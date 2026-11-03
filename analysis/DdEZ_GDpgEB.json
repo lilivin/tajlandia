@@ -1,0 +1,22 @@
+{
+  "title": "Little Wood - kawiarnia z kozami w Bangkoku",
+  "summary": "Autorzy polecają Little Wood jako swoją ulubioną kawiarnię w Bangkoku. Po ogródku chodzą kozy, kaczka i duży żółw, a goście mogą je karmić.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Little Wood",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Urocza kawiarnia ze zwierzakami: kozy, kaczka, żółw"
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "kawiarnia",
+    "zwierzęta",
+    "kozy",
+    "Bangkok"
+  ]
+}

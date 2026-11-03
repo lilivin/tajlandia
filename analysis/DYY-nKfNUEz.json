@@ -1,0 +1,43 @@
+{
+  "title": "Rejs po Chao Phraya za 16 bahtów",
+  "summary": "Godzinny rejs tramwajem wodnym po Chao Phraya za ok. 2 zł. Autorzy radzą płynąć w stronę centrum, by ominąć kolejki, a zachód słońca złapać w trakcie rejsu z widokiem na Wat Arun.",
+  "category": "Transport",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Stacja metra Bangkok Po",
+      "type": "stacja metra",
+      "area": "Bangkok",
+      "note": "Niebieska linia, stąd idzie się do przystani"
+    },
+    {
+      "name": "Przystań Bangkok Po",
+      "type": "przystań",
+      "area": "Bangkok",
+      "note": "Start rejsu pomarańczową linią"
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Najlepiej widoczna z wody przy zachodzie słońca"
+    }
+  ],
+  "tips": [
+    "Jedź niebieską linią metra do stacji Bangkok Po, dojdź do przystani i wsiądź w tramwaj wodny pomarańczowej linii.",
+    "Płyń w stronę centrum (odwrotnie niż większość) - omijasz kolejki.",
+    "Zaplanuj rejs tuż przed zachodem słońca, by zobaczyć Wat Arun w idealnym świetle."
+  ],
+  "prices": [
+    {
+      "item": "Rejs tramwajem wodnym (pomarańczowa linia, ok. godziny)",
+      "price": "16 THB (ok. 2 zł)"
+    }
+  ],
+  "tags": [
+    "rejs",
+    "tramwaj wodny",
+    "budżetowo",
+    "zachód słońca"
+  ]
+}

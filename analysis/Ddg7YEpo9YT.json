@@ -1,0 +1,51 @@
+{
+  "title": "5 miejsc w Bangkoku, które warto znać przed pierwszym wyjazdem",
+  "summary": "Autor, który mieszkał w Bangkoku prawie dwa lata, poleca pięć miejsc: pad kra pao, świątynię z widokiem, Talat Noi, kawiarnię nad rzeką i night market. Wskazówki to unikanie tłumów i oglądanie mniej turystycznego Bangkoku.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Phed Mark",
+      "type": "restauracja",
+      "area": "Ekkamai, Bangkok",
+      "note": "Słynny pad kra pao; polecany z wołowiną i czterema kaczymi jajami, opinie podzielone."
+    },
+    {
+      "name": "Wat Ratchanatdaram Worawihan (Loha Prasat)",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Mało tłumów i widok z góry na Wat Saket."
+    },
+    {
+      "name": "Talat Noi",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Stare zabudowania, warsztaty, street art, kawiarnie i widok na rzekę."
+    },
+    {
+      "name": "Hong Sieng Kong",
+      "type": "kawiarnia",
+      "area": "Talat Noi, Bangkok",
+      "note": "Kawiarnia nad rzeką z ogrodem; polecane dirty coffee i zachód słońca."
+    },
+    {
+      "name": "Save One Go Market",
+      "type": "night market",
+      "area": "Bangkok",
+      "note": "Duży lokalny night market z jedzeniem i zakupami."
+    }
+  ],
+  "tips": [
+    "W Phed Mark nie przesadzaj z ostrością; poziom 3 to maks.",
+    "Wejdź na samą górę Loha Prasat po widok na Wat Saket.",
+    "W Talat Noi spacer od kawiarni do kawiarni, bez planu.",
+    "Zostań nad rzeką w Hong Sieng Kong do zachodu słońca."
+  ],
+  "prices": [],
+  "tags": [
+    "bangkok",
+    "poradnik",
+    "jedzenie",
+    "kawiarnie"
+  ]
+}

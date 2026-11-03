@@ -1,0 +1,44 @@
+{
+ "title": "Mahasan – tajska steakhouse w Bangkoku, gdzie jedzą lokalsi",
+ "summary": "Mahasan to mała steakhouse w Bangkoku specjalizująca się w tajskiej wołowinie (7 stolików, jeden szef kuchni), z trudnymi do zdobycia rezerwacjami. Autorka poleca język wołowy, ryż z tłuszczem wołowym, marynowane jajko i sałatkę pomidorową.",
+ "category": "Jedzenie",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "Mahasan (มหาสาร)",
+   "type": "restauracja",
+   "area": "Bangkok, Yan Nawa / Chong Nonsi",
+   "note": "Tajska wołowina, mały lokal z rezerwacjami; adres: 2016/46-47 Chan Road, naprzeciw poczty Yan Nawa"
+  }
+ ],
+ "tips": [
+  "Rezerwacje są mocno zalecane – sprawdź rundy rezerwacji na oficjalnej stronie",
+  "Zapytaj z wyprzedzeniem o zamówienie marynowanych jajek",
+  "Must-order: grillowany język wołowy i ryż z tłuszczem wołowym, nie pomijaj dodatków"
+ ],
+ "prices": [
+  {
+   "item": "Grillowany język wołowy",
+   "price": "470 THB"
+  },
+  {
+   "item": "Marynowane jajko",
+   "price": "35 THB za sztukę"
+  },
+  {
+   "item": "Ryż z tłuszczem wołowym",
+   "price": "350 THB"
+  },
+  {
+   "item": "Picanha 200 g",
+   "price": "550 THB"
+  }
+ ],
+ "tags": [
+  "steakhouse",
+  "wołowina",
+  "Bangkok",
+  "rezerwacja",
+  "lokalne"
+ ]
+}

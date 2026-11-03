@@ -1,0 +1,39 @@
+{
+  "title": "Drugi dzień solo w Bangkoku: muzeum, pad thai i speakeasy",
+  "summary": "Vlog z dnia w Bangkoku: muzeum ze słoniem trójgłowym, kawiarnia, najlepszy pad thai i smoothie z mango, Talat Noi, masaż z onsenem i ukryty bar w fotobudce. Autorka podkreśla, że Bangkok to nie tylko świątynie i rooftopy.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Erawan Museum",
+      "type": "muzeum",
+      "area": "Bangkok",
+      "note": "Muzeum pod trójgłowym słoniem z wnętrzem przedstawiającym buddyjski wszechświat (w materiale mówione jako 'Air One Museum')."
+    },
+    {
+      "name": "Talat Noi",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Ciche uliczki i ukryte świątynie."
+    },
+    {
+      "name": "7-Eleven przy Erawan Museum",
+      "type": "punkt widokowy",
+      "area": "Bangkok",
+      "note": "Stąd dobry widok na trzy głowy słonia."
+    }
+  ],
+  "tips": [
+    "Perfekcyjne zdjęcie trzech głów słonia zrobisz sprzed pobliskiego 7-Eleven.",
+    "Warto zaplanować masaż w spa z prywatnymi kąpielami onsen i 2-godzinnym masażem.",
+    "W deszczu można schować się w kawiarni w marokańskim stylu."
+  ],
+  "prices": [],
+  "tags": [
+    "bangkok",
+    "solo",
+    "vlog",
+    "speakeasy",
+    "pad thai"
+  ]
+}

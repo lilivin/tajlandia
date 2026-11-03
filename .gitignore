@@ -1,0 +1,11 @@
+# dane lokalne: filmy/klatki, stan z pełnymi imionami i nazwiskami, linki z identyfikatorami kont IG
+data/
+state.json
+state.tmp
+inbox/
+node_modules/
+__pycache__/
+.chrome-profile/
+# exFAT/macOS
+._*
+.DS_Store

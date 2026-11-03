@@ -1,0 +1,69 @@
+{
+  "title": "24 godziny w Bangkoku bez Khao San",
+  "summary": "Plan jednego dnia w Bangkoku od świtu do nocy: spacer z waranami, tajskie śniadanie, mniej turystyczne Chinatown, świątynia Wat Arun, zachód słońca z promu i wieczór na Yaowarat. Autor radzi omijać Khao San.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Lumphini Park",
+      "type": "park",
+      "area": "Bangkok",
+      "note": "Poranny spacer wśród dzikich waranów (07:00)."
+    },
+    {
+      "name": "Polo Fried Chicken",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Chrupiący kurczak z czosnkiem i som tam na śniadanie/lunch."
+    },
+    {
+      "name": "Talat Noi",
+      "type": "dzielnica",
+      "area": "Chinatown, Bangkok",
+      "note": "Pomijana przez turystów część Chinatown."
+    },
+    {
+      "name": "Song Wat",
+      "type": "ulica",
+      "area": "Chinatown, Bangkok",
+      "note": "Klimatyczna okolica z kawiarniami."
+    },
+    {
+      "name": "Song Wat Coffee Roasters",
+      "type": "kawiarnia",
+      "area": "Song Wat, Bangkok",
+      "note": "Dirty coffee polecana jako najlepsza kawa."
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Świątynia obłożona kawałkami chińskiej porcelany, która kiedyś była balastem na statkach."
+    },
+    {
+      "name": "Yaowarat Road",
+      "type": "ulica",
+      "area": "Chinatown, Bangkok",
+      "note": "Główna ulica Chinatown na wieczór ze street foodem."
+    },
+    {
+      "name": "Ang Yi",
+      "type": "bar",
+      "area": "Chinatown, Bangkok",
+      "note": "Ukryty bar nazwany jak tajne stowarzyszenie z dawnego Syjamu."
+    }
+  ],
+  "tips": [
+    "Nie idź na Khao San.",
+    "Główną ulicę Chinatown zostaw na wieczór.",
+    "Do Chinatown jedź metrem.",
+    "Na zachód słońca przepłyń promem na drugi brzeg i oglądaj Wat Arun z innej perspektywy."
+  ],
+  "prices": [],
+  "tags": [
+    "bangkok",
+    "plan dnia",
+    "chinatown",
+    "street food"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tajlandia-feed",
+  "version": "1.0.0",
+  "description": "Linki z grupowego czatu na Instagramie → Apify (opis, wideo) → lokalna transkrypcja i klatki → analiza → `site/index.html`. Każdy post przechodzi przez pipeline **raz**: stan trzyma `state.json` (statusy `new → scraped → media → analyzed`, plus `unavailable` dla prywatnych/usuniętych postów, oraz `last` = ostatni przeanalizowany post i data przebiegu).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}

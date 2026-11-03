@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>~*~ TAJLANDIA 2026 ~*~ Strona Domowa Ekipy ~*~</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  /* Estetyka GeoCities ~1998: kafelkowe tło, Comic Sans, ramki z bevelem, migające napisy. */
+  body{margin:0;font:15px/1.4 "Comic Sans MS","Comic Sans",cursive;color:#000;
+    background:#0000a8 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><text x='6' y='34' font-size='26'>🌴</text><text x='44' y='74' font-size='22'>🍹</text><text x='50' y='26' font-size='10' fill='%23ffff66'>✦</text><text x='14' y='70' font-size='8' fill='%23ffffff'>✧</text></svg>")}
+  a{color:#0000ee}a:visited{color:#551a8b}
+  .page{max-width:980px;margin:0 auto;padding:10px}
+  .box{background:#fffbe6;border:4px outset #c0c0c0;margin:14px 0;padding:10px 14px;box-shadow:6px 6px 0 #000}
+  .title{text-align:center;background:linear-gradient(90deg,#ff0080,#ff8c00,#ffe600,#00d26a,#00b7ff,#8a2be2);
+    border:4px ridge #ffd700;padding:12px 6px;box-shadow:6px 6px 0 #000}
+  .title h1{margin:0;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(28px,6vw,56px);color:#fff;
+    text-shadow:3px 3px 0 #000,-1px -1px 0 #000;letter-spacing:2px}
+  .title p{margin:4px 0 0;color:#fff;text-shadow:2px 2px 0 #000;font-weight:bold}
+  marquee{background:#000;color:#00ff00;font:bold 16px "Courier New",monospace;padding:4px 0;border:2px inset #888}
+  .blink{animation:blink 1s steps(2,start) infinite}@keyframes blink{to{visibility:hidden}}
+  .rainbow{height:8px;border:0;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet);margin:16px 0}
+  h2{font-family:Impact,"Arial Black",sans-serif;font-weight:normal;letter-spacing:1px;color:#ff0080;
+    text-shadow:2px 2px 0 #ffe600;margin:4px 0 10px;font-size:28px}
+  .spin{display:inline-block;animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+  .wobble{display:inline-block;animation:wob 1.2s ease-in-out infinite alternate}@keyframes wob{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+  .construction{background:repeating-linear-gradient(45deg,#ffd400 0 18px,#000 18px 36px);padding:6px;text-align:center}
+  .construction span{background:#ffd400;padding:2px 10px;font-weight:bold;border:2px solid #000}
+  .counter{display:inline-flex;gap:2px;vertical-align:middle}
+  .counter b{background:#000;color:#ff3030;font:bold 20px "Courier New",monospace;padding:0 5px;border:2px inset #666}
+  table.league{width:100%;border-collapse:separate;border-spacing:2px;background:#808080;border:3px outset #c0c0c0}
+  .league th{background:#000080;color:#ffff00;padding:6px;font-family:"Arial Black",sans-serif;font-size:13px}
+  .league td{background:#fff;padding:6px;text-align:center;vertical-align:middle}
+  .league tr:nth-child(2) td{background:#fff3a0}.league tr:nth-child(3) td{background:#e8e8e8}.league tr:nth-child(4) td{background:#ffd9b3}
+  .league td.who{text-align:left;font-weight:bold;font-size:17px}
+  .league .pts{font:bold 22px Impact,sans-serif;color:#d40000}
+  .bar{height:14px;background:repeating-linear-gradient(90deg,#00c000 0 6px,#008000 6px 8px);border:1px solid #000;min-width:2px}
+  .badge{display:inline-block;background:#ffffcc;border:1px dashed #ff0080;padding:1px 6px;margin:2px;font-size:12px;border-radius:8px}
+  #map{height:460px;border:4px inset #c0c0c0}
+  .legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px}
+  .dot{display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid #000;vertical-align:-2px;margin-right:4px}
+  .controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:10px}
+  button,.btn{font:bold 13px "MS Sans Serif",Tahoma,sans-serif;background:#c0c0c0;border:3px outset #fff;padding:4px 10px;cursor:pointer;color:#000}
+  button:active,button[aria-pressed=true]{border-style:inset;background:#a0a0a0}
+  input[type=search]{font:14px "Courier New",monospace;border:3px inset #c0c0c0;padding:4px 6px;min-width:220px;margin-left:auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .card{background:#fff;border:3px ridge #ff8c00;padding:8px;display:flex;flex-direction:column;gap:6px}
+  .card .cover{display:block;height:220px;background:#000 center/cover no-repeat;border:2px inset #c0c0c0;position:relative}
+  .card .cover .new{position:absolute;top:6px;left:6px;background:red;color:#ff0;font:bold 13px Impact,sans-serif;padding:2px 8px;transform:rotate(-8deg);border:2px solid #ff0}
+  .card .cover .kind{position:absolute;bottom:6px;right:6px;background:#000c;color:#0f0;font:12px "Courier New",monospace;padding:1px 6px}
+  .card h3{margin:0;font-size:16px;color:#000080}
+  .meta{font-size:12px;color:#444}.meta b{color:#d40000}
+  .sum{margin:0;font-size:13px}
+  .places{font-size:12px}.places a{margin-right:6px;white-space:nowrap}
+  details{font-size:12px}summary{cursor:pointer;color:#008000;font-weight:bold}details ul{margin:4px 0 0;padding-left:18px}
+  .pager{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin:14px 0 4px;font-family:"Courier New",monospace}
+  .pager button[aria-current=true]{background:#000080;color:#fff;border-style:inset}
+  .shame li{margin:2px 0}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .tile{background:#fff;border:3px outset #c0c0c0;box-shadow:4px 4px 0 #000;display:flex;flex-direction:column}
+  .tile h3{margin:0;padding:6px 10px;color:#fff;font:20px Impact,"Arial Black",sans-serif;letter-spacing:1px;
+    background:linear-gradient(90deg,#000080,#1084d0);border-bottom:2px solid #000}
+  .tile:nth-child(2n) h3{background:linear-gradient(90deg,#800000,#d01010)}
+  .tile:nth-child(3n) h3{background:linear-gradient(90deg,#006400,#10b010)}
+  .tile ul{margin:0;padding:8px 10px 10px 26px;font-size:13px}
+  .tile li{margin:4px 0}
+  .tile li a{color:#0000ee;font-size:11px;white-space:nowrap}
+  footer{text-align:center;color:#fff;font-size:12px;padding:20px 0 40px;text-shadow:1px 1px 0 #000}
+  footer .webring{display:inline-block;background:#000;border:2px ridge #ffd700;padding:6px 12px;margin:8px 0;color:#ffd700}
+  .leaflet-popup-content{font-family:"Comic Sans MS",cursive;font-size:13px}
+  html,body{overflow-x:hidden}
+  @media (max-width:720px){
+    .page{padding:6px}
+    .box{padding:8px 10px;box-shadow:3px 3px 0 #000}
+    h2{font-size:22px}
+    .title p{font-size:13px}
+    #map{height:340px}
+    input[type=search]{min-width:0;width:100%;margin-left:0}
+    .controls button,.controls select{font-size:12px;padding:3px 7px}
+    .grid{grid-template-columns:1fr}
+    /* Tabela ligowa jako karty: miejsce | zawodnik | punkty, pod spodem statystyki, na dole odznaki. */
+    table.league,.league tbody{display:block;border:0;background:none}
+    .league tr:first-child{display:none}
+    .league tr{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:8px;background:#808080;border:3px outset #c0c0c0}
+    .league td{display:block;padding:5px}
+    .league td.rank{grid-column:1}
+    .league td.who{grid-column:2/4}
+    .league td.pts{grid-column:4}
+    .league td.stat{font-size:13px}
+    .league td.stat::before{content:attr(data-label);display:block;font-size:10px;color:#555;font-family:Tahoma,sans-serif}
+    .league td.badges{grid-column:1/-1;text-align:left}
+    .league td.badges:empty,.league td.badges.none{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){.blink,.spin,.wobble{animation:none}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="title">
+    <h1><span class="spin">🌴</span> TAJLANDIA 2026 <span class="spin">🌴</span></h1>
+    <p>~*~ Geje jadą w tropiki być ukąszonym przez komary i lajdibojów ~*~</p>
+  </div>
+  <marquee scrollamount="7" id="ticker">*** WITAMY NA NASZEJ STRONIE!!! *** </marquee>
+
+  <div class="box" style="text-align:center">
+    <span class="wobble" style="font-size:34px">🐘</span>
+    <b style="font-size:18px">Jesteś <span class="counter" id="counter"></span> gościem na tej stronie!</b>
+    <span class="wobble" style="font-size:34px">🛺</span>
+    <div style="margin-top:6px" id="stats"></div>
+    <div class="blink" style="color:#d40000;font-weight:bold;margin-top:4px" id="newinfo"></div>
+  </div>
+
+  <div class="construction"><span>🚧 STRONA W BUDOWIE — ciągle wrzucacie nowe rolki 🚧</span></div>
+
+  <div class="box">
+    <h2>🏆 TABELA LIGOWA — kto najwięcej podrzuca?</h2>
+    <p style="margin:0 0 8px;font-size:13px">Punktacja: <b>+10</b> za znalezisko, <b>+2</b> za każde miejsce w nim, <b>−5</b> za wrzutkę nie na temat. Sędzia jest bezstronny (to skrypt).</p>
+    <table class="league" id="league"></table>
+    <div id="shame"></div>
+  </div>
+
+  <hr class="rainbow">
+
+  <div class="box">
+    <h2>🗺️ MAPA SKARBÓW</h2>
+    <div id="map"></div>
+    <div class="legend" id="legend"></div>
+    <p style="font-size:12px;margin:6px 0 0" id="mapnote"></p>
+  </div>
+
+  <hr class="rainbow">
+
+  <div class="box">
+    <h2>📌 ŚCIĄGAWKA — co wynieśliśmy z tych rolek</h2>
+    <div class="tiles" id="tiles"></div>
+  </div>
+
+  <hr class="rainbow">
+
+  <div class="box">
+    <h2>📼 ZNALEZISKA <span class="blink" style="color:#00a000">NOWOŚCI!</span></h2>
+    <div class="controls" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <div class="pager" id="pager"></div>
+  </div>
+
+  <footer>
+    <div>Strona najlepiej wygląda w <b>Netscape Navigator 4.0</b> przy rozdzielczości <b>800×600</b> 🖥️</div>
+    <div class="webring">◄ poprzednia | 🌐 WEBRING „Azja na Plecaku” 🌐 | następna ►</div>
+    <div>Ostatnia aktualizacja: <span id="updated"></span> · Zrobione w Notatniku 📝 · <a href="#" style="color:#ff0" onclick="alert('Księga gości jest pełna! Napisz na czacie 😎');return false">✍️ Wpisz się do księgi gości!</a></div>
+  </footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const gmaps = (p, r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([p.name, p.area || (r !== "Cała Tajlandia" ? r : ""), "Thailand"].filter(Boolean).join(", "));
+const fmt = d => d ? new Date(d).toLocaleDateString("pl-PL", {day:"numeric", month:"short", year:"numeric"}) : "";
+const COLORS = {"Plaże i wyspy":"#00b7ff","Atrakcje":"#ff8c00","Jedzenie":"#ff0080","Noclegi":"#8a2be2","Imprezy i nightlife":"#ffe600","Transport":"#00d26a","Porady i koszty":"#a0522d","Inne":"#888"};
+const posts = DATA.posts, PER_PAGE = 9;
+let cat = "Wszystko", q = "", page = 1;
+
+// ---------- nagłówek ----------
+const places = posts.flatMap(p => (p.places || []).map(pl => ({...pl, post: p})));
+const newCount = posts.filter(p => p.isNew).length;
+String(1337 + posts.length * 42 + places.length).padStart(6, "0").split("").forEach(d => $("#counter").insertAdjacentHTML("beforeend", `<b>${d}</b>`));
+$("#stats").innerHTML = `📼 <b>${posts.length}</b> znalezisk &nbsp;·&nbsp; 📍 <b>${places.length}</b> miejsc &nbsp;·&nbsp; 👥 <b>${DATA.leaderboard.length}</b> osób w lidze`;
+$("#newinfo").textContent = newCount ? `★ ${newCount} NOWYCH ZNALEZISK OD OSTATNIEJ AKTUALIZACJI! ★` : "";
+$("#updated").textContent = fmt(DATA.updatedAt);
+const lb = DATA.leaderboard;
+$("#ticker").textContent = `*** WITAMY NA NASZEJ STRONIE!!! *** LIDER LIGI: ${lb[0] ? lb[0].name.toUpperCase() + " (" + lb[0].points + " pkt)" : "?"} *** ${posts.length} ZNALEZISK, ${places.length} MIEJSC *** PAMIĘTAJ: NIE PIJ KRANÓWKI!!! *** KTO NIE WRZUCA, TEN NIE JEDZIE *** 🌴🐘🍹🛺 ***`;
+
+// ---------- tabela ligowa ----------
+const medal = i => ["🥇","🥈","🥉"][i] || `${i + 1}.`;
+const maxPts = Math.max(1, ...lb.map(r => r.points));
+$("#league").innerHTML = `<tr><th>#</th><th>Zawodnik</th><th>Pkt</th><th>Wrzutki</th><th>Miejsca</th><th>Nie na temat</th><th>Ulubiony temat</th><th>Odznaki</th></tr>` +
+  lb.map((r, i) => `<tr><td class="rank" style="font-size:22px">${medal(i)}</td><td class="who">${esc(r.name)}<div class="bar" style="width:${Math.max(4, r.points / maxPts * 100)}%"></div></td>
+    <td class="pts">${r.points}</td><td class="stat" data-label="Wrzutki">${r.posts + r.off}</td><td class="stat" data-label="Miejsca">${r.places}</td>
+    <td class="stat" data-label="Nie na temat">${r.off ? "🙈 " + r.off : "—"}</td><td class="stat" data-label="Ulubiony temat">${esc(r.topCat || "—")}</td>
+    <td class="badges${(r.badges || []).length ? "" : " none"}" style="text-align:left">${(r.badges || []).map(b => `<span class="badge">${esc(b)}</span>`).join("") || "—"}</td></tr>`).join("");
+if (DATA.offtopic.length) {
+  $("#shame").innerHTML = `<details style="margin-top:8px"><summary>🙈 Ściana wstydu: wrzutki nie na temat (${DATA.offtopic.length})</summary><ul class="shame">${
+    DATA.offtopic.map(o => `<li><b>${esc(o.sharedBy || "?")}</b>: <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a></li>`).join("")}</ul></details>`;
+}
+
+// ---------- mapa ----------
+const onMap = places.filter(pl => pl.ll);
+const approx = onMap.filter(pl => pl.approx).length;
+$("#mapnote").textContent = `Na mapie: ${onMap.length} z ${places.length} miejsc — ${onMap.length - approx} dokładnie, ${approx} w przybliżeniu (puste kółko = znana tylko okolica).`;
+$("#legend").innerHTML = Object.entries(COLORS).map(([k, c]) => `<span><span class="dot" style="background:${c}"></span>${k}</span>`).join("");
+if (window.L) {
+  const map = L.map("map", { scrollWheelZoom: false }).setView([13.5, 100.8], 6);
+  // Kafelki Esri: serwery kafelków OSM odrzucają żądania bez Referer (strona z pliku go nie wysyła), CARTO chce klucza.
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: 19, attribution: "Tiles © Esri · dane miejsc © OpenStreetMap" }).addTo(map);
+  const seen = new Map();
+  onMap.forEach(pl => {
+    const key = pl.ll.join(",") + pl.name;
+    if (seen.has(key)) { seen.get(key).push(pl); return; }
+    seen.set(key, [pl]);
+  });
+  const markers = [];
+  for (const group of seen.values()) {
+    const pl = group[0];
+    // Przybliżone (tylko okolica znana) — puste kółko z lekkim rozrzutem, żeby się nie nakładały.
+    const ll = pl.approx ? [pl.ll[0] + (Math.random() - .5) * .03, pl.ll[1] + (Math.random() - .5) * .03] : pl.ll;
+    const m = L.circleMarker(ll, { radius: pl.approx ? 6 : 8, color: pl.approx ? COLORS[pl.post.category] || "#888" : "#000", weight: pl.approx ? 3 : 2,
+      dashArray: pl.approx ? "3" : null, fillColor: COLORS[pl.post.category] || "#888", fillOpacity: pl.approx ? .15 : .95 }).addTo(map);
+    m.bindPopup(`<b>📍 ${esc(pl.name)}</b>${pl.type ? ` <i>(${esc(pl.type)})</i>` : ""}${pl.approx ? " <small>(okolica — dokładnej pozycji brak w OSM)</small>" : ""}<br>${pl.note ? esc(pl.note) + "<br>" : ""}` +
+      group.map(g => `🎬 <a href="${esc(g.post.url)}" target="_blank" rel="noopener">${esc(g.post.title)}</a> — od <b>${esc(g.post.sharedBy || "?")}</b>`).join("<br>") +
+      `<br><a href="${gmaps(pl, pl.post.region)}" target="_blank" rel="noopener">Otwórz w Google Maps →</a>`);
+    markers.push(m);
+  }
+  if (markers.length) map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1));
+} else {
+  $("#map").innerHTML = '<p style="padding:20px">Mapa potrzebuje internetu (Leaflet + OpenStreetMap). Modem się rozłączył? 📞</p>';
+}
+
+// ---------- ściągawka ----------
+$("#tiles").innerHTML = (DATA.tiles || []).map(t => `<div class="tile"><h3>${esc(t.emoji)} ${esc(t.title)}</h3><ul>${
+  t.items.map(i => `<li>${esc(i.text)}${i.url ? ` <a href="${esc(i.url)}" target="_blank" rel="noopener" title="${esc(i.src)}">[🎬 źródło]</a>` : ""}</li>`).join("")}</ul></div>`).join("");
+
+// ---------- znaleziska z paginacją ----------
+const cats = ["Wszystko", ...(newCount ? ["Nowe"] : []), ...DATA.categories.filter(c => posts.some(p => p.category === c))];
+const people = [...new Set(posts.map(p => p.sharedBy).filter(Boolean))];
+$("#filters").innerHTML = cats.map(c => `<button data-c="${esc(c)}">${esc(c)}</button>`).join("") +
+  `<select id="who" class="btn"><option value="">👤 Wszyscy</option>${people.map(p => `<option>${esc(p)}</option>`).join("")}</select>` +
+  `<input type="search" id="q" placeholder="szukaj: Krabi, rooftop, skuter...">`;
+$("#filters").addEventListener("click", e => { if (e.target.dataset.c) { cat = e.target.dataset.c; page = 1; draw(); } });
+$("#q").addEventListener("input", e => { q = e.target.value.toLowerCase(); page = 1; draw(); });
+$("#who").addEventListener("change", () => { page = 1; draw(); });
+
+function matches(p) {
+  const who = $("#who").value;
+  if (who && p.sharedBy !== who) return false;
+  if (cat === "Nowe" && !p.isNew) return false;
+  if (cat !== "Wszystko" && cat !== "Nowe" && p.category !== cat) return false;
+  return !q || JSON.stringify(p).toLowerCase().includes(q);
+}
+
+function card(p) {
+  const list = (t, xs) => xs && xs.length ? `<details><summary>${t} (${xs.length})</summary><ul>${xs.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : "";
+  return `<div class="card">
+    <a class="cover" href="${esc(p.url)}" target="_blank" rel="noopener" style="${p.img ? `background-image:url('${esc(p.img)}')` : ""}">
+      ${p.isNew ? '<span class="new">NOWE!</span>' : ""}<span class="kind">${p.isVideo ? "▶ ROLKA" : "▣ POST"}</span></a>
+    <div class="meta"><span style="color:${COLORS[p.category] === "#ffe600" ? "#b8860b" : COLORS[p.category]}">■</span> ${esc(p.category)}${p.region ? ` · 📍 ${esc(p.region)}` : ""}</div>
+    <h3>${esc(p.title)}</h3>
+    <p class="sum">${esc(p.summary)}</p>
+    ${(p.places || []).length ? `<div class="places">${p.places.map(pl => `<a href="${gmaps(pl, p.region)}" target="_blank" rel="noopener">📍${esc(pl.name)}</a>`).join("")}</div>` : ""}
+    ${list("Wskazówki", p.tips)}
+    ${list("Ceny", (p.prices || []).map(x => `${x.item}: ${x.price}`))}
+    <div class="meta">wrzucił(a): <b>${esc(p.sharedBy || "?")}</b>${p.sharedAt ? " · " + fmt(p.sharedAt) : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">@${esc(p.owner || "ig")} →</a></div>
+  </div>`;
+}
+
+function draw() {
+  document.querySelectorAll("#filters button").forEach(b => b.setAttribute("aria-pressed", b.dataset.c === cat));
+  const shown = posts.filter(matches);
+  const pages = Math.max(1, Math.ceil(shown.length / PER_PAGE));
+  page = Math.min(page, pages);
+  $("#grid").innerHTML = shown.slice((page - 1) * PER_PAGE, page * PER_PAGE).map(card).join("") || "<p>Nic nie znaleziono 😢 Spróbuj inaczej!</p>";
+  const btn = (n, label, dis) => `<button data-p="${n}" ${dis ? "disabled" : ""} ${n === page && !label ? 'aria-current="true"' : ""}>${label || n}</button>`;
+  $("#pager").innerHTML = pages < 2 ? "" : btn(page - 1, "« Poprzednia", page === 1) +
+    Array.from({ length: pages }, (_, i) => btn(i + 1)).join("") + btn(page + 1, "Następna »", page === pages) +
+    `<span style="align-self:center;margin-left:8px">strona ${page}/${pages} · ${shown.length} znalezisk</span>`;
+}
+$("#pager").addEventListener("click", e => {
+  const n = Number(e.target.dataset.p);
+  if (n) { page = n; draw(); document.querySelector("#filters").scrollIntoView({ behavior: "smooth" }); }
+});
+draw();
+</script>
+</body>
+</html>

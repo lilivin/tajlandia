@@ -1,0 +1,32 @@
+{
+  "title": "Nai Lert Park – ukryty park w centrum Bangkoku",
+  "summary": "Darmowy, popularny wśród Tajów park przy BTS Ploenchit z kawiarniami, restauracjami, kanałem z rybami i stawem lotosowym w dawnym kraterze po bombie z II wojny. Można też zwiedzić dom Nai Lerta.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Nai Lert Park",
+      "type": "park",
+      "area": "Ploenchit, Bangkok",
+      "note": "Darmowy park z kawiarniami, restauracjami, kanałem i stawem lotosowym w kraterze po bombie z II wojny."
+    }
+  ],
+  "tips": [
+    "Wstęp jest bezpłatny.",
+    "Dojazd: BTS Ploenchit.",
+    "Można zwiedzić historyczny dom Nai Lerta z oprowadzaniem."
+  ],
+  "prices": [
+    {
+      "item": "Wstęp do parku",
+      "price": "bezpłatnie"
+    }
+  ],
+  "tags": [
+    "Bangkok",
+    "park",
+    "za darmo",
+    "BTS Ploenchit",
+    "kawiarnie"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+ "title": "Ranking klubów w Bangkoku wg tier listy (część 2)",
+ "summary": "Twórca ocenia w tier liście kluby w Bangkoku pod kątem poznawania atrakcyjnych kobiet, zaznaczając że to jego subiektywna opinia. Najwyżej stawia House of Savoy (S) i Mira (A), najniżej Sugar Club i Void (D).",
+ "category": "Imprezy i nightlife",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "House of Savoy Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena S – według autora pełen modelek, najlepsze miejsce"
+  },
+  {
+   "name": "Mira Club Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena A – alternatywa, gdy nie ma stolika w House of Savoy"
+  },
+  {
+   "name": "Tic Tac Toe Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena B – dużo młodych dziewczyn (wczesne 20+), klimat na piątym piętrze"
+  },
+  {
+   "name": "Route 66 Club Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena C – fajny klub, ale do poznawania ludzi to loteria"
+  },
+  {
+   "name": "Sugar Club Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena D – świetna muzyka, ale nie na poznawanie ludzi"
+  },
+  {
+   "name": "Void Club Bangkok",
+   "type": "klub",
+   "area": "Bangkok",
+   "note": "Ocena D – autor trafił na pustawy wieczór"
+  }
+ ],
+ "tips": [
+  "Jeśli nie ma stolika w House of Savoy, autor proponuje Mira",
+  "Ocena jest subiektywna i dotyczy punktu widzenia singla-mężczyzny"
+ ],
+ "prices": [],
+ "tags": [
+  "kluby",
+  "Bangkok",
+  "nightlife",
+  "ranking"
+ ]
+}

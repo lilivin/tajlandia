@@ -1,0 +1,31 @@
+{
+  "title": "Najlepszy punkt widokowy na Wat Arun: przystań Wat Pho",
+  "summary": "Karuzela pokazuje, że z przystani Wat Pho (Wat Pho Pier) Wat Arun widać frontalnie, z główną pagodą na środku i czterema symetrycznymi wieżami po bokach. Plac jest szeroki, popularny na zachód słońca i łatwo dostępny.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Wat Pho Pier",
+      "type": "przystań / punkt widokowy",
+      "area": "Bangkok",
+      "note": "Frontalny, symetryczny widok na Wat Arun, popularny o zachodzie słońca"
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Główna pagoda i cztery wieże, nie zasłaniają jej drzewa"
+    }
+  ],
+  "tips": [
+    "Przy przystani Wat Pho jest szeroki plac z widokiem na Wat Arun, popularny o zachodzie słońca.",
+    "W okolicy są też zaułki i inne kąty do zdjęć Wat Arun."
+  ],
+  "prices": [],
+  "tags": [
+    "Wat Arun",
+    "zachód słońca",
+    "fotografia",
+    "Bangkok"
+  ]
+}

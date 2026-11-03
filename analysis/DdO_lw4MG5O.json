@@ -1,0 +1,46 @@
+{
+  "title": "5 wysp w Tajlandii do zapisania",
+  "summary": "Dronowe ujęcia pięciu mało znanych wysp z białym piaskiem i turkusową wodą: Koh Lao Ya, Koh Kham, Koh Ngam, Koh Wai i Koh Rayang. Sama lista nazw, bez opisów czy cen.",
+  "category": "Plaże i wyspy",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "Koh Lao Ya",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Biała plaża i turkusowa woda."
+    },
+    {
+      "name": "Koh Kham",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Plaża i jasna laguna."
+    },
+    {
+      "name": "Koh Ngam",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Zatoka z długim pomostem."
+    },
+    {
+      "name": "Koh Wai",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Piaszczysta plaża i rafa przy brzegu."
+    },
+    {
+      "name": "Koh Rayang",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Mała wyspa z piaszczystą łachą."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "wyspy",
+    "plaże",
+    "dron",
+    "turkusowa woda"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Rung Rueang – słynne makarony z wieprzowiną w Bangkoku",
+  "summary": "Para poleca Rung Rueang, restaurację z makaronem z wieprzowiną serwowanym od dziesięcioleci, wyróżnioną wieloma tabliczkami Michelin. Wokół pełno gości i kolejka na ulicy.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Rung Rueang (Sukhumvit 26)",
+      "type": "restauracja",
+      "area": "Sukhumvit, Bangkok",
+      "note": "Makaron z wieprzowiną od dziesięcioleci, wyróżnienia Michelin, zwykle tłum i kolejka."
+    }
+  ],
+  "tips": [
+    "Spodziewaj się kolejki przed wejściem."
+  ],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "makaron",
+    "Michelin",
+    "street food"
+  ]
+}

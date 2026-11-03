@@ -1,0 +1,34 @@
+{
+  "title": "Taksówka z lotniska Suvarnabhumi – voucher zamiast aplikacji",
+  "summary": "Autorzy polecają po wylądowaniu w Bangkoku wziąć taksówkę na lotnisku z biletem (kiosk z numerem stanowiska) zamiast czekać na auto z aplikacji – szybciej i niewiele drożej. Pokazują wybór taksówki zwykłej/dużej i sam przejazd.",
+  "category": "Transport",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Suvarnabhumi Airport",
+      "type": "lotnisko",
+      "area": "Bangkok",
+      "note": "Stanowiska taksówek z biletem; są też miejsca dla Graba."
+    }
+  ],
+  "tips": [
+    "Weź bilet z kiosku – dostaniesz numer stanowiska (tu nr 40) i nie czekasz na auto z aplikacji.",
+    "Poproś kierowcę o włączenie taksometru.",
+    "Duża taksówka przy większej ilości bagażu; zwykła wystarcza na 2-4 sztuki; na krótsze dystanse wybierz zwykłą.",
+    "Do ceny doliczane jest 50 bahtów opłaty lotniskowej.",
+    "Po długim locie szybkość jest warta kilku dolarów różnicy."
+  ],
+  "prices": [
+    {
+      "item": "Przejazd taksówką z lotniska (duża, z voucherem)",
+      "price": "ok. 470 THB (+50 THB dopłaty)"
+    }
+  ],
+  "tags": [
+    "lotnisko",
+    "taksówka",
+    "Bangkok",
+    "transport",
+    "Suvarnabhumi"
+  ]
+}

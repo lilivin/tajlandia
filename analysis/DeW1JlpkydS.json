@@ -1,0 +1,50 @@
+{
+  "title": "Taniej na Phi Phi Islands z Phuket",
+  "summary": "Autorka pokazuje, jak zrobić wycieczkę na Phi Phi z Phuket taniej niż w gotowych pakietach po 7–15 tys. THB. Kupuje się osobno bilet na speedboat lub prom oraz prywatny longtail przez hotel.",
+  "category": "Porady i koszty",
+  "region": "Koh Phi Phi",
+  "places": [
+    {
+      "name": "Coco Beach Hotel",
+      "type": "hotel",
+      "area": "Phuket",
+      "note": "Polecany do zorganizowania wycieczki longtailem po cenach niższych niż w biurach."
+    },
+    {
+      "name": "Mayada",
+      "type": "hotel",
+      "area": "Phuket",
+      "note": "Polecany jako druga opcja do zamówienia wycieczki."
+    }
+  ],
+  "tips": [
+    "Kup osobno bilet na speedboat/prom (rano, np. o 8 lub 9) i prywatny longtail.",
+    "Zamów longtail przez hotel, dzień do trzech dni wcześniej — hotele miały lepsze ceny niż budki na Phi Phi.",
+    "Hotel nie musi być Twoim noclegiem — można zadzwonić i poprosić o zorganizowanie wycieczki.",
+    "Platformy typu Booking czy GetYourGuide są zwykle droższe."
+  ],
+  "prices": [
+    {
+      "item": "Bilet Phuket–Phi Phi (speedboat/prom), w jedną stronę",
+      "price": "ok. 700 THB (ok. 70 zł)"
+    },
+    {
+      "item": "Prywatny longtail, 5–7 godzin",
+      "price": "4–5 tys. THB (400–500 zł)"
+    },
+    {
+      "item": "Całość dla 2 osób (bilety + longtail)",
+      "price": "ok. 7300 THB"
+    },
+    {
+      "item": "Gotowe wycieczki w biurach",
+      "price": "7–15 tys. THB"
+    }
+  ],
+  "tags": [
+    "phi phi",
+    "phuket",
+    "oszczędzanie",
+    "longtail"
+  ]
+}

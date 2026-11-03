@@ -1,0 +1,53 @@
+{
+ "title": "Ranking wysp Tajlandii po 3,5 miesiąca podróży",
+ "summary": "Para, która spędziła w Tajlandii 3,5 miesiąca i odwiedziła 9 wysp, ocenia je i opisuje czego się spodziewać. Podium: Koh Kood i Koh Tao, potem Koh Phi Phi, a trzecie Koh Lipe; Phuket dostał 4/10.",
+ "category": "Plaże i wyspy",
+ "region": "Cała Tajlandia",
+ "places": [
+  {
+   "name": "Koh Kood",
+   "type": "wyspa",
+   "area": "Zatoka Tajlandzka",
+   "note": "1. miejsce (ex aequo) w rankingu"
+  },
+  {
+   "name": "Koh Tao",
+   "type": "wyspa",
+   "area": "Zatoka Tajlandzka",
+   "note": "1. miejsce (ex aequo) w rankingu"
+  },
+  {
+   "name": "Koh Phi Phi",
+   "type": "wyspa",
+   "area": "Andamany",
+   "note": "2. miejsce, ocena zaskoczyła nawet autorów"
+  },
+  {
+   "name": "Koh Lipe",
+   "type": "wyspa",
+   "area": "Andamany",
+   "note": "3. miejsce w rankingu"
+  },
+  {
+   "name": "Phuket City",
+   "type": "miasto",
+   "area": "Phuket",
+   "note": "Najmilej wspominane z Phuket: fajny klimacik i niedzielny targ"
+  }
+ ],
+ "tips": [
+  "Phuket 4/10: dobry do życia, ale lecąc tylko tam na wakacje autorzy byliby rozczarowani",
+  "Ocena jest subiektywna; przy krótkim wyjeździe warto wybrać miejsca blisko siebie lub oferujące wszystko w jednym",
+  "Na Phuket klimat i jedzenie wypadły gorzej niż na innych wyspach"
+ ],
+ "prices": [],
+ "tags": [
+  "wyspy",
+  "ranking",
+  "Koh Tao",
+  "Koh Phi Phi",
+  "Koh Lipe",
+  "Phuket",
+  "Koh Kood"
+ ]
+}

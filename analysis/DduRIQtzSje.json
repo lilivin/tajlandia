@@ -1,0 +1,46 @@
+{
+  "title": "5 rooftopów w Bangkoku do zapisania",
+  "summary": "Krótka lista pięciu rooftopów w Bangkoku z nocnymi widokami na miasto. W materiale pokazane są m.in. Nobu i Tulum Skybar; reszta to sama lista nazw.",
+  "category": "Imprezy i nightlife",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Aether Bangkok",
+      "type": "rooftop",
+      "area": "Bangkok",
+      "note": "Rooftop z widokiem na panoramę miasta."
+    },
+    {
+      "name": "Nobu Bangkok",
+      "type": "restauracja/rooftop",
+      "area": "Bangkok",
+      "note": "Kolacja z widokiem na wieżowiec MahaNakhon i miasto o zmierzchu."
+    },
+    {
+      "name": "Tichuca Rooftop Bar",
+      "type": "rooftop",
+      "area": "Bangkok",
+      "note": "Rooftop z listy."
+    },
+    {
+      "name": "Tulum Skybar",
+      "type": "rooftop/klub",
+      "area": "Bangkok",
+      "note": "Klimatyczny, kolorowy bar na dachu."
+    },
+    {
+      "name": "Le Du Kaan",
+      "type": "restauracja/rooftop",
+      "area": "Bangkok",
+      "note": "Miejsce z listy."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "rooftop",
+    "widoki",
+    "nocne życie"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Bangkok: 5 błędów, które psują wyjazd",
+  "summary": "Autor tłumaczy, że Bangkok ma złą opinię przez złe planowanie. Daje konkretne rady: gdzie nie nocować, ile dni zarezerwować, który floating market wybrać, jak tanio popłynąć łodzią po rzece i jak planować dni, żeby nie utknąć w korkach.",
+  "category": "Porady i koszty",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Khao San Road",
+      "type": "ulica",
+      "area": "Bangkok",
+      "note": "Ikoniczna, ale niepolecana do spania: hałas do 4 rano i brak BTS/metra w pobliżu."
+    },
+    {
+      "name": "Damnoen Saduak Floating Market",
+      "type": "targ",
+      "area": "okolice Bangkoku",
+      "note": "Dwie godziny w jedną stronę i ceny pod autokary – lepiej odpuścić."
+    },
+    {
+      "name": "Khlong Lat Mayom Floating Market",
+      "type": "targ",
+      "area": "Bangkok",
+      "note": "W granicach miasta, weekendowy, tani, głównie Tajowie."
+    },
+    {
+      "name": "Taling Chan Floating Market",
+      "type": "targ",
+      "area": "Bangkok",
+      "note": "Jak wyżej – bliżej i taniej."
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Na trasie publicznej łodzi po Chao Phrayi."
+    },
+    {
+      "name": "Wielki Pałac",
+      "type": "zabytek",
+      "area": "Bangkok",
+      "note": "Na trasie publicznej łodzi."
+    },
+    {
+      "name": "Song Wat Road",
+      "type": "ulica",
+      "area": "Chinatown, Bangkok",
+      "note": "Stare magazyny widoczne z rzeki."
+    },
+    {
+      "name": "Ari",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Polecana na nocleg dla spokoju i kawiarni."
+    },
+    {
+      "name": "Silom",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Polecana na nocleg dla wygody."
+    },
+    {
+      "name": "Sukhumvit",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Polecana na nocleg dla wygody."
+    },
+    {
+      "name": "Chinatown",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Polecana na nocleg dla jedzenia."
+    }
+  ],
+  "tips": [
+    "Nocuj przy stacji BTS lub metra: Ari (spokój, kawiarnie), Silom i Sukhumvit (wygoda), Chinatown (jedzenie).",
+    "Daj Bangkokowi ok. 5 dni, nie 2 – floating market, rooftop, trzy świątynie, rejs rzeką i jedzenie w różnych dzielnicach.",
+    "Zamiast Damnoen Saduak jedź na Khlong Lat Mayom lub Taling Chan (weekendy).",
+    "Zamiast drogiego prywatnego rejsu płyń publiczną łodzią z pomarańczową flagą; uważaj przy Sathorn na droższą niebieską turystyczną.",
+    "Jeden dzień = jedna okolica; trzymaj się blisko BTS i metra, żeby nie stać w korkach.",
+    "Najlepsze jedzenie jest tam, gdzie nie ma menu po angielsku."
+  ],
+  "prices": [
+    {
+      "item": "Publiczna łódź z pomarańczową flagą po Chao Phrayi",
+      "price": "16 bahtów (ok. 2 zł)"
+    }
+  ],
+  "tags": [
+    "Bangkok",
+    "porady",
+    "floating market",
+    "rzeka",
+    "noclegi",
+    "transport"
+  ]
+}

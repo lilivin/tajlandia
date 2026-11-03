@@ -1,0 +1,88 @@
+{
+  "title": "Dwie trasy na pierwszy raz w Tajlandii i kiedy którą wybrać",
+  "summary": "Autorzy, którzy byli w Tajlandii 6 razy, polecają dwie trasy dla debiutantów: Andamany (Krabi, Phi Phi, wyspy Trang) oraz Zatokę Tajlandzką (Samui, Phangan, Tao). Kluczowy jest dobór trasy do pory roku, bo monsuny występują po obu stronach w innych miesiącach.",
+  "category": "Porady i koszty",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "Bangkok",
+      "type": "miasto",
+      "area": "Bangkok",
+      "note": "Start obu tras: street food, świątynie i chaos"
+    },
+    {
+      "name": "Krabi",
+      "type": "region",
+      "area": "Krabi",
+      "note": "Klify, laguny i widoki jak z pocztówki"
+    },
+    {
+      "name": "Maya Bay",
+      "type": "plaża",
+      "area": "Koh Phi Phi",
+      "note": "Piękna zatoka, ale bywa tłocznie"
+    },
+    {
+      "name": "Koh Phi Phi",
+      "type": "wyspa",
+      "area": "Koh Phi Phi",
+      "note": "Charakterystyczne tajskie krajobrazy"
+    },
+    {
+      "name": "Wyspy Trang",
+      "type": "wyspy",
+      "area": "Trang",
+      "note": "Mniej turystyczne, spokojne, niektóre bez dróg"
+    },
+    {
+      "name": "Koh Mook",
+      "type": "wyspa",
+      "area": "Trang",
+      "note": "Wspomniana jako opcja z hotelem (wg transkrypcji, nazwa niepewna)"
+    },
+    {
+      "name": "Koh Ngai",
+      "type": "wyspa",
+      "area": "Trang",
+      "note": "Spokojna wyspa z obłędną plażą (wg transkrypcji, nazwa niepewna)"
+    },
+    {
+      "name": "Koh Kradan",
+      "type": "wyspa",
+      "area": "Trang",
+      "note": "Obłędna plaża"
+    },
+    {
+      "name": "Koh Samui",
+      "type": "wyspa",
+      "area": "Koh Samui",
+      "note": "Duży wybór dobrych hoteli, łatwa logistyka"
+    },
+    {
+      "name": "Koh Phangan",
+      "type": "wyspa",
+      "area": "Koh Phangan",
+      "note": "Jedna z ulubionych wysp autorów"
+    },
+    {
+      "name": "Koh Tao",
+      "type": "wyspa",
+      "area": "Koh Tao",
+      "note": "Snorkeling i nurkowanie"
+    }
+  ],
+  "tips": [
+    "Trasa 1 (Bangkok, Krabi, Phi Phi, Trang): najlepiej grudzień-kwiecień; maj-październik to monsun, deszcz i fale, część hoteli na Trang zamknięta.",
+    "Trasa 2 (Bangkok, Samui, Phangan, Tao): najlepiej styczeń-sierpień; październik-grudzień to monsun w Zatoce, listopad bywa mocno deszczowy.",
+    "Trasę 2 jest łatwiej zorganizować logistycznie.",
+    "Trasy można modyfikować, np. zrobić tylko Samui + Phangan."
+  ],
+  "prices": [],
+  "tags": [
+    "trasa",
+    "pierwszy raz",
+    "pora roku",
+    "monsun",
+    "wyspy"
+  ]
+}

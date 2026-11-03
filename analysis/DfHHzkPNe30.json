@@ -1,0 +1,44 @@
+{
+ "title": "72 godziny w Bangkoku – 5 rzeczy, których nie można pominąć",
+ "summary": "Autorka poleca pięć rzeczy na krótki pobyt w Bangkoku: zakupy lokalnych marek, zachód słońca nad Wat Arun, bar z muzyką na żywo, street food oraz rooftopy. Nazwany jest sklep Tress oraz okolice Chula i Chinatown.",
+ "category": "Atrakcje",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "Tress Bangkok",
+   "type": "sklep",
+   "area": "Bangkok",
+   "note": "Lokalne marki, od ubrań po akcesoria"
+  },
+  {
+   "name": "Wat Arun",
+   "type": "świątynia",
+   "area": "Bangkok",
+   "note": "Zachód słońca z widokiem na rozświetlaną świątynię z drugiego brzegu rzeki"
+  },
+  {
+   "name": "Chula Street (Soi Chula)",
+   "type": "street food",
+   "area": "Bangkok",
+   "note": "Jedna z ulubionych okolic ze street foodem"
+  },
+  {
+   "name": "Chinatown (Yaowarat)",
+   "type": "street food",
+   "area": "Bangkok",
+   "note": "Autentyczne chińsko-tajskie jedzenie uliczne"
+  }
+ ],
+ "tips": [
+  "Listopad to początek pory suchej – dobry czas na Bangkok",
+  "Autorka poleca też R&B bar z muzyką na żywo (nazwa nie podana) i rooftopy"
+ ],
+ "prices": [],
+ "tags": [
+  "Bangkok",
+  "72 godziny",
+  "street food",
+  "rooftopy",
+  "Wat Arun"
+ ]
+}

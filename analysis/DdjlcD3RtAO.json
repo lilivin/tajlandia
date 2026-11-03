@@ -1,0 +1,35 @@
+{
+  "title": "Pogryzienie przez małpę na Monkey Hill w Phuket - koszty leczenia",
+  "summary": "Autorka (po rosyjsku) została pogryziona na Monkey Hill i dostała szczepienia w szpitalu. Mimo ubezpieczenia i listu gwarancyjnego musiała dopłacić franszyzę i leki, łącznie ponad 10 000 rubli. Ostrzeżenie, że kontakt z małpami bywa kosztowny.",
+  "category": "Porady i koszty",
+  "region": "Phuket",
+  "places": [
+    {
+      "name": "Monkey Hill",
+      "type": "punkt widokowy",
+      "area": "Phuket (Phuket Town)",
+      "note": "Wzgórze z dzikimi małpami; uwaga na pogryzienia"
+    }
+  ],
+  "tips": [
+    "Ubezpieczenie podróżne wystawiło list gwarancyjny na przyjęcie i szczepienia, ale franszyza i leki nie były w nim wliczone.",
+    "Lekarka powiedziała, że do szpitala najczęściej trafiają osoby z głębokimi ukąszeniami.",
+    "Nie karm i nie zaczepiaj małp, a po pogryzieniu jedź do szpitala na szczepienie."
+  ],
+  "prices": [
+    {
+      "item": "Całkowity koszt wizyty i szczepienia (z franszyzą i lekami)",
+      "price": "ponad 10 000 RUB"
+    },
+    {
+      "item": "Rachunek z kliniki widoczny w filmie",
+      "price": "4 250 THB (3 250 + 1 000)"
+    }
+  ],
+  "tags": [
+    "małpy",
+    "szczepienie",
+    "ubezpieczenie",
+    "Phuket"
+  ]
+}

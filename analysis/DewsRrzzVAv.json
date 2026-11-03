@@ -1,0 +1,37 @@
+{
+  "title": "7 rzeczy do kupienia w 7-Eleven po przylocie",
+  "summary": "Lista rzeczy z 7-Eleven: woda z elektrolitami, tosty, inhalator ziołowy, środek na komary, chipsy w tajskich smakach, tajska herbata lub mrożona kawa i piwo. Plus aktualne godziny sprzedaży alkoholu.",
+  "category": "Porady i koszty",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "7-Eleven",
+      "type": "sklep",
+      "area": "Cała Tajlandia",
+      "note": "Sieć sklepów z przekąskami, napojami i podstawowymi artykułami"
+    }
+  ],
+  "tips": [
+    "Woda i elektrolity w saszetkach ratują po długim locie i w upale.",
+    "Tost z szynką i serem - kasjer podgrzeje, wybór kilkunastu smaków.",
+    "Inhalator ziołowy pomaga na klimatyzację, chorobę lokomocyjną i zatkany nos; to też pamiątka.",
+    "Środek na komary jest ważny ze względu na dengę.",
+    "Wypróbuj chipsy w tajskich smakach, np. grillowane krewetki.",
+    "Tajska herbata z mlekiem lub mrożona kawa - słodko, zimno i tanio.",
+    "Piwo (Leo, Chang, Singha): od końca maja 2026 sprzedaż 11:00-24:00 bez przerwy 14:00-17:00; od 20. roku życia, w święta buddyjskie sprzedaży nie ma.",
+    "Miej gotówkę - nie wszędzie zapłacisz kartą."
+  ],
+  "prices": [
+    {
+      "item": "Tost z szynką i serem",
+      "price": "kilkadziesiąt bahtów"
+    }
+  ],
+  "tags": [
+    "7-Eleven",
+    "zakupy",
+    "piwo",
+    "przekąski",
+    "po przylocie"
+  ]
+}

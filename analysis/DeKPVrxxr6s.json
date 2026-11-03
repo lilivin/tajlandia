@@ -1,0 +1,30 @@
+{
+  "title": "Sklep Adidas w Song Wat z personalizacją",
+  "summary": "Wyjątkowy sklep Adidas w dzielnicy Song Wat w Bangkoku z limitowanymi produktami dostępnymi tylko tam. Można samemu zaprojektować koszulkę, malować buty lub personalizować jeansy, a na piętrze jest kawiarnia z widokiem na rzekę.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Adidas Song Wat",
+      "type": "sklep / kawiarnia",
+      "area": "Song Wat, Bangkok",
+      "note": "Limitowane produkty, stanowiska personalizacji i kawiarnia z widokiem na rzekę."
+    }
+  ],
+  "tips": [
+    "Personalizacja trwa ok. 5 minut.",
+    "Na drugim piętrze jest kawiarnia z widokiem na rzekę."
+  ],
+  "prices": [
+    {
+      "item": "Koszulka z własnym projektem i personalizacją",
+      "price": "ok. 50 USD"
+    }
+  ],
+  "tags": [
+    "bangkok",
+    "song wat",
+    "zakupy",
+    "adidas"
+  ]
+}

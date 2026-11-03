@@ -1,0 +1,77 @@
+{
+  "title": "10 magicznych kawiarni w Tajlandii",
+  "summary": "Lista dziesięciu fotogenicznych kawiarni w różnych częściach Tajlandii – od stawów z koi i pól kwiatów po wodospady i pola ryżowe. Dobre źródło pomysłów na instagramowe miejsca.",
+  "category": "Jedzenie",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "Lalitta Cafe",
+      "type": "kawiarnia",
+      "area": "Chiang Rai",
+      "note": "Pozycja 1 na liście."
+    },
+    {
+      "name": "Ying Yong Flower",
+      "type": "kawiarnia",
+      "area": "Chiang Mai",
+      "note": "Czerwone pole kwiatów z białą kładką."
+    },
+    {
+      "name": "Ma Doo Bua",
+      "type": "kawiarnia",
+      "area": "Phuket",
+      "note": "Pozycja 3 na liście."
+    },
+    {
+      "name": "Dantewada",
+      "type": "kawiarnia",
+      "area": "Chiang Mai",
+      "note": "Wodospad i turkusowy staw."
+    },
+    {
+      "name": "Park Sathorn",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Pozycja 5 na liście."
+    },
+    {
+      "name": "Meena Cafe",
+      "type": "kawiarnia",
+      "area": "Kanchanaburi",
+      "note": "Kładka wśród zielonych pól ryżowych i widok na świątynię."
+    },
+    {
+      "name": "Rabbit Hole",
+      "type": "kawiarnia",
+      "area": "Phuket",
+      "note": "Pozycja 7 na liście."
+    },
+    {
+      "name": "After the Rain",
+      "type": "kawiarnia",
+      "area": "Nakhon Pathom",
+      "note": "Kanał wśród palm, rejs łódką."
+    },
+    {
+      "name": "Great & Grand",
+      "type": "kawiarnia",
+      "area": "Pattaya",
+      "note": "Pozycja 9 na liście."
+    },
+    {
+      "name": "Carp Cafe",
+      "type": "kawiarnia",
+      "area": "Chiang Mai",
+      "note": "Staw z kolorowymi karpiami koi i czerwonym mostkiem."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "kawiarnie",
+    "instagramowe miejsca",
+    "Chiang Mai",
+    "Phuket",
+    "koi"
+  ]
+}

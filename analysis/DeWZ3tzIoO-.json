@@ -1,0 +1,26 @@
+{
+  "title": "Wattana Panich - zupa gotowana od 1974 roku",
+  "summary": "Restauracja z polecenia Michelin w Bangkoku, gdzie trzecie pokolenie rodziny od 52 lat dolewa ten sam wywar. Autor jadł najpopularniejszą pozycję, zupę z makaronem i wołowiną, i uznał ją za pyszną.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Wattana Panich",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Zupa z makaronem i wołowiną z wywaru gotowanego od 1974 r., polecana przez Michelin"
+    }
+  ],
+  "tips": [
+    "Zamów najpopularniejsze danie: zupa z makaronem i wołowiną.",
+    "Codziennie część wywaru zostaje jako baza na następny dzień, do której dodaje się świeże składniki."
+  ],
+  "prices": [],
+  "tags": [
+    "zupa",
+    "Michelin",
+    "wołowina",
+    "street food",
+    "Bangkok"
+  ]
+}

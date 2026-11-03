@@ -1,0 +1,69 @@
+{
+  "title": "7 miejsc na jedzenie w Bangkoku: street food, Michelin i 7-Eleven",
+  "summary": "Lista siedmiu sprawdzonych miejsc z jedzeniem w Bangkoku – od khao soi i lodów, przez owoce morza w cenach jak w McDonald's, po polską knajpę i lava cake z 7-Eleven. Autor wskazuje ulubione dania i daje kilka praktycznych rad (np. jak zamówić nieostre).",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Soi Silom",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Khao soi z kurczakiem (północnotajskie danie) i pierożki."
+    },
+    {
+      "name": "Ice Cream Samosorn",
+      "type": "deserownia",
+      "area": "Bangkok",
+      "note": "Lody w cieście oraz klasyczne smaki, m.in. czekoladowe i crème brûlée."
+    },
+    {
+      "name": "7-Eleven",
+      "type": "sklep",
+      "area": "Bangkok",
+      "note": "Lava cake – kaloryczna, trzeba poprosić o podgrzanie."
+    },
+    {
+      "name": "Here Hai",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Omlet z krabem, przegrzebki i owoce morza w cenach jak w McDonald's; spodziewaj się kolejki."
+    },
+    {
+      "name": "Jeh O Chula",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Słynne Mama Tom Yum i sashimi z łososia w ostrym sosie."
+    },
+    {
+      "name": "Larder",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Polska knajpa: pierogi, kanapki, jajecznica z kiełbasą i wypieki."
+    },
+    {
+      "name": "Nueng Nom Nua",
+      "type": "deserownia",
+      "area": "Bangkok",
+      "note": "Lody na tostowanym chlebie z sosem; polecane słone jajko i Hokkaido, do tego tajwańska herbata mleczna."
+    }
+  ],
+  "tips": [
+    "Lava cake z 7-Eleven poproś o podgrzanie przed jedzeniem.",
+    "Jeśli nie jesz ostrego, powiedz obsłudze „mai phet” (nieostre) – i tak będzie piekło, ale do zniesienia.",
+    "Do Here Hai przygotuj się na kolejkę."
+  ],
+  "prices": [
+    {
+      "item": "Owoce morza w Here Hai",
+      "price": "ceny porównywalne z McDonald's"
+    }
+  ],
+  "tags": [
+    "Bangkok",
+    "street food",
+    "Michelin",
+    "khao soi",
+    "lody",
+    "7-Eleven"
+  ]
+}

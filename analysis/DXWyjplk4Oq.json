@@ -1,0 +1,22 @@
+{
+  "title": "Khao Sok – jak Jurassic Park",
+  "summary": "Rolka z łodzi na jeziorze w parku narodowym Khao Sok: turkusowa woda i pionowe skalne wieże porośnięte dżunglą. Autorka zachęca, by dodać park do listy miejsc do zobaczenia w Tajlandii.",
+  "category": "Atrakcje",
+  "region": "Khao Sok",
+  "places": [
+    {
+      "name": "Khao Sok National Park",
+      "type": "park",
+      "area": "Khao Sok",
+      "note": "Jezioro z wapiennymi skałami i turkusową wodą, oglądane z długiej łodzi."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "Khao Sok",
+    "park narodowy",
+    "jezioro",
+    "natura"
+  ]
+}

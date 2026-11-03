@@ -1,0 +1,77 @@
+{
+  "title": "Oceny regionów Tajlandii w skali 10",
+  "summary": "Osobisty ranking autorów: Koh Lanta 11/10, Bangkok i Koh Phangan 10/10, a Phuket i Koh Samui najniżej przez komercję i tłok. Z krótkimi uzasadnieniami dla każdego miejsca.",
+  "category": "Porady i koszty",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "Krabi",
+      "type": "region",
+      "area": "Krabi",
+      "note": "9/10 - klify, turkusowa woda, island hopping"
+    },
+    {
+      "name": "Phuket",
+      "type": "wyspa",
+      "area": "Phuket",
+      "note": "6/10 - piękne plaże, ale tłoczno i komercyjnie"
+    },
+    {
+      "name": "Koh Phi Phi",
+      "type": "wyspa",
+      "area": "Koh Phi Phi",
+      "note": "8/10 - piękne widoki i czysta woda, ale tłumy"
+    },
+    {
+      "name": "Chiang Mai",
+      "type": "miasto",
+      "area": "Chiang Mai",
+      "note": "9/10 - jedzenie, świątynie, kawiarnie"
+    },
+    {
+      "name": "Chiang Rai",
+      "type": "miasto",
+      "area": "Chiang Rai",
+      "note": "8/10 - spokojniejsze, świątynie i krajobrazy"
+    },
+    {
+      "name": "Koh Lanta",
+      "type": "wyspa",
+      "area": "Koh Lanta",
+      "note": "11/10 - ulubione: wyluzowane, zachody słońca, restauracje"
+    },
+    {
+      "name": "Bangkok",
+      "type": "miasto",
+      "area": "Bangkok",
+      "note": "10/10 - street food, rooftop bary, świątynie"
+    },
+    {
+      "name": "Koh Samui",
+      "type": "wyspa",
+      "area": "Koh Samui",
+      "note": "7/10 - wygodna, ale zbyt rozwinięta i zatłoczona"
+    },
+    {
+      "name": "Koh Phangan",
+      "type": "wyspa",
+      "area": "Koh Phangan",
+      "note": "10/10 - plaże, kawiarnie, dżungla, nie tylko Full Moon Party"
+    },
+    {
+      "name": "Koh Tao",
+      "type": "wyspa",
+      "area": "Koh Tao",
+      "note": "9/10 - snorkeling, nurkowanie, punkty widokowe"
+    }
+  ],
+  "tips": [
+    "To subiektywne oceny autorów; każdy podróżuje inaczej."
+  ],
+  "prices": [],
+  "tags": [
+    "ranking",
+    "oceny",
+    "plan podróży"
+  ]
+}

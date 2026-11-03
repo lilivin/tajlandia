@@ -1,0 +1,35 @@
+{
+  "title": "3 rzeczy do załatwienia przed lądowaniem w Tajlandii",
+  "summary": "TDAC (cyfrowa karta przylotu) jest darmowa, wypełnia się ją na oficjalnej stronie do 3 dni przed przylotem, bo strony pośredników pobierają 60-100 USD. Do tego bankomaty i eSIM zamiast karty SIM na lotnisku.",
+  "category": "Porady i koszty",
+  "region": "Cała Tajlandia",
+  "places": [],
+  "tips": [
+    "Wypełnij TDAC wyłącznie na oficjalnej stronie tdac.immigration.go.th - to darmowe, najlepiej przed przylotem, by nie stać w kolejce.",
+    "Uważaj na scamowe strony, które pobierają opłatę za TDAC.",
+    "W bankomacie wybieraj wypłatę bez konwersji walut (decline currency conversion), by przewalutował Twój bank.",
+    "Bankomaty pobierają opłatę za wypłatę, więc wypłacaj większe kwoty rzadziej.",
+    "Zamiast fizycznej karty SIM na lotnisku weź eSIM."
+  ],
+  "prices": [
+    {
+      "item": "TDAC na oficjalnej stronie",
+      "price": "za darmo"
+    },
+    {
+      "item": "TDAC na scamowych stronach",
+      "price": "60-100 (waluta niepodana, prawdopodobnie USD)"
+    },
+    {
+      "item": "Opłata bankomatu za wypłatę",
+      "price": "ok. 250 THB"
+    }
+  ],
+  "tags": [
+    "TDAC",
+    "bankomat",
+    "eSIM",
+    "lotnisko",
+    "imigracja"
+  ]
+}

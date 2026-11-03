@@ -1,0 +1,30 @@
+{
+  "title": "Robienie pierścionka za 50 batów w Chiang Mai",
+  "summary": "Warsztat w Lanna Artisan Art Gallery w Chiang Mai, gdzie samemu robi się pierścionek, bransoletkę lub breloczek z mosiądzu albo aluminium. Instruktor pokazuje technikę, a obsługa wycina, mierzy i poleruje całość.",
+  "category": "Atrakcje",
+  "region": "Chiang Mai",
+  "places": [
+    {
+      "name": "Lanna Artisan Art Gallery",
+      "type": "warsztat / galeria",
+      "area": "Chiang Mai",
+      "note": "Warsztat tworzenia biżuterii z metalu."
+    }
+  ],
+  "tips": [
+    "Do wyboru mosiądz lub aluminium, trzy style pierścionka.",
+    "Obsługa pokazuje tutorial i poprawia ostateczny efekt."
+  ],
+  "prices": [
+    {
+      "item": "Pierścionek zrobiony własnoręcznie",
+      "price": "50 THB (ok. 1,48 USD)"
+    }
+  ],
+  "tags": [
+    "chiang mai",
+    "warsztat",
+    "biżuteria",
+    "tanio"
+  ]
+}

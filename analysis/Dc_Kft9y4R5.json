@@ -1,0 +1,37 @@
+{
+ "title": "Wypożyczenie butów do biegania w ON Store One Bangkok",
+ "summary": "W sklepie ON w One Bangkok można pożyczyć buty biegowe na maks. 2 godziny, zostawiając paszport jako zastaw. Po drugiej stronie ulicy jest park Lumphini, a sklep Carnival też oferuje wypożyczenia butów.",
+ "category": "Atrakcje",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "ON Store One Bangkok",
+   "type": "sklep",
+   "area": "Bangkok",
+   "note": "Bezpłatne wypożyczenie butów biegowych na do 2 godzin"
+  },
+  {
+   "name": "Lumphini Park",
+   "type": "park",
+   "area": "Bangkok",
+   "note": "Trasa do biegania tuż naprzeciwko sklepu"
+  },
+  {
+   "name": "Carnival Store Bangkok",
+   "type": "sklep",
+   "area": "Bangkok",
+   "note": "Sklep z odzieżą i sprzętem do biegania, również wypożycza buty"
+  }
+ ],
+ "tips": [
+  "Na wypożyczenie butów zostawia się paszport jako zastaw",
+  "Wypożyczenie trwa do 2 godzin"
+ ],
+ "prices": [],
+ "tags": [
+  "bieganie",
+  "Lumphini Park",
+  "Bangkok",
+  "aktywnie"
+ ]
+}
