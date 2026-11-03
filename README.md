@@ -68,3 +68,11 @@ bez Referer z `file://`, CARTO chce klucza; puste kółko = miejsca nie ma w OSM
 po 9 na stronę z filtrami po kategorii i osobie. Nadawcy: `ig.mjs grab` czyta `sender_fbid`/`timestamp_ms`
 z propsów wiadomości, imię z etykiety nad grupą; własne wiadomości (bez etykiety, po prawej) = „Karol”
 (`IG_ME` zmienia).
+
+## Publikacja (GitHub Pages)
+
+Strona: https://lilivin.github.io/tajlandia/ — repo `lilivin/tajlandia`, Pages z `main:/docs`.
+Po każdej aktualizacji: `python3 feed.py render && git add -A && git commit -m "Nowe rolki" && git push`.
+Strona jest publiczna (z `noindex`): render pokazuje tylko imiona (`public_name`, ksywki w `NAME_ALIASES`);
+`state.json`, `inbox/` i `data/` nie trafiają do repo. Kafelki „Ściągawka” są w `highlights.json` (ręcznie, z analiz) —
+przy nowych rolkach warto je uzupełnić.
