@@ -5,25 +5,38 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🌴%3C/text%3E%3C/svg%3E">
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>~*~ TAJLANDIA 2026 ~*~ Strona Domowa Ekipy ~*~</title>
+<title>~*~ TAJLANDIA 2027 ~*~ Strona Domowa Ekipy ~*~</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
-  /* Estetyka GeoCities ~1998: kafelkowe tło, Comic Sans, ramki z bevelem, migające napisy. */
-  body{margin:0;font:15px/1.4 "Comic Sans MS","Comic Sans",cursive;color:#000;
+  /* Anton (SIL OFL) zamiast Impact: iOS nie ma ani Impact, ani Comic Sans ("cursive" = pismo odręczne). */
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin-ext.woff2) format("woff2");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  /* Estetyka GeoCities ~1998: kafelkowe tło, Verdana (czytelna, a z epoki), ramki z bevelem, migające napisy. */
+  body{margin:0;font:15px/1.55 Verdana,Tahoma,"DejaVu Sans",sans-serif;color:#000;
     background:#0000a8 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><text x='6' y='34' font-size='26'>🌴</text><text x='44' y='74' font-size='22'>🍹</text><text x='50' y='26' font-size='10' fill='%23ffff66'>✦</text><text x='14' y='70' font-size='8' fill='%23ffffff'>✧</text></svg>")}
   a{color:#0000ee}a:visited{color:#551a8b}
   .page{max-width:980px;margin:0 auto;padding:10px}
   .box{background:#fffbe6;border:4px outset #c0c0c0;margin:14px 0;padding:10px 14px;box-shadow:6px 6px 0 #000}
   .title{text-align:center;background:linear-gradient(90deg,#ff0080,#ff8c00,#ffe600,#00d26a,#00b7ff,#8a2be2);
     border:4px ridge #ffd700;padding:12px 6px;box-shadow:6px 6px 0 #000}
-  .title h1{margin:0;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(28px,6vw,56px);color:#fff;
+  .title h1{margin:0;font-family:Anton,Impact,"Arial Black",sans-serif;font-size:clamp(28px,6vw,56px);color:#fff;
     text-shadow:3px 3px 0 #000,-1px -1px 0 #000;letter-spacing:2px}
   .title p{margin:4px 0 0;color:#fff;text-shadow:2px 2px 0 #000;font-weight:bold}
   marquee{background:#000;color:#00ff00;font:bold 16px "Courier New",monospace;padding:4px 0;border:2px inset #888}
   .blink{animation:blink 1s steps(2,start) infinite}@keyframes blink{to{visibility:hidden}}
+  .countdown{text-align:center;background:#000;color:#fff;border-color:#ffd700}
+  .cd-title{font:24px Anton,Impact,"Arial Black",sans-serif;letter-spacing:2px;color:#ffe600}
+  .cd{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:8px 0}
+  .cd .unit{display:flex;flex-direction:column;align-items:center;min-width:70px}
+  .cd .num{font:bold 40px "Courier New",monospace;color:#ff3030;background:#1a0000;border:3px inset #555;padding:0 8px;min-width:64px;
+    text-shadow:0 0 8px #ff0000}
+  .cd .lbl{font-size:12px;color:#0f0;font-family:"Courier New",monospace;margin-top:3px;text-transform:uppercase}
+  .cd-when{font-size:13px;color:#ccc}
   .rainbow{height:8px;border:0;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet);margin:16px 0}
-  h2{font-family:Impact,"Arial Black",sans-serif;font-weight:normal;letter-spacing:1px;color:#ff0080;
-    text-shadow:2px 2px 0 #ffe600;margin:4px 0 10px;font-size:28px}
+  h2{font-family:Anton,Impact,"Arial Black",sans-serif;font-weight:normal;letter-spacing:1px;color:#c2005f;
+    text-shadow:1px 1px 0 #ffe600;margin:4px 0 10px;font-size:28px}
   .spin{display:inline-block;animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
   .wobble{display:inline-block;animation:wob 1.2s ease-in-out infinite alternate}@keyframes wob{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
   .construction{background:repeating-linear-gradient(45deg,#ffd400 0 18px,#000 18px 36px);padding:6px;text-align:center}
@@ -31,45 +44,45 @@
   .counter{display:inline-flex;gap:2px;vertical-align:middle}
   .counter b{background:#000;color:#ff3030;font:bold 20px "Courier New",monospace;padding:0 5px;border:2px inset #666}
   table.league{width:100%;border-collapse:separate;border-spacing:2px;background:#808080;border:3px outset #c0c0c0}
-  .league th{background:#000080;color:#ffff00;padding:6px;font-family:"Arial Black",sans-serif;font-size:13px}
+  .league th{background:#000080;color:#ffff00;padding:6px;font-family:Verdana,Tahoma,sans-serif;font-weight:bold;font-size:12.5px}
   .league td{background:#fff;padding:6px;text-align:center;vertical-align:middle}
   .league tr:nth-child(2) td{background:#fff3a0}.league tr:nth-child(3) td{background:#e8e8e8}.league tr:nth-child(4) td{background:#ffd9b3}
   .league td.who{text-align:left;font-weight:bold;font-size:17px}
-  .league .pts{font:bold 22px Impact,sans-serif;color:#d40000}
+  .league .pts{font:bold 22px Anton,Impact,"Arial Black",sans-serif;color:#d40000}
   .bar{height:14px;background:repeating-linear-gradient(90deg,#00c000 0 6px,#008000 6px 8px);border:1px solid #000;min-width:2px}
   .badge{display:inline-block;background:#ffffcc;border:1px dashed #ff0080;padding:1px 6px;margin:2px;font-size:12px;border-radius:8px}
   #map{height:460px;border:4px inset #c0c0c0}
   .legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px}
   .dot{display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid #000;vertical-align:-2px;margin-right:4px}
   .controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:10px}
-  button,.btn{font:bold 13px "MS Sans Serif",Tahoma,sans-serif;background:#c0c0c0;border:3px outset #fff;padding:4px 10px;cursor:pointer;color:#000}
+  button,.btn{font:bold 13px Verdana,Tahoma,sans-serif;background:#c0c0c0;border:3px outset #fff;padding:4px 10px;cursor:pointer;color:#000}
   button:active,button[aria-pressed=true]{border-style:inset;background:#a0a0a0}
   input[type=search]{font:14px "Courier New",monospace;border:3px inset #c0c0c0;padding:4px 6px;min-width:220px;margin-left:auto}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
   .card{background:#fff;border:3px ridge #ff8c00;padding:8px;display:flex;flex-direction:column;gap:6px}
   .card .cover{display:block;height:220px;background:#000 center/cover no-repeat;border:2px inset #c0c0c0;position:relative}
-  .card .cover .new{position:absolute;top:6px;left:6px;background:red;color:#ff0;font:bold 13px Impact,sans-serif;padding:2px 8px;transform:rotate(-8deg);border:2px solid #ff0}
+  .card .cover .new{position:absolute;top:6px;left:6px;background:red;color:#ff0;font:bold 13px Anton,Impact,"Arial Black",sans-serif;padding:2px 8px;transform:rotate(-8deg);border:2px solid #ff0}
   .card .cover .kind{position:absolute;bottom:6px;right:6px;background:#000c;color:#0f0;font:12px "Courier New",monospace;padding:1px 6px}
   .card h3{margin:0;font-size:16px;color:#000080}
-  .meta{font-size:12px;color:#444}.meta b{color:#d40000}
-  .sum{margin:0;font-size:13px}
-  .places{font-size:12px}.places a{margin-right:6px;white-space:nowrap}
-  details{font-size:12px}summary{cursor:pointer;color:#008000;font-weight:bold}details ul{margin:4px 0 0;padding-left:18px}
+  .meta{font-size:12.5px;color:#333}.meta b{color:#d40000}
+  .sum{margin:0;font-size:14px}
+  .places{font-size:12.5px}.places a{margin-right:6px;white-space:nowrap}
+  details{font-size:13px}summary{cursor:pointer;color:#008000;font-weight:bold}details ul{margin:4px 0 0;padding-left:18px}
   .pager{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin:14px 0 4px;font-family:"Courier New",monospace}
   .pager button[aria-current=true]{background:#000080;color:#fff;border-style:inset}
   .shame li{margin:2px 0}
   .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
   .tile{background:#fff;border:3px outset #c0c0c0;box-shadow:4px 4px 0 #000;display:flex;flex-direction:column}
-  .tile h3{margin:0;padding:6px 10px;color:#fff;font:20px Impact,"Arial Black",sans-serif;letter-spacing:1px;
+  .tile h3{margin:0;padding:6px 10px;color:#fff;font:20px Anton,Impact,"Arial Black",sans-serif;letter-spacing:1px;
     background:linear-gradient(90deg,#000080,#1084d0);border-bottom:2px solid #000}
   .tile:nth-child(2n) h3{background:linear-gradient(90deg,#800000,#d01010)}
   .tile:nth-child(3n) h3{background:linear-gradient(90deg,#006400,#10b010)}
-  .tile ul{margin:0;padding:8px 10px 10px 26px;font-size:13px}
+  .tile ul{margin:0;padding:8px 10px 10px 26px;font-size:13.5px}
   .tile li{margin:4px 0}
   .tile li a{color:#0000ee;font-size:11px;white-space:nowrap}
   footer{text-align:center;color:#fff;font-size:12px;padding:20px 0 40px;text-shadow:1px 1px 0 #000}
   footer .webring{display:inline-block;background:#000;border:2px ridge #ffd700;padding:6px 12px;margin:8px 0;color:#ffd700}
-  .leaflet-popup-content{font-family:"Comic Sans MS",cursive;font-size:13px}
+  .leaflet-popup-content{font-family:Verdana,Tahoma,sans-serif;font-size:13px;line-height:1.5}
   html,body{overflow-x:hidden}
   @media (max-width:720px){
     .page{padding:6px}
@@ -77,21 +90,30 @@
     h2{font-size:22px}
     .title p{font-size:13px}
     #map{height:340px}
+    .cd{gap:6px;flex-wrap:nowrap}.cd .unit{min-width:0}
+    .cd .num{font-size:30px;min-width:0;padding:0 5px}
+    .cd-title{font-size:20px}
     input[type=search]{min-width:0;width:100%;margin-left:0}
     .controls button,.controls select{font-size:12px;padding:3px 7px}
     .grid{grid-template-columns:1fr}
-    /* Tabela ligowa jako karty: miejsce | zawodnik | punkty, pod spodem statystyki, na dole odznaki. */
+    /* Tabela ligowa jako karty: medal + imię + punkty, pasek, statystyki-pigułki, odznaki. */
     table.league,.league tbody{display:block;border:0;background:none}
     .league tr:first-child{display:none}
-    .league tr{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:8px;background:#808080;border:3px outset #c0c0c0}
-    .league td{display:block;padding:5px}
-    .league td.rank{grid-column:1}
-    .league td.who{grid-column:2/4}
-    .league td.pts{grid-column:4}
-    .league td.stat{font-size:13px}
-    .league td.stat::before{content:attr(data-label);display:block;font-size:10px;color:#555;font-family:Tahoma,sans-serif}
-    .league td.badges{grid-column:1/-1;text-align:left}
-    .league td.badges:empty,.league td.badges.none{display:none}
+    .league tr{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;background:#fff;border:3px outset #c0c0c0;
+      box-shadow:3px 3px 0 #000;padding:8px 10px;margin-bottom:10px}
+    .league tr:nth-child(2){background:#fff3a0}.league tr:nth-child(3){background:#ececec}.league tr:nth-child(4){background:#ffe0c2}
+    .league td{display:block;padding:0;background:transparent!important;text-align:left}
+    .league td.rank{width:34px;text-align:center;font-size:26px!important;line-height:1}
+    .league td.who{flex:1 1 calc(100% - 130px);min-width:0;font-size:18px}
+    .league td.who .bar{margin-top:4px}
+    .league td.pts{font-size:28px;line-height:1;text-align:right}
+    .league td.pts::after{content:" pkt";font:12px Verdana,sans-serif;color:#555}
+    .league td.stat{flex:0 0 auto;font-size:12px;background:rgba(255,255,255,.75)!important;border:1px solid #999;border-radius:12px;padding:2px 9px;white-space:nowrap}
+    .league td.stat::before{content:attr(data-label) ": ";color:#555}
+    .league td.stat.zero{display:none}
+    .league td.badges{flex:1 1 100%;padding-top:2px}
+    .league td.badges.none{display:none}
+    .league .badge{font-size:11.5px}
   }
   @media (prefers-reduced-motion:reduce){.blink,.spin,.wobble{animation:none}}
 </style>
@@ -99,7 +121,7 @@
 <body>
 <div class="page">
   <div class="title">
-    <h1><span class="spin">🌴</span> TAJLANDIA 2026 <span class="spin">🌴</span></h1>
+    <h1><span class="spin">🌴</span> TAJLANDIA 2027 <span class="spin">🌴</span></h1>
     <p>~*~ Geje jadą w tropiki być ukąszonym przez komary i lajdibojów ~*~</p>
   </div>
   <marquee scrollamount="7" id="ticker">*** WITAMY NA NASZEJ STRONIE!!! *** </marquee>
@@ -110,6 +132,12 @@
     <span class="wobble" style="font-size:34px">🛺</span>
     <div style="margin-top:6px" id="stats"></div>
     <div class="blink" style="color:#d40000;font-weight:bold;margin-top:4px" id="newinfo"></div>
+  </div>
+
+  <div class="box countdown">
+    <div class="cd-title">✈️ DO WYLOTU ZOSTAŁO ✈️</div>
+    <div class="cd" id="cd"></div>
+    <div class="cd-when">środa, 10 lutego 2027, godz. 11:45 — pakuj klapki!</div>
   </div>
 
   <div class="construction"><span>🚧 STRONA W BUDOWIE — ciągle wrzucacie nowe rolki 🚧</span></div>
@@ -174,13 +202,23 @@ $("#updated").textContent = fmt(DATA.updatedAt);
 const lb = DATA.leaderboard;
 $("#ticker").textContent = `*** WITAMY NA NASZEJ STRONIE!!! *** LIDER LIGI: ${lb[0] ? lb[0].name.toUpperCase() + " (" + lb[0].points + " pkt)" : "?"} *** ${posts.length} ZNALEZISK, ${places.length} MIEJSC *** PAMIĘTAJ: NIE PIJ KRANÓWKI!!! *** KTO NIE WRZUCA, TEN NIE JEDZIE *** 🌴🐘🍹🛺 ***`;
 
+// ---------- odliczanie do wylotu ----------
+const DEPARTURE = new Date("2027-02-10T11:45:00+01:00"); // czas polski (CET)
+function tick() {
+  const ms = DEPARTURE - Date.now();
+  if (ms <= 0) { $("#cd").innerHTML = '<div class="num blink" style="font-size:30px">JUŻ LECIMY!!! 🛫</div>'; return; }
+  const s = Math.floor(ms / 1000), parts = [[Math.floor(s / 86400), "dni"], [Math.floor(s / 3600) % 24, "godz"], [Math.floor(s / 60) % 60, "min"], [s % 60, "sek"]];
+  $("#cd").innerHTML = parts.map(([v, l]) => `<div class="unit"><div class="num">${String(v).padStart(2, "0")}</div><div class="lbl">${l}</div></div>`).join("");
+}
+tick(); setInterval(tick, 1000);
+
 // ---------- tabela ligowa ----------
 const medal = i => ["🥇","🥈","🥉"][i] || `${i + 1}.`;
 const maxPts = Math.max(1, ...lb.map(r => r.points));
 $("#league").innerHTML = `<tr><th>#</th><th>Zawodnik</th><th>Pkt</th><th>Wrzutki</th><th>Miejsca</th><th>Nie na temat</th><th>Ulubiony temat</th><th>Odznaki</th></tr>` +
   lb.map((r, i) => `<tr><td class="rank" style="font-size:22px">${medal(i)}</td><td class="who">${esc(r.name)}<div class="bar" style="width:${Math.max(4, r.points / maxPts * 100)}%"></div></td>
     <td class="pts">${r.points}</td><td class="stat" data-label="Wrzutki">${r.posts + r.off}</td><td class="stat" data-label="Miejsca">${r.places}</td>
-    <td class="stat" data-label="Nie na temat">${r.off ? "🙈 " + r.off : "—"}</td><td class="stat" data-label="Ulubiony temat">${esc(r.topCat || "—")}</td>
+    <td class="stat${r.off ? "" : " zero"}" data-label="Nie na temat">${r.off ? "🙈 " + r.off : "—"}</td><td class="stat" data-label="Ulubione">${esc(r.topCat || "—")}</td>
     <td class="badges${(r.badges || []).length ? "" : " none"}" style="text-align:left">${(r.badges || []).map(b => `<span class="badge">${esc(b)}</span>`).join("") || "—"}</td></tr>`).join("");
 if (DATA.offtopic.length) {
   $("#shame").innerHTML = `<details style="margin-top:8px"><summary>🙈 Ściana wstydu: wrzutki nie na temat (${DATA.offtopic.length})</summary><ul class="shame">${
