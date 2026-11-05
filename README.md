@@ -75,4 +75,6 @@ Strona: https://lilivin.github.io/tajlandia/ — repo `lilivin/tajlandia`, Pages
 Po każdej aktualizacji: `python3 feed.py render && git add -A && git commit -m "Nowe rolki" && git push`.
 Strona jest publiczna (z `noindex`): render pokazuje tylko imiona (`public_name`, ksywki w `NAME_ALIASES`);
 `state.json`, `inbox/` i `data/` nie trafiają do repo. Kafelki „Ściągawka” są w `highlights.json` (ręcznie, z analiz) —
-przy nowych rolkach warto je uzupełnić.
+przy nowych rolkach warto je uzupełnić. Lista „Do ogarnięcia przed wylotem” to `bookings.json`
+(priorytet 1–3, źródło przy każdym punkcie). `ig.mjs grab` zapisuje też wiadomości tekstowe czatu do `inbox/messages.json`
+(lokalnie) — tam szukać rad typu „rezerwujcie wcześniej”.
