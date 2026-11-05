@@ -78,6 +78,7 @@ try {
     };
     // Udostępnione posty to karty bez <a href>; kod siedzi w propsach Reacta karty (shortCode/targetUrl).
     const names = {}; // fbid -> {tekst etykiety: ile razy}
+    const msgs = new Map(); // ts|tekst -> wiadomość
     const collect = () => page.evaluate(() => {
       const res = [], labels = [];
       // Wiadomość (nadawca + czas) siedzi w propsach przodka: messageRef/currentMessageRef.
@@ -103,6 +104,13 @@ try {
           if (m || sc) { res.push({ kind: m ? m[1] : "p", code: m ? m[2] : sc, top: c.getBoundingClientRect().top, ...msgRef(c), right: c.getBoundingClientRect().left > window.innerWidth * 0.55 }); break; }
         }
       }
+      // Wiadomości tekstowe (dymki = div[dir=auto]); potrzebne do rad typu „rezerwujcie wcześniej”.
+      const texts = [];
+      for (const d of document.querySelectorAll('div[dir="auto"]')) {
+        const t = d.innerText.trim();
+        if (t.length < 2 || d.querySelector('div[dir="auto"]')) continue;
+        const r = msgRef(d); if (r.sender && r.ts) texts.push({ sender: r.sender, ts: r.ts, text: t });
+      }
       // Etykieta z imieniem nad grupą wiadomości ma ten sam sender_fbid co wiadomości pod nią.
       for (const s of document.querySelectorAll('span[dir="auto"]')) {
         const t = s.textContent.trim();
@@ -115,7 +123,7 @@ try {
       for (const s of document.querySelectorAll('div[dir="auto"], span[dir="auto"]')) {
         for (const m of s.textContent.matchAll(/instagram\.com\/(?:[\w.]+\/)?(p|reels?|tv)\/([\w-]{6,})/g)) res.push({ kind: m[1], code: m[2], top: 0 });
       }
-      return { res, labels };
+      return { res, labels, texts };
     });
     const scrollUp = () => page.evaluate(() => {
       const box = [...document.querySelectorAll("div")].filter(d => d.scrollHeight > d.clientHeight + 200 && getComputedStyle(d).overflowY !== "visible")
@@ -128,7 +136,8 @@ try {
     let still = 0, order = 0;
     for (let i = 0; i < 600 && still < 10; i++) {
       const before = found.size;
-      const { res, labels } = await collect();
+      const { res, labels, texts } = await collect();
+      for (const m of texts) msgs.set(m.ts + "|" + m.text, m);
       for (const r of res.sort((a, b) => b.top - a.top)) add(r.code, r.kind, { code: r.code, sender: r.sender, ts: r.ts, mine: r.right, order: order++ });
       for (const [fb, t] of labels) { names[fb] ??= {}; names[fb][t] = (names[fb][t] || 0) + 1; }
       if ([...found.keys()].some(k => stopAt.has(k))) { console.error("dotarłem do znanego posta — stop"); break; }
@@ -149,9 +158,14 @@ try {
     const mineCnt = {};
     for (const v of list) if (v.sender) { mineCnt[v.sender] ??= [0, 0]; mineCnt[v.sender][v.mine ? 0 : 1]++; }
     for (const [fb, [m, o]] of Object.entries(mineCnt)) if (m > o) nameOf[fb] = process.env.IG_ME || "Karol";
+    // Etykieta w stylu „Wt, 17:46” to separator czasu, nie imię — taki nadawca nie ma etykiety, czyli to właściciel sesji.
+    for (const fb of Object.keys(nameOf)) if (/\d{1,2}:\d{2}/.test(nameOf[fb])) nameOf[fb] = process.env.IG_ME || "Karol";
     const meta = list.map(v => ({ url: v.url, code: v.code, sender: v.sender || null, senderName: (v.sender && nameOf[v.sender]) || null,
       sharedAt: v.ts ? new Date(v.ts).toISOString() : null, mine: !!v.mine }));
     fs.writeFileSync(out.replace(/\.txt$/, "") + ".json", JSON.stringify({ names: nameOf, links: meta }, null, 1));
+    const texts = [...msgs.values()].sort((a, b) => a.ts - b.ts)
+      .map(m => ({ sender: nameOf[m.sender] || m.sender, at: new Date(m.ts).toISOString(), text: m.text }));
+    fs.writeFileSync(out.replace(/[^/]+$/, "messages.json"), JSON.stringify(texts, null, 1));
     console.log(`${found.size} linków -> ${out} (+ .json z nadawcami: ${Object.values(nameOf).join(", ")})`);
   } else {
     console.log("komendy: status | shot | threads | open | grab");

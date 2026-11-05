@@ -501,7 +501,13 @@ def render():
             src = by_code.get(item.get("ref"))
             if src:
                 item.update(url=src["url"], src=src["title"])
-    data = json.dumps({"posts": posts, "categories": CATEGORIES, "updatedAt": now(), "tiles": tiles,
+    bookings = json.loads((HERE / "bookings.json").read_text(encoding="utf-8")) if (HERE / "bookings.json").exists() else []
+    for b in bookings:
+        src = by_code.get(b.get("ref"))
+        if src:
+            b.update(url=src["url"], src=src["title"])
+    bookings.sort(key=lambda b: b.get("priority", 9))
+    data = json.dumps({"posts": posts, "categories": CATEGORIES, "updatedAt": now(), "tiles": tiles, "bookings": bookings,
                        "leaderboard": leaderboard(posts, offtopic), "offtopic": offtopic}, ensure_ascii=False)
     (SITE / "index.html").write_text(tpl.replace("/*__DATA__*/null", data.replace("</", "<\\/")), encoding="utf-8")
     # Ostatni (najnowszy w czacie) przeanalizowany post — punkt, na którym `ig.mjs grab` może się zatrzymać.

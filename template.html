@@ -71,6 +71,16 @@
   .pager{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin:14px 0 4px;font-family:"Courier New",monospace}
   .pager button[aria-current=true]{background:#000080;color:#fff;border-style:inset}
   .shame li{margin:2px 0}
+  .bk{display:flex;gap:10px;align-items:flex-start;background:#fff;border:2px solid #808080;padding:8px 10px;margin:6px 0}
+  .bk.done{opacity:.55}.bk.done .bk-what{text-decoration:line-through}
+  .bk input{width:22px;height:22px;margin-top:2px;flex:0 0 auto;accent-color:#008000}
+  .bk>span:last-child{flex:1;min-width:0;overflow-wrap:anywhere}
+  .bk-what{font-weight:bold}
+  .bk-meta{font-size:12.5px;color:#333;margin-top:2px}
+  .bk-when{display:inline-block;background:#000080;color:#ff0;font-size:11.5px;font-weight:bold;padding:1px 7px;margin-right:6px}
+  .prio{flex:0 0 auto;font-size:11px;font-weight:bold;padding:2px 6px;border:2px outset #c0c0c0;margin-top:2px}
+  .prio.p1{background:#ff3030;color:#fff}.prio.p2{background:#ffd400}.prio.p3{background:#c0ffc0}
+  .src{font-size:11.5px;color:#666}
   .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
   .tile{background:#fff;border:3px outset #c0c0c0;box-shadow:4px 4px 0 #000;display:flex;flex-direction:column}
   .tile h3{margin:0;padding:6px 10px;color:#fff;font:20px Anton,Impact,"Arial Black",sans-serif;letter-spacing:1px;
@@ -90,6 +100,7 @@
     h2{font-size:22px}
     .title p{font-size:13px}
     #map{height:340px}
+    .bk{flex-wrap:wrap;gap:6px 8px}.bk>span:last-child{flex:1 1 100%}
     .cd{gap:6px;flex-wrap:nowrap}.cd .unit{min-width:0}
     .cd .num{font-size:30px;min-width:0;padding:0 5px}
     .cd-title{font-size:20px}
@@ -147,6 +158,14 @@
     <p style="margin:0 0 8px;font-size:13px">Punktacja: <b>+10</b> za znalezisko, <b>+2</b> za każde miejsce w nim, <b>−5</b> za wrzutkę nie na temat. Sędzia jest bezstronny (to skrypt).</p>
     <table class="league" id="league"></table>
     <div id="shame"></div>
+  </div>
+
+  <hr class="rainbow">
+
+  <div class="box">
+    <h2>🗓️ DO OGARNIĘCIA PRZED WYLOTEM</h2>
+    <p style="margin:0 0 8px;font-size:13px">Odhaczaj, co załatwione — zapamiętuje się w Twojej przeglądarce. Przy każdym punkcie jest źródło; „do sprawdzenia” = wiedza ogólna, warto potwierdzić.</p>
+    <div id="bookings"></div>
   </div>
 
   <hr class="rainbow">
@@ -260,7 +279,28 @@ if (window.L) {
 
 // ---------- ściągawka ----------
 $("#tiles").innerHTML = (DATA.tiles || []).map(t => `<div class="tile"><h3>${esc(t.emoji)} ${esc(t.title)}</h3><ul>${
-  t.items.map(i => `<li>${esc(i.text)}${i.url ? ` <a href="${esc(i.url)}" target="_blank" rel="noopener" title="${esc(i.src)}">[🎬 źródło]</a>` : ""}</li>`).join("")}</ul></div>`).join("");
+  t.items.map(i => `<li>${esc(i.text)}${i.url ? ` <a href="${esc(i.url)}" target="_blank" rel="noopener" title="${esc(i.src)}">[🎬 źródło]</a>` : i.note ? ` <span class="src">[📝 ${esc(i.note)}]</span>` : ""}</li>`).join("")}</ul></div>`).join("");
+
+// ---------- do ogarnięcia (checklista w localStorage) ----------
+const doneKey = "tajlandia-done";
+const done = new Set(JSON.parse(localStorage.getItem(doneKey) || "[]"));
+const PRIO = { 1: "PILNE", 2: "WAŻNE", 3: "PÓŹNIEJ" };
+function drawBookings() {
+  $("#bookings").innerHTML = (DATA.bookings || []).map(b => {
+    const id = b.what.slice(0, 40);
+    return `<label class="bk${done.has(id) ? " done" : ""}"><input type="checkbox" data-id="${esc(id)}" ${done.has(id) ? "checked" : ""}>
+      <span class="prio p${b.priority}">${PRIO[b.priority] || ""}</span>
+      <span><div class="bk-what">${esc(b.what)}</div>
+      <div class="bk-meta"><span class="bk-when">⏰ ${esc(b.when)}</span>${esc(b.why)}</div>
+      <div class="src">źródło: ${esc(b.source)}${b.url ? ` · <a href="${esc(b.url)}" target="_blank" rel="noopener">🎬 ${esc(b.src)}</a>` : ""}</div></span></label>`;
+  }).join("");
+}
+$("#bookings").addEventListener("change", e => {
+  const id = e.target.dataset.id; if (!id) return;
+  e.target.checked ? done.add(id) : done.delete(id);
+  localStorage.setItem(doneKey, JSON.stringify([...done])); drawBookings();
+});
+drawBookings();
 
 // ---------- znaleziska z paginacją ----------
 const cats = ["Wszystko", ...(newCount ? ["Nowe"] : []), ...DATA.categories.filter(c => posts.some(p => p.category === c))];
