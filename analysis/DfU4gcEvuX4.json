@@ -1,0 +1,46 @@
+{
+  "title": "Dzień jedzenia w Bangkoku i na Chinatown",
+  "summary": "Vlog z jednego dnia w Bangkoku: lokalne śniadanie, mango sticky rice, uliczki Chinatown, chińskie pączki z przewodnika Michelin i Pad Thai wieczorem. Dobra inspiracja na to, co zjeść na Chinatown.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Chinatown Bangkok (Yaowarat)",
+      "type": "dzielnica / street food",
+      "area": "Bangkok",
+      "note": "Spacer uliczkami bez planu, mnóstwo dziwnych i smacznych rzeczy do spróbowania"
+    },
+    {
+      "name": "Chinatown Night Market Bangkok",
+      "type": "night market",
+      "area": "Chinatown, Bangkok",
+      "note": "Wieczorem wróciła tu na chińskie pączki z sosem pandanowym"
+    },
+    {
+      "name": "Patonggo Savoey (Chinese Donut)",
+      "type": "street food",
+      "area": "Chinatown, Bangkok",
+      "note": "Chińskie pączki z listy Michelin, dobre z sosem pandanowym"
+    }
+  ],
+  "tips": [
+    "Dzień warto zacząć od lokalnego, domowego jedzenia",
+    "Na Chinatown warto chodzić uliczkami bez planu",
+    "Pierożki z jajkiem przepiórczym i sosem mala to coś nietypowego do spróbowania",
+    "W okolicy Night Market jest przyjemny koktajlbar"
+  ],
+  "prices": [
+    {
+      "item": "Zielone curry i Pad Kra Pao (lokalna knajpka, całość)",
+      "price": "ok. 20 zł"
+    }
+  ],
+  "tags": [
+    "Bangkok",
+    "Chinatown",
+    "street food",
+    "mango sticky rice",
+    "pad thai",
+    "Michelin"
+  ]
+}

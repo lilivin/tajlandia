@@ -1,0 +1,31 @@
+{
+  "title": "Darmowe atrakcje w Bangkoku (w tym Muay Thai w MBK)",
+  "summary": "Karuzela o darmowych rzeczach do zrobienia w Bangkoku. Z dostępnych slajdów konkretna informacja dotyczy bezpłatnego pokazu Muay Thai w centrum MBK; pozostałe slajdy to zdjęcia autorki.",
+  "category": "Porady i koszty",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "MBK Center",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Ground floor, Zone A – darmowy pokaz Muay Thai"
+    }
+  ],
+  "tips": [
+    "Darmowy Muay Thai odbywa się w pierwszą i ostatnią środę każdego miesiąca, godz. 18-20, parter, Zone A w MBK Center",
+    "Liczba miejsc siedzących jest ograniczona – warto przyjść wcześniej"
+  ],
+  "prices": [
+    {
+      "item": "Pokaz Muay Thai w MBK",
+      "price": "za darmo"
+    }
+  ],
+  "tags": [
+    "za darmo",
+    "Muay Thai",
+    "MBK",
+    "Bangkok",
+    "budżet"
+  ]
+}

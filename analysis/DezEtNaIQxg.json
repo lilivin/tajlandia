@@ -1,0 +1,82 @@
+{
+ "title": "Najlepsze wyspy Tajlandii wg pary po 6 wyjazdach",
+ "summary": "Lista ulubionych wysp i miejsc: mniej turystyczne wyspy Trang, Koh Phangan, Koh Tao, Koh Racha i Koh Kut oraz klasyczne Krabi i Phi Phi. Przy każdym krótki opis klimatu i konkretne rekomendacje noclegów.",
+ "category": "Plaże i wyspy",
+ "region": "Cała Tajlandia",
+ "places": [
+  {
+   "name": "Koh Kradan",
+   "type": "wyspa",
+   "area": "Wyspy Trang",
+   "note": "Bez miast i dróg, tylko hotele i plaża z białym piaskiem jak mąka i turkusową wodą."
+  },
+  {
+   "name": "Koh Mook – Sivalai Beach Resort",
+   "type": "hotel",
+   "area": "Koh Mook, Wyspy Trang",
+   "note": "Cypel z hotelem dającym poczucie totalnego oderwania od świata."
+  },
+  {
+   "name": "Koh Lipe",
+   "type": "wyspa",
+   "area": "Morze Andamańskie",
+   "note": "Nazywana „Malediwami Tajlandii”, rajskie plaże i turkusowa woda."
+  },
+  {
+   "name": "Krabi",
+   "type": "region",
+   "area": "Krabi",
+   "note": "Spektakularne klify, laguny i pocztówkowe widoki; dobre na pierwszy raz."
+  },
+  {
+   "name": "Koh Phi Phi",
+   "type": "wyspa",
+   "area": "Krabi",
+   "note": "Klasyczna Tajlandia, klify i laguny."
+  },
+  {
+   "name": "Koh Phangan",
+   "type": "wyspa",
+   "area": "Zatoka Tajlandzka",
+   "note": "Imprezy Full Moon, ale też spokojne plaże; mniej ruchliwa niż Koh Samui."
+  },
+  {
+   "name": "Shark Bay Koh Tao",
+   "type": "plaża",
+   "area": "Koh Tao",
+   "note": "Raj do snorkelingu i nurkowania."
+  },
+  {
+   "name": "Koh Racha",
+   "type": "wyspa",
+   "area": "na południe od Phuketu",
+   "note": "Można na jednodniową wycieczkę."
+  },
+  {
+   "name": "The Racha Resort",
+   "type": "hotel",
+   "area": "Koh Racha",
+   "note": "Polecany nocleg, „przepięknie”."
+  },
+  {
+   "name": "Koh Kut",
+   "type": "wyspa",
+   "area": "Koh Kut",
+   "note": "Jedna z najbardziej dziewiczych wysp: dżungla, wodospady, cisza, slow travel."
+  }
+ ],
+ "tips": [
+  "Wyspy Trang są mniej turystyczne niż Phuket/Krabi.",
+  "Krabi i Phi Phi są świetne na pierwszy pobyt w Tajlandii.",
+  "Koh Racha: wycieczka jednodniowa z Phuketu możliwa, ale lepiej zanocować w The Racha Resort."
+ ],
+ "prices": [],
+ "tags": [
+  "wyspy",
+  "plaże",
+  "snorkeling",
+  "Trang",
+  "Koh Lipe",
+  "Koh Kut"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "title": "Castaway Resort na Koh Lipe – bungalowy przy plaży",
+ "summary": "Relacja z pobytu w małym hotelu na Koh Lipe, z bungalowem kilka kroków od oceanu, jogą, nurkowaniem i dobrym jedzeniem. Autorka opisuje wyspę jako miejsce do odcięcia się od telefonu, z wycieczką snorkelingową i muzyką na żywo na plaży o zachodzie słońca. Dotarcie na wyspę nie było łatwe.",
+ "category": "Noclegi",
+ "region": "Koh Lipe",
+ "places": [
+  {
+   "name": "Castaway Resort Koh Lipe",
+   "type": "hotel",
+   "area": "Koh Lipe",
+   "note": "Bungalowy blisko oceanu, joga, nurkowanie, śniadanie w cenie hotelu."
+  },
+  {
+   "name": "Koh Lipe",
+   "type": "wyspa",
+   "area": "Morze Andamańskie",
+   "note": "Mała wyspa, można przejść ją w poprzek, prawie bez zasięgu."
+  }
+ ],
+ "tips": [
+  "Dotarcie na Koh Lipe nie jest łatwe, zaplanuj dojazd.",
+  "Na wyspie jest słaby zasięg, dobre miejsce na digital detox.",
+  "Na miejscu: snorkeling (małpy na trasie), joga, nurkowanie, plaża z muzyką na żywo o zachodzie."
+ ],
+ "prices": [],
+ "tags": [
+  "Koh Lipe",
+  "hotel",
+  "bungalow",
+  "joga",
+  "nurkowanie"
+ ]
+}

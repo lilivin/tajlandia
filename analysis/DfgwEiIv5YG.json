@@ -1,0 +1,25 @@
+{
+  "title": "3 night markety w Bangkoku",
+  "summary": "Trzy nocne markety: ulica pełna restauracji ze street foodem, turystyczny i tłoczny market na Chinatown oraz spokojniejszy, nowocześniejszy. Nazw miejsc autorka nie podaje.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Chinatown Night Market Bangkok",
+      "type": "night market",
+      "area": "Chinatown, Bangkok",
+      "note": "Bardziej turystyczny i tłoczny, ale robi wrażenie"
+    }
+  ],
+  "tips": [
+    "Pierwszego dnia w Bangkoku autorka zamówiła klasykę: Tom Yum i Morning Glory",
+    "Spokojniejszy, nowoczesny market dobrze sprawdzi się na odpoczynek od zgiełku"
+  ],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "night market",
+    "street food",
+    "Chinatown"
+  ]
+}

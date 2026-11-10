@@ -1,0 +1,84 @@
+{
+  "title": "Phuket - gdzie spać, najlepsze plaże i Maya Bay o wschodzie",
+  "summary": "Porady dla pierwszej wizyty na Phuket: Phuket to nie tylko Patong, a wybór miejsca na nocleg zmienia cały urlop. Autorka poleca spokojniejsze Kata, Karon, Rawai i Nai Yang, Old Town oraz mniej znane plaże, a do Maya Bay radzi jechać na wycieczkę o wschodzie słońca.",
+  "category": "Porady i koszty",
+  "region": "Phuket",
+  "places": [
+    {
+      "name": "Patong",
+      "type": "dzielnica imprezowa",
+      "area": "Phuket",
+      "note": "Imprezowy i tłoczny; Bangla Road to centrum nocnego życia."
+    },
+    {
+      "name": "Kata Beach",
+      "type": "plaża",
+      "area": "Kata, Phuket",
+      "note": "Spokojniejsza plaża i lokalne street food markety."
+    },
+    {
+      "name": "Karon Beach",
+      "type": "plaża",
+      "area": "Karon, Phuket",
+      "note": "Spokojniejsza plaża z własnym street food marketem."
+    },
+    {
+      "name": "Rawai",
+      "type": "okolica",
+      "area": "Rawai, Phuket",
+      "note": "Relaksujące, spokojniejsza część wyspy."
+    },
+    {
+      "name": "Nai Yang",
+      "type": "plaża",
+      "area": "Nai Yang, Phuket (przy lotnisku)",
+      "note": "Piękne plaże i niewiele ludzi."
+    },
+    {
+      "name": "Phuket Old Town",
+      "type": "dzielnica / miasto",
+      "area": "Phuket Town",
+      "note": "Kolorowe uliczki, butiki, restauracje z Michelin Guide, kawiarnie i weekendowy targ; oddalone od plaż."
+    },
+    {
+      "name": "Nui Beach",
+      "type": "plaża",
+      "area": "Phuket",
+      "note": "Ulubiona plaża autorki."
+    },
+    {
+      "name": "Kata Noi Beach",
+      "type": "plaża",
+      "area": "Phuket",
+      "note": "Spokojniejsza plaża z dala od tłumów."
+    },
+    {
+      "name": "Yanui Beach",
+      "type": "plaża",
+      "area": "Phuket",
+      "note": "Zwykle cicho, jest stragan z kokosami."
+    },
+    {
+      "name": "Maya Bay",
+      "type": "zatoka / plaża",
+      "area": "Koh Phi Phi",
+      "note": "Warto, ale na wycieczce o wschodzie słońca."
+    }
+  ],
+  "tips": [
+    "Nocleg dobierz mądrze: Patong to centrum imprez, Kata i Karon są spokojniejsze.",
+    "W Old Town spędź parę dni, potem przenieś się nad plażę.",
+    "Do Maya Bay wybierz wycieczkę o wschodzie słońca, żeby uniknąć tłumów.",
+    "W Maya Bay przejdź na koniec plaży - tam prawie nikogo nie ma.",
+    "Rejon lotniska (Nai Yang) ma piękne plaże i mało ludzi."
+  ],
+  "prices": [],
+  "tags": [
+    "Phuket",
+    "gdzie spać",
+    "plaże",
+    "Maya Bay",
+    "wschód słońca",
+    "Old Town"
+  ]
+}

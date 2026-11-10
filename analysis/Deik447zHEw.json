@@ -1,0 +1,44 @@
+{
+ "title": "Rung Rueang – michelinowskie pork noodles w Bangkoku",
+ "summary": "Klasyk Bangkoku działający od 1965 r., wyróżniony Bib Gourmand przewodnika Michelin, słynący z makaronu z wieprzowiną w wersji tom yum. Autorka (Tajka) zamawia dwie miski, minced pork soup na boku i chrupiącą skórkę rybną. Smak jest łagodniejszy niż kiedyś, więc dodaje przyprawy.",
+ "category": "Jedzenie",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "Rung Rueang Tung Pork Noodle (รุ่งเรือง (ตั๋ง) ก๋วยเตี๋ยวหมู)",
+   "type": "restauracja",
+   "area": "Sukhumvit Soi 26, Khlong Toei",
+   "note": "Michelin Bib Gourmand, od 1965 r., makaron wieprzowy tom yum."
+  }
+ ],
+ "tips": [
+  "Adres: 10/3 Sukhumvit Soi 26, Khlong Tan, Khlong Toei, Bangkok 10110.",
+  "Spróbuj chrupiącej smażonej skórki rybnej.",
+  "Wersja tom yum jest dość łagodna, dodaj chili/przyprawy do smaku."
+ ],
+ "prices": [
+  {
+   "item": "Tom yum rice noodles w zupie",
+   "price": "70 THB"
+  },
+  {
+   "item": "Suchy makaron jajeczny tom yum z zupą osobno",
+   "price": "70 THB"
+  },
+  {
+   "item": "Zupa z mielonej wieprzowiny (เกาเหลาหมูสับ)",
+   "price": "70 THB"
+  },
+  {
+   "item": "Chrupiąca skórka rybna",
+   "price": "20 THB"
+  }
+ ],
+ "tags": [
+  "Michelin",
+  "makaron",
+  "street food",
+  "Bangkok",
+  "tanio"
+ ]
+}

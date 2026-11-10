@@ -1,0 +1,137 @@
+{
+  "title": "Bangkok - polecajki cz. 3 (kawiarnie, jedzenie, rooftopy, atrakcje)",
+  "summary": "Lista ponad dwudziestu miejsc w Bangkoku: kawiarnie i matcha, restauracje, rooftopy, parki, pokazy na żywo i walki Muay Thai oraz modne ulice Song Wat i Banthat Thong. Dobry zbiór do wrzucenia w mapę.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Mystery Hug",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Kawiarnia z widokiem na pociągi."
+    },
+    {
+      "name": "Friend Friend",
+      "type": "przestrzeń społeczna / kawiarnia",
+      "area": "Bangkok",
+      "note": "Kolejna fajna przestrzeń dla społeczności."
+    },
+    {
+      "name": "Matcha and More",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Jedna z ulubionych matchy autorki."
+    },
+    {
+      "name": "Ceremoniale",
+      "type": "kawiarnia matcha",
+      "area": "Song Wat, Bangkok",
+      "note": "Miejsce z matchą na Song Wat."
+    },
+    {
+      "name": "Folk Lane",
+      "type": "restauracja / brunch",
+      "area": "Bangkok",
+      "note": "Urocze miejsce na brunch."
+    },
+    {
+      "name": "Electric Sheep",
+      "type": "restauracja / bar",
+      "area": "Bangkok",
+      "note": "Kuchnia śródziemnomorska i drinki."
+    },
+    {
+      "name": "Helena Greek Kitchen",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Pyszna kuchnia grecka."
+    },
+    {
+      "name": "Piscari",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Klimat jak w Nowym Jorku."
+    },
+    {
+      "name": "Rolling Roasters",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Nietypowy wystrój i świetna kawa."
+    },
+    {
+      "name": "Cloud 11",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Centrum z kawiarniami, ogrodem i nowym \"commons\" na ostatnim piętrze."
+    },
+    {
+      "name": "True Digital Park",
+      "type": "park / centrum",
+      "area": "Bangkok",
+      "note": "Zielone przestrzenie i kawiarnie."
+    },
+    {
+      "name": "Aether",
+      "type": "rooftop",
+      "area": "Bangkok",
+      "note": "Rooftop z pięknym widokiem na zachód słońca."
+    },
+    {
+      "name": "Lamaya",
+      "type": "rooftop",
+      "area": "Bangkok",
+      "note": "Rooftop z pokazami ognia."
+    },
+    {
+      "name": "Siam Pic Hall",
+      "type": "sala widowiskowa",
+      "area": "Bangkok",
+      "note": "Występy i pokazy na żywo."
+    },
+    {
+      "name": "Rajadamnern Stadium",
+      "type": "stadion Muay Thai",
+      "area": "Bangkok",
+      "note": "Walki Muay Thai na żywo."
+    },
+    {
+      "name": "Miffy Café",
+      "type": "kawiarnia",
+      "area": "Bangkok",
+      "note": "Urocze jedzenie w motywie Miffy."
+    },
+    {
+      "name": "Song Wat Road",
+      "type": "ulica",
+      "area": "Bangkok",
+      "note": "Z perfumerią SKONX i wietnamską restauracją Songviet."
+    },
+    {
+      "name": "SKONX",
+      "type": "perfumeria",
+      "area": "Song Wat, Bangkok",
+      "note": "Perfumy."
+    },
+    {
+      "name": "Songviet",
+      "type": "restauracja wietnamska",
+      "area": "Song Wat, Bangkok",
+      "note": "Świetne jedzenie wietnamskie."
+    },
+    {
+      "name": "Banthat Thong",
+      "type": "ulica / dzielnica",
+      "area": "Bangkok",
+      "note": "Street food i modne kawiarnie."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "kawiarnie",
+    "matcha",
+    "rooftop",
+    "lista"
+  ]
+}

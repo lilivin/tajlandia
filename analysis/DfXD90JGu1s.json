@@ -1,0 +1,22 @@
+{
+  "title": "Newstand Coffee Thonglor - nowa kawiarnia w Bangkoku",
+  "summary": "Nocna wersja nowej kawiarni na wysokim piętrze w Thonglor: loftowe wnętrze z oknami od podłogi do sufitu, widokiem na miasto o zmierzchu i łóżkami/materacami do leżenia. Opisana jako spokojna przestrzeń społeczna do relaksu.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Newstand Coffee Thonglor",
+      "type": "kawiarnia",
+      "area": "Thonglor, Bangkok",
+      "note": "Nowa, spokojna kawiarnia i przestrzeń do relaksu z widokiem na miasto."
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "kawiarnia",
+    "Thonglor",
+    "Bangkok",
+    "widok"
+  ]
+}

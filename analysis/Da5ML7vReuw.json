@@ -1,0 +1,78 @@
+{
+  "title": "10 baśniowych miejsc na północy Tajlandii",
+  "summary": "Lista dziesięciu świątyń i kawiarni w okolicach Chiang Rai, Chiang Mai i Lampang o niemal bajkowym wyglądzie, m.in. Biała i Niebieska Świątynia. Przydatna inspiracja do planowania trasy po północy.",
+  "category": "Atrakcje",
+  "region": "Chiang Rai",
+  "places": [
+    {
+      "name": "Wat Rong Suea Ten (Blue Temple)",
+      "type": "świątynia",
+      "area": "Chiang Rai",
+      "note": "Niebieska Świątynia"
+    },
+    {
+      "name": "Wat Santi Nikhom",
+      "type": "świątynia",
+      "area": "Lampang",
+      "note": "Kolorowa świątynia ze złotym posągiem Buddy"
+    },
+    {
+      "name": "Wat Rattana Khuha",
+      "type": "świątynia",
+      "area": "Lampang",
+      "note": "Baśniowa świątynia z listy"
+    },
+    {
+      "name": "Wat Rong Khun (White Temple)",
+      "type": "świątynia",
+      "area": "Chiang Rai",
+      "note": "Biała Świątynia"
+    },
+    {
+      "name": "Carp Cafe",
+      "type": "kawiarnia",
+      "area": "Chiang Mai",
+      "note": "Kawiarnia ze stawem karpi koi i mostkiem"
+    },
+    {
+      "name": "Lalitta Cafe",
+      "type": "kawiarnia",
+      "area": "Chiang Rai",
+      "note": "Baśniowa kawiarnia z listy"
+    },
+    {
+      "name": "Wat Huay Pla Kang",
+      "type": "świątynia",
+      "area": "Chiang Rai",
+      "note": "Biały posąg bogini Guanyin nad wzgórzami"
+    },
+    {
+      "name": "Dantewada",
+      "type": "atrakcja",
+      "area": "Chiang Mai",
+      "note": "Miejsce z listy (pod taką nazwą w opisie)"
+    },
+    {
+      "name": "Wat Sri Don Moon",
+      "type": "świątynia",
+      "area": "Chiang Mai",
+      "note": "Bogato zdobione wnętrze ze złotym Buddą"
+    },
+    {
+      "name": "Wat Sai Khao",
+      "type": "świątynia",
+      "area": "Chiang Rai",
+      "note": "Miejsce z listy"
+    }
+  ],
+  "tips": [],
+  "prices": [],
+  "tags": [
+    "północ",
+    "świątynie",
+    "kawiarnie",
+    "Chiang Rai",
+    "Chiang Mai",
+    "Lampang"
+  ]
+}

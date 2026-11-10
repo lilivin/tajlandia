@@ -1,0 +1,79 @@
+{
+  "title": "Bangkok: najlepsze dzielnice i centra handlowe",
+  "summary": "Autorka przekonuje, że Bangkok nie jest nudny, jeśli wie się, dokąd iść. Lista dzielnic oraz malli, plus polecany hotel.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Song Wat Road",
+      "type": "ulica",
+      "area": "Bangkok",
+      "note": "Lokalne markety, modne kawiarnie, vintage i miejsca do zdjęć"
+    },
+    {
+      "name": "Talat Noi",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Street art, lokalne kawiarnie, sklepiki i widoki na rzekę"
+    },
+    {
+      "name": "Chinatown Night Market",
+      "type": "night market",
+      "area": "Chinatown, Bangkok",
+      "note": "Najlepszy po zmroku z neonami, a jak tłok przeszkadza, warto za dnia"
+    },
+    {
+      "name": "Banthat Thong Road",
+      "type": "ulica",
+      "area": "Bangkok",
+      "note": "Ulubiona autorki, 4 km kawiarni, restauracji, piekarni i lodziarni"
+    },
+    {
+      "name": "Platinum Fashion Mall",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Tanie zakupy"
+    },
+    {
+      "name": "CentralWorld",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Duży wybór sklepów, dobra atmosfera"
+    },
+    {
+      "name": "Terminal 21",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Znany z taniego food courtu"
+    },
+    {
+      "name": "ICONSIAM",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Widok z góry, wewnętrzny pływający targ i wodospad"
+    },
+    {
+      "name": "EmQuartier",
+      "type": "centrum handlowe",
+      "area": "Bangkok",
+      "note": "Wygodna lokalizacja, mniej tłoczno"
+    },
+    {
+      "name": "The Salil Hotel Riverside Bangkok",
+      "type": "hotel",
+      "area": "Bangkok",
+      "note": "Hotel polecany przez autorkę"
+    }
+  ],
+  "tips": [
+    "Jeśli Chinatown w nocy jest zbyt tłoczne, odwiedź je za dnia"
+  ],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "dzielnice",
+    "malle",
+    "zakupy",
+    "hotel"
+  ]
+}

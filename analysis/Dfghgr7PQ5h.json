@@ -1,0 +1,30 @@
+{
+  "title": "Song Wat Lane - modna uliczka w Bangkoku",
+  "summary": "Autorka poleca Song Wat Lane jako trendy zaułek z matchą, mango sticky rice, perfumeriami i sklepikami, pełen twórców i turystów. W materiale pokazana fotobudka na banknoty (150 baht).",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Song Wat Lane",
+      "type": "uliczka / dzielnica",
+      "area": "Bangkok",
+      "note": "Modna uliczka ze sklepami, matchą, mango sticky rice i perfumeriami."
+    }
+  ],
+  "tips": [
+    "Fotobudka przyjmuje tylko banknoty 50, 100, 500 i 1000 baht (widoczna tabliczka)."
+  ],
+  "prices": [
+    {
+      "item": "Fotobudka",
+      "price": "150 THB"
+    }
+  ],
+  "tags": [
+    "Song Wat",
+    "Bangkok",
+    "zakupy",
+    "matcha",
+    "fotobudka"
+  ]
+}

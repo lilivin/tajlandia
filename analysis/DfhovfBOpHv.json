@@ -1,0 +1,50 @@
+{
+  "title": "5 najlepszych wysp Tajlandii wg autora",
+  "summary": "Ranking pięciu ulubionych wysp: Koh Lipe, Koh Yao Noi, Koh Phangan, Koh Mook i Koh Tao. Każda z krótkim uzasadnieniem – od spokoju i krystalicznej wody po nurkowanie.",
+  "category": "Plaże i wyspy",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "Koh Lipe",
+      "type": "wyspa",
+      "area": "Tajlandia (Morze Andamańskie)",
+      "note": "Jedna z najczystszych wód i najszersze plaże, idealna dla par (miejsce 5)"
+    },
+    {
+      "name": "Koh Yao Noi",
+      "type": "wyspa",
+      "area": "Zatoka Phang Nga",
+      "note": "Niedaleko Phuket, bardziej autentyczna niż turystyczne wyspy (miejsce 4)"
+    },
+    {
+      "name": "Koh Phangan",
+      "type": "wyspa",
+      "area": "Zatoka Tajlandzka",
+      "note": "Znana z Full Moon Party, ale świetna też poza nią (miejsce 3)"
+    },
+    {
+      "name": "Koh Mook",
+      "type": "wyspa",
+      "area": "Tajlandia",
+      "note": "Bardzo spokojna, numer 1 dla tych, którzy nie lubią tłumów (miejsce 2)"
+    },
+    {
+      "name": "Koh Tao",
+      "type": "wyspa",
+      "area": "Zatoka Tajlandzka",
+      "note": "Jedno z najlepszych miejsc na snorkeling i nurkowanie, dobre na kurs PADI (miejsce 1)"
+    }
+  ],
+  "tips": [
+    "Koh Tao – dobre miejsce na zrobienie certyfikatu nurkowego PADI",
+    "Koh Mook polecana, jeśli unikasz tłumów"
+  ],
+  "prices": [],
+  "tags": [
+    "wyspy",
+    "ranking",
+    "nurkowanie",
+    "Koh Tao",
+    "Koh Lipe"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "24 godziny w Bangkoku – 5 punktów programu",
+  "summary": "Plan idealnego dnia w Bangkoku: poranny targ, świątynia Wat Arun, park Lumpini, Chinatown na jedzenie i wieczorna walka Muay Thai. Dobra ściąga, gdy mamy tylko jeden dzień w mieście.",
+  "category": "Atrakcje",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Trong Mo Market",
+      "type": "targ",
+      "area": "Bangkok",
+      "note": "Jeden z najstarszych porannych targów w Bangkoku, pełen autentycznego jedzenia"
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Najbardziej ikoniczna świątynia Bangkoku, na żywo jeszcze ładniejsza"
+    },
+    {
+      "name": "Lumpini Park",
+      "type": "park",
+      "area": "Bangkok",
+      "note": "Lokalsi odpoczywają, pływają na paddleboardach, można spotkać wielkie warany"
+    },
+    {
+      "name": "Chinatown (Yaowarat)",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Raj dla głodnych – masa ulicznego jedzenia"
+    },
+    {
+      "name": "Rajadamnern Stadium",
+      "type": "stadion Muay Thai",
+      "area": "Bangkok",
+      "note": "Pokaz Muay Thai z kulturą, storytellingiem i show"
+    }
+  ],
+  "tips": [
+    "Dzień zacznij rano na targu Trong Mo",
+    "Do Chinatown przyjdź głodny",
+    "Dzień zakończ walką Muay Thai na Rajadamnern Stadium"
+  ],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "24h",
+    "Muay Thai",
+    "świątynie",
+    "street food"
+  ]
+}

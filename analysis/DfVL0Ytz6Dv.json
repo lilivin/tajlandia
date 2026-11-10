@@ -1,0 +1,91 @@
+{
+  "title": "Bangkok w 3 dni - plan od stałej bywalczyni",
+  "summary": "Plan na 3 dni: świątynie, jedzenie i markety, a trzeciego dnia Bangkok bez tłumów. Autorka jest tam co roku i podpowiada, co warto, a co można pominąć.",
+  "category": "Porady i koszty",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Targ Amuletów (Amulet Market)",
+      "type": "targ",
+      "area": "Bangkok",
+      "note": "Ulubiony punkt autorki, start o 8 rano"
+    },
+    {
+      "name": "Pałac Królewski (Grand Palace)",
+      "type": "pałac",
+      "area": "Bangkok",
+      "note": "Wejście po Targu Amuletów"
+    },
+    {
+      "name": "Wat Pho",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Po pałacu"
+    },
+    {
+      "name": "Wat Arun",
+      "type": "świątynia",
+      "area": "Bangkok",
+      "note": "Na drugą stronę rzeki łódką"
+    },
+    {
+      "name": "Chatuchak Weekend Market",
+      "type": "targ",
+      "area": "Bangkok",
+      "note": "Na weekend"
+    },
+    {
+      "name": "Floating market (pływający targ)",
+      "type": "targ",
+      "area": "okolice Bangkoku",
+      "note": "Opcja w dni powszednie"
+    },
+    {
+      "name": "Chinatown Bangkok",
+      "type": "dzielnica",
+      "area": "Bangkok",
+      "note": "Wieczorem, jedzenie najlepsze w bocznych uliczkach"
+    },
+    {
+      "name": "Koh Kret",
+      "type": "wyspa",
+      "area": "Bangkok",
+      "note": "Bangkok bez tłumów"
+    },
+    {
+      "name": "Bang Krachao",
+      "type": "park",
+      "area": "Bangkok",
+      "note": "Zielone płuca Bangkoku: rower, kanały, domy na palach"
+    },
+    {
+      "name": "Octave Rooftop Lounge & Bar",
+      "type": "rooftop",
+      "area": "Bangkok",
+      "note": "Polecany rooftop na koniec dnia 3"
+    },
+    {
+      "name": "Ayutthaya",
+      "type": "miasto historyczne",
+      "area": "Ayutthaya",
+      "note": "Opcja na jednodniowy wypad"
+    }
+  ],
+  "tips": [
+    "Start dnia 1 o 8:00 od Targu Amuletów",
+    "Przed Pałacem Królewskim ktoś może mówić, że dziś święto i zamknięte. To nieprawda, ignoruj i wchodź",
+    "Do Wat Arun przepłyń łódką przez rzekę",
+    "Chatuchak tylko w weekend, w tygodniu pływający targ",
+    "Na Chinatown zaglądaj w boczne uliczki",
+    "Tajski masaż może trochę boleć",
+    "Jeden dzień można przeznaczyć na Ayutthayę"
+  ],
+  "prices": [],
+  "tags": [
+    "Bangkok",
+    "plan 3 dni",
+    "świątynie",
+    "markety",
+    "rooftop"
+  ]
+}

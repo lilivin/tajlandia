@@ -1,0 +1,28 @@
+{
+  "title": "Biała Świątynia (Wat Rong Khun), Chiang Rai",
+  "summary": "Autorka, zmęczona oglądaniem kolejnych świątyń, mówi że ta zrobiła na niej ogromne wrażenie – to według niej prawdziwe arcydzieło. Podaje godziny otwarcia i cenę biletu.",
+  "category": "Atrakcje",
+  "region": "Chiang Rai",
+  "places": [
+    {
+      "name": "Wat Rong Khun (White Temple)",
+      "type": "świątynia",
+      "area": "Chiang Rai",
+      "note": "Olśniewająca biała świątynia, arcydzieło architektury"
+    }
+  ],
+  "tips": [
+    "Otwarte od 8:00 do 16:40"
+  ],
+  "prices": [
+    {
+      "item": "Wstęp do Wat Rong Khun",
+      "price": "200 THB"
+    }
+  ],
+  "tags": [
+    "Biała Świątynia",
+    "Chiang Rai",
+    "świątynie"
+  ]
+}

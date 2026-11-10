@@ -1,0 +1,40 @@
+{
+  "title": "Raan Jay Fai – michelinowy omlet z krabem w Bangkoku",
+  "summary": "Relacja z wizyty w słynnej restauracji Jay Fai z gwiazdką Michelin. Omlet to głównie delikatne mięso kraba, lekki i chrupiący; drunken noodles z krewetkami też dobre, ale porcja mała. Autorka nie czekała w kolejce ani minuty.",
+  "category": "Jedzenie",
+  "region": "Bangkok",
+  "places": [
+    {
+      "name": "Raan Jay Fai",
+      "type": "restauracja",
+      "area": "Bangkok",
+      "note": "Słynny omlet z krabem, gwiazdka Michelin; drunken noodles z krewetkami"
+    }
+  ],
+  "tips": [
+    "Autorka zamówiła omlet z krabem i Drunken Noodles oraz dodała własny sos Sriracha Jay Fai",
+    "Tym razem w kolejce nie czekali ani minuty (nie zawsze tak jest)",
+    "Płomień pod wokiem jest tak duży, że zapach ogniska czuć na sobie przez cały dzień"
+  ],
+  "prices": [
+    {
+      "item": "Omlet z krabem",
+      "price": "ok. 170 zł"
+    },
+    {
+      "item": "2 dania + 2 napoje",
+      "price": "ok. 260 zł"
+    },
+    {
+      "item": "Rachunek na kartce (widoczny na filmie)",
+      "price": "2240 THB"
+    }
+  ],
+  "tags": [
+    "Michelin",
+    "Jay Fai",
+    "omlet",
+    "Bangkok",
+    "street food"
+  ]
+}

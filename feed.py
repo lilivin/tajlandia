@@ -181,6 +181,8 @@ def scrape_ytdlp(st, codes):
             d = json.loads(r.stdout)
         except json.JSONDecodeError:
             d = None
+        if d and d.get("entries") is not None and not any(out.glob("video.*")):
+            d = None  # karuzela samych zdjęć: yt-dlp nie pobiera obrazów -> przeglądarka (niżej)
         if not d:  # post ze zdjęciami — przez zalogowaną przeglądarkę
             p = subprocess.run(["node", str(HERE / "ig.mjs"), "post", code, str(out)], capture_output=True, text=True)
             try:

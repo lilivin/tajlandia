@@ -1,0 +1,33 @@
+{
+  "title": "Co kupić w 7-Eleven w Tajlandii",
+  "summary": "Para pokazuje pierwsze zakupy w 7-Eleven: leki i elektrolity, środki na komary, kosmetyki oraz przekąski i gotowe jedzenie. Lista pomysłów, co wrzucić do koszyka.",
+  "category": "Porady i koszty",
+  "region": "Cała Tajlandia",
+  "places": [
+    {
+      "name": "7-Eleven",
+      "type": "sklep",
+      "area": "Cała Tajlandia",
+      "note": "Kopalnia leków, kosmetyków i przekąsek"
+    }
+  ],
+  "tips": [
+    "Elektrolity i Gaviscon na trawienie, RX na wzdęcia, Flying Rabbit na ból brzucha po przejedzeniu",
+    "Spray na komary i maść na ukąszenia",
+    "Plastry na nos, okłady chłodzące, maska na włosy, maski kolagenowe",
+    "Tosty z serem i szynką, chipsy Lay's kalmarowe, ramen, lava cake, fizzpresso"
+  ],
+  "prices": [
+    {
+      "item": "Pierwsze zakupy w 7-Eleven (całość)",
+      "price": "ok. 200 zł"
+    }
+  ],
+  "tags": [
+    "7-Eleven",
+    "zakupy",
+    "leki",
+    "przekąski",
+    "komary"
+  ]
+}
