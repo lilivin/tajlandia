@@ -1,0 +1,1177 @@
+{
+ "subtitle": "11 lutego – 3 marca 2027 · 21 dni · Bangkok → Chiang Mai → Khao Sok → Krabi → Koh Lanta → Phi Phi → Phuket → Bangkok",
+ "assumptions": [
+  "Wylot z Polski 10.02 o 11:45, na miejscu od 11.02; lot powrotny 3.03 z Bangkoku (założenie).",
+  "Kolejność: najpierw miasto i północ (zanim smog w Chiang Mai się rozkręci), potem dżungla, na koniec plaże i 2 dni Bangkoku na zakupy — z zapasem przed lotem do domu.",
+  "Tylko strona andamańska: tam jest większość polecajek z czatu, a w lutym–marcu pogoda i morze są tam najlepsze. Ceny orientacyjne z researchu (listopad 2026) — sprawdźcie przed zakupem."
+ ],
+ "stops": [
+  {
+   "id": "bkk",
+   "name": "Bangkok",
+   "lat": 13.7563,
+   "lng": 100.5018,
+   "color": "#d4006a",
+   "zoom": 12
+  },
+  {
+   "id": "cnx",
+   "name": "Chiang Mai",
+   "lat": 18.7883,
+   "lng": 98.9853,
+   "color": "#8a2be2",
+   "zoom": 12
+  },
+  {
+   "id": "ks",
+   "name": "Khao Sok",
+   "lat": 8.9137,
+   "lng": 98.529,
+   "color": "#00802b",
+   "zoom": 10
+  },
+  {
+   "id": "krabi",
+   "name": "Krabi (Ao Nang / Railay)",
+   "lat": 8.0322,
+   "lng": 98.8228,
+   "color": "#ff7a00",
+   "zoom": 11
+  },
+  {
+   "id": "lanta",
+   "name": "Koh Lanta",
+   "lat": 7.613,
+   "lng": 99.031,
+   "color": "#0088cc",
+   "zoom": 10
+  },
+  {
+   "id": "pp",
+   "name": "Koh Phi Phi",
+   "lat": 7.7407,
+   "lng": 98.7784,
+   "color": "#00a59a",
+   "zoom": 12
+  },
+  {
+   "id": "hkt",
+   "name": "Phuket",
+   "lat": 7.8206,
+   "lng": 98.2976,
+   "color": "#c0392b",
+   "zoom": 11
+  },
+  {
+   "id": "bkk2",
+   "name": "Bangkok — finał",
+   "lat": 13.73,
+   "lng": 100.57,
+   "color": "#d4006a",
+   "zoom": 12
+  }
+ ],
+ "legs": [
+  {
+   "from": "bkk",
+   "to": "cnx",
+   "mode": "train",
+   "how": "Nocny pociąg sypialny nr 9 (Krung Thep Aphiwat 18:40 → Chiang Mai 07:15), 2. klasa z kuszetką. Plan B: poranny lot (ok. 1 h 20 min, AirAsia z DMK).",
+   "time": "ok. 12,5 h (noc)",
+   "price": "ok. 800–1 100 THB/os. (1. klasa 1 250–1 650 THB)",
+   "book": "SRT D-Ticket albo 12Go — w dniu otwarcia sprzedaży (źródła podają 90–180 dni wcześniej, sprawdźcie na dticket.railway.co.th). Luty wyprzedaje się szybko, zwłaszcza 1. klasa."
+  },
+  {
+   "from": "cnx",
+   "to": "ks",
+   "mode": "flight",
+   "how": "Lot Chiang Mai → Surat Thani (Thai AirAsia, jedyny bezpośredni przewoźnik) + minivan do wioski Khao Sok. Plan B, gdy tego dnia nie ma lotu: lot do Phuketu (najwięcej połączeń) lub Krabi + minivan do Khao Sok.",
+   "time": "lot ok. 1 h 50 min + ok. 2 h busem",
+   "price": "lot od ok. 2 000 THB; minivan — sprawdzić",
+   "book": "Rozkład na luty 2027 niepotwierdzony — sprawdźcie na airasia.com, zanim zarezerwujecie jezioro. Transfer z lotniska załatwi operator jeziora albo 12Go."
+  },
+  {
+   "from": "ks",
+   "to": "krabi",
+   "mode": "van",
+   "how": "Minivan Khao Sok → Ao Nang po powrocie z jeziora (operator rejsu zwykle organizuje transfer).",
+   "time": "ok. 3,5–5 h",
+   "price": "ok. 350–700 THB/os. (szacunek)",
+   "book": "12Go albo razem z wycieczką na jezioro; prywatny van przy 5 osobach wychodzi podobnie."
+  },
+  {
+   "from": "krabi",
+   "to": "lanta",
+   "mode": "van",
+   "how": "Minivan z promem samochodowym Ao Nang → Koh Lanta (odbiór spod hotelu) albo prom pasażerski z Ao Nang.",
+   "time": "ok. 2,5–3 h",
+   "price": "ok. 400–600 THB/os.",
+   "book": "1–2 dni wcześniej w hotelu / 12Go."
+  },
+  {
+   "from": "lanta",
+   "to": "pp",
+   "mode": "ferry",
+   "how": "Prom lub speedboat Koh Lanta (Saladan) → Koh Phi Phi (Tonsai).",
+   "time": "0,5–1,5 h",
+   "price": "ok. 500–900 THB/os.",
+   "book": "Dzień–dwa wcześniej; w sezonie nie zostawiać na ostatnią chwilę."
+  },
+  {
+   "from": "pp",
+   "to": "hkt",
+   "mode": "ferry",
+   "how": "Prom Koh Phi Phi → Phuket (Rassada Pier), potem taxi/Grab na plażę.",
+   "time": "1–2 h + ok. 45 min autem",
+   "price": "ok. 500–700 THB/os.",
+   "book": "Kupcie bilet zaraz po przypłynięciu na Phi Phi — popołudniowe promy wyprzedają się pierwsze."
+  },
+  {
+   "from": "hkt",
+   "to": "bkk2",
+   "mode": "flight",
+   "how": "Lot Phuket → Bangkok (Thai AirAsia, Thai Lion Air, Nok Air — głównie na DMK; Thai/Bangkok Airways na BKK).",
+   "time": "ok. 1 h 30 min",
+   "price": "ok. 1 300–2 400 THB + bagaż",
+   "book": "Kupić razem z resztą lotów (grudzień). Lecimy 1.03, więc mamy 2 dni zapasu przed lotem do Polski."
+  }
+ ],
+ "days": [
+  {
+   "n": 1,
+   "date": "2027-02-11",
+   "stop": "bkk",
+   "title": "Przylot i pierwszy street food w Chinatown",
+   "move": {
+    "mode": "taxi",
+    "text": "Z lotniska Suvarnabhumi: Airport Rail Link (ok. 30 min, 45 THB) albo taxi z licznikiem + 50 THB opłaty lotniskowej. Nie wsiadać do „pierwszego auta” od naganiacza."
+   },
+   "plan": [
+    "Check-in, prysznic, drzemka — nie planujemy nic ambitnego po 15 h podróży",
+    "Karta SIM/eSIM i gotówka z bankomatu; apki Grab, Bolt, LINE",
+    "Wieczorem Chinatown (Yaowarat): street food, pierwsze pad thai i mango sticky rice",
+    "Jak starczy sił: drink w Talat Noi albo Song Wat"
+   ],
+   "tip": "Nocleg najlepiej przy BTS/MRT (Silom, Sukhumvit) albo nad rzeką — stąd wszędzie blisko.",
+   "points": [
+    {
+     "name": "Lotnisko Suvarnabhumi",
+     "ll": [
+      13.69,
+      100.7501
+     ]
+    },
+    {
+     "name": "Chinatown (Yaowarat)",
+     "match": "Chinatown (Yaowarat)"
+    },
+    {
+     "name": "Talat Noi",
+     "match": "Talat Noi"
+    },
+    {
+     "name": "Song Wat",
+     "match": "Song Wat"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "date": "2027-02-12",
+   "stop": "bkk",
+   "title": "Stare Miasto: Wielki Pałac, Wat Pho, Wat Arun o zachodzie",
+   "plan": [
+    "8:30 Wielki Pałac — na otwarcie, zanim przyjdzie upał i wycieczki (zakryte ramiona i kolana!)",
+    "Wat Pho (Leżący Budda) + tajski masaż w szkole przy świątyni",
+    "Prom przez rzekę (kilka THB) do Wat Arun",
+    "Zachód słońca z widokiem na Wat Arun — z przystani Wat Pho albo z baru Mitr Street",
+    "Wieczór: Khao San Road albo rooftop (Tichuca)"
+   ],
+   "book": "Wielki Pałac 500 THB, Wat Pho 300 THB, Wat Arun 200 THB — bilety w kasie, bez rezerwacji. Jeśli ktoś powie, że „pałac dziś zamknięty” — to scam.",
+   "points": [
+    {
+     "name": "Wielki Pałac",
+     "ll": [
+      13.75,
+      100.4913
+     ]
+    },
+    {
+     "name": "Wat Pho",
+     "match": "Wat Pho"
+    },
+    {
+     "name": "Wat Arun",
+     "match": "Wat Arun"
+    },
+    {
+     "name": "Mitr Street (bar z widokiem)",
+     "ll": [
+      13.7452,
+      100.4915
+     ],
+     "ref": "DettBa-gfEO"
+    },
+    {
+     "name": "Khao San Road",
+     "match": "Khao San Road"
+    },
+    {
+     "name": "Tichuca Rooftop",
+     "match": "Tichuca Bangkok"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "date": "2027-02-13",
+   "stop": "bkk",
+   "noNight": true,
+   "title": "Chatuchak, Song Wat i nocny pociąg na północ",
+   "plan": [
+    "Rano Chatuchak Weekend Market (działa tylko w weekendy — dlatego sobota)",
+    "Bagaże do przechowalni na dworcu Krung Thep Aphiwat (jest tuż obok targu)",
+    "Po południu Song Wat Lane: kawiarnie, mango sticky rice w Wanjai Cafe House, pamiątki",
+    "Kolacja na wynos do pociągu, 18:40 odjazd — kuszetki rozkłada obsługa ok. 20:00"
+   ],
+   "move": {
+    "mode": "train",
+    "from": "bkk",
+    "text": "Nocny pociąg nr 9 Bangkok (Krung Thep Aphiwat) 18:40 → Chiang Mai 07:15. Oszczędza nocleg i dzień. Bierzcie dolne kuszetki (szersze) i bluzę — klimatyzacja mrozi."
+   },
+   "book": "Bilety na pociąg kupić w dniu otwarcia sprzedaży (D-Ticket / 12Go). Nie ma kuszetek? Lot rano 14.02 (ok. 1 700–2 200 THB).",
+   "points": [
+    {
+     "name": "Chatuchak Weekend Market",
+     "match": "Chatuchak Weekend Market"
+    },
+    {
+     "name": "Dworzec Krung Thep Aphiwat",
+     "ll": [
+      13.804,
+      100.54
+     ]
+    },
+    {
+     "name": "Song Wat Lane",
+     "match": "Song Wat Road",
+     "ref": "Dfghgr7PQ5h"
+    },
+    {
+     "name": "Wanjai Cafe House",
+     "ll": [
+      13.7372,
+      100.5068
+     ],
+     "ref": "DafFccBSj8b"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "date": "2027-02-14",
+   "stop": "cnx",
+   "title": "Chiang Mai: Stare Miasto i niedzielny targ (walentynki!)",
+   "plan": [
+    "07:15 przyjazd, śniadanie i zostawienie bagaży w hotelu",
+    "Spacer po Starym Mieście: Wat Chedi Luang, Wat Phra Singh",
+    "Masaż i kawa (Chiang Mai to stolica kawiarni)",
+    "Od ok. 17:00 Sunday Walking Street od bramy Tha Phae — największy targ w tygodniu, tylko w niedzielę"
+   ],
+   "tip": "Połowa lutego to początek sezonu wypalania pól — może być smog. Weźcie maseczki FFP2 i sprawdzajcie IQAir.",
+   "points": [
+    {
+     "name": "Dworzec Chiang Mai",
+     "ll": [
+      18.7837,
+      99.0165
+     ]
+    },
+    {
+     "name": "Wat Chedi Luang",
+     "ll": [
+      18.787,
+      98.9865
+     ]
+    },
+    {
+     "name": "Wat Phra Singh",
+     "ll": [
+      18.7885,
+      98.9818
+     ]
+    },
+    {
+     "name": "Tha Phae Gate / Sunday Walking Street",
+     "ll": [
+      18.7877,
+      98.9933
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "date": "2027-02-15",
+   "stop": "cnx",
+   "title": "Dzień ze słoniami (etycznie — bez jazdy i kąpieli)",
+   "plan": [
+    "Cały dzień w sanktuarium: Elephant Nature Park (ok. 60 km od miasta, odbiór z hotelu) albo Elephant Eco Trails z rolki",
+    "Obserwacja i karmienie, bez jeżdżenia na słoniach",
+    "Wieczorem Nimman: kolacja (khao soi!) i bary"
+   ],
+   "book": "Elephant Nature Park: 2 500 THB (pół dnia) / 3 500 THB (cały dzień) — rezerwacja online na elephantnaturepark.org kilka tygodni wcześniej, w lutym miejsca znikają.",
+   "points": [
+    {
+     "name": "Elephant Nature Park",
+     "ll": [
+      19.2147,
+      98.86
+     ]
+    },
+    {
+     "name": "Nimman",
+     "ll": [
+      18.7997,
+      98.968
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "date": "2027-02-16",
+   "stop": "cnx",
+   "title": "Wycieczka do Chiang Rai: Biała i Niebieska Świątynia",
+   "move": {
+    "mode": "van",
+    "text": "Zorganizowana wycieczka busem z Chiang Mai (ok. 3–3,5 h w jedną stronę, wyjazd ok. 7:00, powrót ok. 20:00). Na własną rękę autobusem robi się ciasno."
+   },
+   "plan": [
+    "Biała Świątynia (Wat Rong Khun) — otwarta 8:00–16:40",
+    "Niebieska Świątynia (Wat Rong Suea Ten) — wstęp wolny",
+    "Wat Huay Pla Kang (wielka biała Guanyin) i Lalitta Cafe, jeśli wycieczka to obejmuje"
+   ],
+   "book": "Wycieczkę kupić 2–3 dni wcześniej (Klook / hotel). Biała Świątynia: 200 THB (niektóre źródła podają już 280 THB).",
+   "tip": "Rolka „po 2 miesiącach w Tajlandii” radzi w Chiang Rai przenocować. Jeśli wolicie wolniej — patrz warianty na dole.",
+   "points": [
+    {
+     "name": "Wat Rong Khun (Biała Świątynia)",
+     "match": "Wat Rong Khun (White Temple)",
+     "ref": "Dfg6PHCxSys"
+    },
+    {
+     "name": "Wat Rong Suea Ten (Niebieska Świątynia)",
+     "ll": [
+      19.9233,
+      99.8417
+     ]
+    },
+    {
+     "name": "Wat Huay Pla Kang",
+     "match": "Wat Huay Pla Kang"
+    },
+    {
+     "name": "Lalitta Cafe",
+     "match": "Lalitta Cafe"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "date": "2027-02-17",
+   "stop": "cnx",
+   "title": "Monk's Trail, Doi Suthep i kurs gotowania",
+   "plan": [
+    "Rano (przed upałem) Monk's Trail: szlak przez dżunglę do Wat Pha Lat, dalej songthaew na Doi Suthep",
+    "Po południu kurs gotowania (np. Smile Organic Farm) albo robienie srebrnego pierścionka w Lanna Artisan Art Gallery",
+    "Wieczorem Night Bazaar i pakowanie — jutro lot na południe"
+   ],
+   "book": "Kurs gotowania: rezerwacja 1–2 tygodnie wcześniej. Doi Suthep: wstęp ok. 30–50 THB.",
+   "points": [
+    {
+     "name": "Wat Pha Lat (Monk's Trail)",
+     "ll": [
+      18.7997,
+      98.9339
+     ]
+    },
+    {
+     "name": "Wat Phra That Doi Suthep",
+     "ll": [
+      18.8049,
+      98.9216
+     ]
+    },
+    {
+     "name": "Lanna Artisan Art Gallery",
+     "ll": [
+      18.788,
+      98.99
+     ],
+     "ref": "DYfKaM8SRZR"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "date": "2027-02-18",
+   "stop": "ks",
+   "title": "Lot na południe i wieczór w dżungli",
+   "move": {
+    "mode": "flight",
+    "from": "cnx",
+    "text": "Lot Chiang Mai → Surat Thani (Thai AirAsia, ok. 1 h 50 min), potem minivan do wioski Khao Sok (ok. 2 h). Gdy tego dnia nie ma lotu do Surat Thani: lot do Phuketu lub Krabi + minivan (ok. 3 h)."
+   },
+   "plan": [
+    "Nocleg w bungalowie w wiosce Khao Sok (przy wejściu do parku)",
+    "Jak przylecicie wcześnie: tubing lub kajak po rzece Sok",
+    "Kolacja i nocne odgłosy dżungli. Operatorzy jeziora radzą przyjechać dzień przed rejsem — stąd ta noc"
+   ],
+   "book": "Lot CNX–URT kupić w grudniu razem z resztą lotów. Najpierw potwierdźcie rozkład na 18.02 — to jedyny niepewny lot na trasie.",
+   "points": [
+    {
+     "name": "Lotnisko Chiang Mai",
+     "ll": [
+      18.7668,
+      98.9626
+     ]
+    },
+    {
+     "name": "Lotnisko Surat Thani",
+     "ll": [
+      9.1326,
+      99.1356
+     ]
+    },
+    {
+     "name": "Wioska Khao Sok",
+     "ll": [
+      8.9137,
+      98.529
+     ]
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "date": "2027-02-19",
+   "stop": "ks",
+   "title": "Jezioro Cheow Lan — nocleg w domku na wodzie",
+   "move": {
+    "mode": "boat",
+    "text": "Rano transfer do tamy Ratchaprapha (ok. 65 km od wioski), stamtąd longtail po jeziorze do domków na tratwach (ok. 1 h)."
+   },
+   "plan": [
+    "Rejs między wapiennymi ostańcami („tajskie Guilin”)",
+    "Zakwaterowanie w pływającym domku, skoki do wody prosto z tarasu, kajaki",
+    "Wieczorne safari łodzią: małpy, dzioborożce, przy szczęściu słonie",
+    "Kolacja na tratwie, zero zasięgu — i o to chodzi"
+   ],
+   "book": "NAJWAŻNIEJSZA REZERWACJA WYJAZDU. Pakiet 2 dni / 1 noc: ok. 5 700–6 300 THB/os. przy 5 osobach (domki: Phupha Waree, Laguna, 360° Issara, Panvaree, 500 Rai). Operatorzy radzą rezerwować 3–4 miesiące wcześniej — czyli TERAZ. Dodatkowo opłata parkowa (ok. 300 THB, niepotwierdzone) i transfery.",
+   "points": [
+    {
+     "name": "Tama Ratchaprapha (przystań)",
+     "ll": [
+      8.973,
+      98.806
+     ]
+    },
+    {
+     "name": "Jezioro Cheow Lan — domki na wodzie",
+     "ll": [
+      8.99,
+      98.69
+     ]
+    },
+    {
+     "name": "Wioska Khao Sok",
+     "ll": [
+      8.9137,
+      98.529
+     ]
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "date": "2027-02-20",
+   "stop": "krabi",
+   "title": "Poranek na jeziorze i przejazd do Krabi",
+   "plan": [
+    "Świt na jeziorze: poranne safari we mgle (najlepszy moment na zwierzęta)",
+    "Trekking do jaskini lub punktu widokowego, lunch, powrót do przystani ok. 14:00",
+    "Wieczorem Ao Nang: kolacja przy plaży i wczesny sen"
+   ],
+   "move": {
+    "mode": "van",
+    "from": "ks",
+    "text": "Minivan z przystani / Khao Sok do Ao Nang, ok. 3,5–5 h (ok. 350–700 THB/os.). Poproście operatora jeziora o transfer prosto z tamy."
+   },
+   "tip": "Rolka radzi spać w Railay zamiast w Ao Nang. Railay jest piękniejsze, ale dopływa się tylko łodzią (ostatnie ok. 18:00) — po całym dniu drogi prościej Ao Nang, a Railay zrobić jutro.",
+   "points": [
+    {
+     "name": "Tama Ratchaprapha",
+     "ll": [
+      8.973,
+      98.806
+     ]
+    },
+    {
+     "name": "Ao Nang",
+     "ll": [
+      8.0322,
+      98.8228
+     ]
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "date": "2027-02-21",
+   "stop": "krabi",
+   "title": "4 wyspy i Railay (Makha Bucha — dzień bez alkoholu)",
+   "move": {
+    "mode": "boat",
+    "text": "Longtail z plaży Ao Nang: wycieczka 4 Islands (ok. 600–1 200 THB/os.) albo sam Railay — 100 THB/os. w jedną stronę, tylko gotówka."
+   },
+   "plan": [
+    "Wycieczka longtailem: Phra Nang Cave Beach (Railay), Koh Poda, Chicken Island, mierzeja Tup",
+    "Po południu zostańcie na Railay: plaża zachodnia, punkt widokowy, zachód słońca",
+    "Powrót łodzią przed zmrokiem (wieczorem drożej)"
+   ],
+   "book": "Wycieczkę kupić dzień wcześniej na plaży / w hotelu. Opłata parkowa 200–400 THB zwykle NIE jest wliczona — miejcie gotówkę.",
+   "tip": "21.02 to święto Makha Bucha: sklepy i większość barów nie sprzedają alkoholu. Idealny dzień na łódkę, nie na imprezę.",
+   "points": [
+    {
+     "name": "Ao Nang",
+     "ll": [
+      8.0322,
+      98.8228
+     ]
+    },
+    {
+     "name": "Railay / Phra Nang Beach",
+     "ll": [
+      8.005,
+      98.838
+     ]
+    },
+    {
+     "name": "Koh Poda",
+     "ll": [
+      7.973,
+      98.809
+     ]
+    },
+    {
+     "name": "Chicken Island",
+     "ll": [
+      7.956,
+      98.805
+     ]
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "date": "2027-02-22",
+   "stop": "krabi",
+   "title": "Krabi od strony lądu: kajaki, bambusowa knajpka i zachód na Khao Thong",
+   "move": {
+    "mode": "taxi",
+    "text": "Wynajęty songthaew/taxi na cały dzień (5 osób = jeden samochód) albo skutery — pamiętajcie o prawie jazdy kat. A + międzynarodowym."
+   },
+   "plan": [
+    "Rano kajaki w krystalicznej wodzie Klong Root (Klong Nam Sai)",
+    "Ok. 11:30 lunch w The Hideaway Cafe — bambusowe chatki nad rzeką (wcześnie = najlepszy pomost)",
+    "Opcjonalnie Tiger Cave Temple (1 260 schodów) dla ambitnych",
+    "Zachód słońca na Khao Thong Hill — być 1–1,5 h wcześniej, żeby dostać dobry stolik"
+   ],
+   "points": [
+    {
+     "name": "Klong Root (kajaki)",
+     "ll": [
+      8.1445,
+      98.776
+     ],
+     "ref": "Dfcw7wcOI1Q"
+    },
+    {
+     "name": "Khao Thong Hill",
+     "match": "Khao Thong Hill",
+     "ref": "DffJEitTnUO"
+    },
+    {
+     "name": "Tiger Cave Temple",
+     "ll": [
+      8.1247,
+      98.9247
+     ]
+    },
+    {
+     "name": "Ao Nang",
+     "ll": [
+      8.0322,
+      98.8228
+     ]
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "date": "2027-02-23",
+   "stop": "lanta",
+   "title": "Przeprawa na Koh Lantę i reset na plaży",
+   "move": {
+    "mode": "van",
+    "from": "krabi",
+    "text": "Minivan z promem samochodowym Ao Nang → Koh Lanta, ok. 2,5–3 h, odbiór spod hotelu (ok. 400–600 THB/os.)."
+   },
+   "plan": [
+    "Check-in przy Long Beach (Phra Ae) albo Klong Khong",
+    "Pierwszy prawdziwie leniwy dzień: plaża, masaż, zachód słońca z baru na piasku",
+    "Lanta jest spokojna i dużo tańsza niż Phi Phi — tu odpoczywamy po połowie wyjazdu"
+   ],
+   "points": [
+    {
+     "name": "Ao Nang",
+     "ll": [
+      8.0322,
+      98.8228
+     ]
+    },
+    {
+     "name": "Przystań Saladan",
+     "ll": [
+      7.649,
+      99.04
+     ]
+    },
+    {
+     "name": "Long Beach (Phra Ae)",
+     "ll": [
+      7.613,
+      99.031
+     ]
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "date": "2027-02-24",
+   "stop": "lanta",
+   "title": "Rejs na 4 wyspy: Koh Mook, Kradan i Koh Ngai",
+   "move": {
+    "mode": "boat",
+    "text": "Całodniowa wycieczka łodzią z Lanty (longtail lub speedboat, odbiór z hotelu)."
+   },
+   "plan": [
+    "Szmaragdowa Jaskinia na Koh Mook — wpływa się wpław przez ciemny tunel na ukrytą plażę",
+    "Snorkeling przy Koh Kradan i lunch na plaży Koh Ngai",
+    "To te „mniej zatłoczone wyspy” z rankingów w rolkach — bez osobnych dni dojazdu",
+    "Wieczorem Lanta Old Town albo kolacja z owocami morza przy plaży"
+   ],
+   "book": "Wycieczkę zarezerwować dzień wcześniej w hotelu; opłata parkowa dodatkowo.",
+   "points": [
+    {
+     "name": "Koh Mook (Szmaragdowa Jaskinia)",
+     "match": "Koh Mook",
+     "ref": "DezEtNaIQxg"
+    },
+    {
+     "name": "Koh Kradan",
+     "match": "Koh Kradan",
+     "ref": "DezEtNaIQxg"
+    },
+    {
+     "name": "Koh Ngai",
+     "match": "Koh Ngai"
+    },
+    {
+     "name": "Lanta Old Town",
+     "ll": [
+      7.533,
+      99.093
+     ]
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "date": "2027-02-25",
+   "stop": "pp",
+   "title": "Prom na Phi Phi, punkt widokowy i fire show",
+   "move": {
+    "mode": "ferry",
+    "from": "lanta",
+    "text": "Prom lub speedboat Koh Lanta (Saladan) → Koh Phi Phi (Tonsai), 0,5–1,5 h."
+   },
+   "plan": [
+    "Na wyspie nie ma aut — bagaże na wózek albo na plecy",
+    "Zaraz po przypłynięciu kupcie bilety na prom do Phuketu na 27.02",
+    "Po południu wejście na Phi Phi Viewpoint na zachód słońca",
+    "Wieczorem fire show i impreza na plaży Loh Dalum — tu odbijamy sobie Makha Bucha"
+   ],
+   "book": "Nocleg na Phi Phi zarezerwować już w listopadzie–grudniu: mała wyspa, koniec lutego to szczyt. Opłata za wstęp na wyspę ok. 20 THB na przystani.",
+   "points": [
+    {
+     "name": "Przystań Saladan (Lanta)",
+     "ll": [
+      7.649,
+      99.04
+     ]
+    },
+    {
+     "name": "Przystań Tonsai",
+     "ll": [
+      7.7386,
+      98.7702
+     ]
+    },
+    {
+     "name": "Phi Phi Viewpoint",
+     "ll": [
+      7.7445,
+      98.779
+     ]
+    },
+    {
+     "name": "Loh Dalum (fire show)",
+     "ll": [
+      7.743,
+      98.774
+     ]
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "date": "2027-02-26",
+   "stop": "pp",
+   "title": "Maya Bay o wschodzie słońca i laguna Pileh",
+   "move": {
+    "mode": "boat",
+    "text": "Prywatny longtail na 3–4 h z Tonsai (ok. 1 500–2 500 THB za łódź) — wypłynąć o świcie."
+   },
+   "plan": [
+    "Maya Bay zaraz po otwarciu (ok. 7:00), zanim przypłyną wycieczki z Phuketu — do zatoki wchodzi się pomostem od tyłu, nie wolno pływać",
+    "Laguna Pileh — tu skaczemy do wody",
+    "Snorkeling przy Bamboo Island albo Monkey Beach (małp nie karmić!)",
+    "Popołudnie: plaża Long Beach, wieczorem druga runda Loh Dalum"
+   ],
+   "book": "Maya Bay: 400 THB/os. (park narodowy), płatne na miejscu, bez obowiązkowej rezerwacji. Łódź umówcie dzień wcześniej na przystani.",
+   "points": [
+    {
+     "name": "Maya Bay",
+     "ll": [
+      7.678,
+      98.7655
+     ],
+     "ref": "DZK0tCEIVru"
+    },
+    {
+     "name": "Laguna Pileh",
+     "ll": [
+      7.6835,
+      98.766
+     ]
+    },
+    {
+     "name": "Przystań Tonsai",
+     "ll": [
+      7.7386,
+      98.7702
+     ]
+    },
+    {
+     "name": "Long Beach (Phi Phi)",
+     "ll": [
+      7.729,
+      98.787
+     ]
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "date": "2027-02-27",
+   "stop": "hkt",
+   "title": "Phuket: Stare Miasto i bar jak z Harry'ego Pottera",
+   "move": {
+    "mode": "ferry",
+    "from": "pp",
+    "text": "Prom Koh Phi Phi → Phuket (Rassada Pier), 1–2 h, ok. 500–700 THB/os. Potem Grab/taxi."
+   },
+   "plan": [
+    "Po drodze z przystani Phuket Old Town: kolorowe kamienice chińsko-portugalskie, kawa, lunch",
+    "Check-in w okolicy Kata / Karon (ładniejsze i spokojniejsze niż Patong)",
+    "Wieczorem Mad Hog Tavern — bar w stylu Harry'ego Pottera; kto chce chaosu: Bangla Road w Patong"
+   ],
+   "points": [
+    {
+     "name": "Rassada Pier",
+     "ll": [
+      7.874,
+      98.413
+     ]
+    },
+    {
+     "name": "Phuket Old Town",
+     "match": "Phuket Old Town"
+    },
+    {
+     "name": "Kata Beach",
+     "match": "Kata Beach"
+    },
+    {
+     "name": "Mad Hog Tavern",
+     "match": "Mad Hog Tavern Phuket",
+     "ref": "DeRkYS3viay"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "date": "2027-02-28",
+   "stop": "hkt",
+   "title": "Plaże południa Phuketu i ostatni zachód nad morzem",
+   "move": {
+    "mode": "taxi",
+    "text": "Grab/taxi albo wynajęte auto z kierowcą na pół dnia."
+   },
+   "plan": [
+    "Plażowy objazd z rolek: Kata Noi, Nui Beach, Yanui, Rawai (owoce morza prosto z targu)",
+    "Zachód słońca: Kalim Sunset albo Café Del Mar",
+    "W niedzielę wieczorem w Starym Mieście działa targ Lard Yai (walking street)",
+    "Ostatnia kąpiel w morzu — jutro wracamy do Bangkoku"
+   ],
+   "points": [
+    {
+     "name": "Kata Noi Beach",
+     "match": "Kata Noi Beach"
+    },
+    {
+     "name": "Nui Beach",
+     "match": "Nui Beach"
+    },
+    {
+     "name": "Yanui Beach",
+     "match": "Yanui Beach"
+    },
+    {
+     "name": "Rawai",
+     "match": "Rawai"
+    },
+    {
+     "name": "Café Del Mar",
+     "match": "Café Del Mar Phuket"
+    },
+    {
+     "name": "Kalim (zachód słońca)",
+     "ll": [
+      7.909,
+      98.296
+     ],
+     "ref": "DfXMaRIgS_i"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "date": "2027-03-01",
+   "stop": "bkk2",
+   "title": "Powrót do Bangkoku: Sukhumvit i rooftop",
+   "move": {
+    "mode": "flight",
+    "from": "hkt",
+    "text": "Poranny lot Phuket → Bangkok, ok. 1 h 30 min (AirAsia / Lion / Nok lądują na DMK, Thai i Bangkok Airways na BKK). Na lotnisko w Phukecie z Kata jedzie się ok. 1 h 15 min."
+   },
+   "plan": [
+    "Nocleg przy Sukhumvit / Thonglor — blisko zakupów i knajp",
+    "Lunch: michelinowskie pork noodles w Rung Rueang",
+    "Centra handlowe: Terminal 21, EmQuartier (klimatyzacja po 3 tygodniach upału)",
+    "Wieczór na rooftopie: Tribe Sky Beach Club albo Tichuca; potem ukryty Good Trouble Bar"
+   ],
+   "book": "Rooftopy: rezerwacja stolika na grupę 5 osób dzień–dwa wcześniej (Instagram / LINE lokalu), dress code smart casual — bez klapek.",
+   "points": [
+    {
+     "name": "Rung Rueang",
+     "match": "Rung Rueang (Sukhumvit 26)",
+     "ref": "Deik447zHEw"
+    },
+    {
+     "name": "Terminal 21",
+     "match": "Terminal 21"
+    },
+    {
+     "name": "EmQuartier",
+     "match": "EmQuartier"
+    },
+    {
+     "name": "Tribe Sky Beach Club",
+     "match": "TRIBE Bangkok",
+     "ref": "DfWE6XvMAmR"
+    },
+    {
+     "name": "Tichuca",
+     "match": "Tichuca Bangkok"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "date": "2027-03-02",
+   "stop": "bkk2",
+   "title": "Ostatnie zakupy, Jay Fai i Muay Thai na pożegnanie",
+   "plan": [
+    "Pamiątki i ciuchy: Platinum Fashion Mall, MBK Center; kosmetyki i przekąski z 7-Eleven do walizki",
+    "Kto ma cierpliwość: omlet z krabem u Jay Fai (kolejka od rana, zapisy na listę na miejscu — sprawdźcie, czy danego dnia otwarte)",
+    "Spacer po Lumphini Park (warany!)",
+    "Wieczorem gala Muay Thai na stadionie Rajadamnern, potem pożegnalna kolacja"
+   ],
+   "book": "Rajadamnern: bilety 1 000–3 500+ THB, kupować bezpośrednio na rajadamnern.com (ringside warto z wyprzedzeniem).",
+   "points": [
+    {
+     "name": "Platinum Fashion Mall",
+     "match": "Platinum Fashion Mall"
+    },
+    {
+     "name": "MBK Center",
+     "match": "MBK Center"
+    },
+    {
+     "name": "Raan Jay Fai",
+     "match": "Raan Jay Fai",
+     "ref": "DfXeYMQPlJX"
+    },
+    {
+     "name": "Lumphini Park",
+     "match": "Lumphini Park"
+    },
+    {
+     "name": "Rajadamnern Stadium",
+     "match": "Rajadamnern Stadium",
+     "ref": "DcatvgDymia"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "date": "2027-03-03",
+   "stop": "bkk2",
+   "noNight": true,
+   "title": "Wylot do domu",
+   "move": {
+    "mode": "taxi",
+    "text": "Na lotnisko wyjechać z dużym zapasem (3 h przed lotem na miejscu) — korki w Bangkoku są nieprzewidywalne; Airport Rail Link ich nie ma."
+   },
+   "plan": [
+    "Ostatnie śniadanie i masaż stóp",
+    "Przy późnym wylocie: 3.03 to pierwsza środa miesiąca — darmowy Muay Thai przed MBK Center, 18:00–20:00"
+   ],
+   "points": [
+    {
+     "name": "MBK Center",
+     "match": "MBK Center",
+     "ref": "DfQCR9ak68Y"
+    },
+    {
+     "name": "Lotnisko Suvarnabhumi",
+     "ll": [
+      13.69,
+      100.7501
+     ]
+    }
+   ]
+  }
+ ],
+ "tickets": [
+  {
+   "priority": 1,
+   "what": "Khao Sok: rejs + nocleg w domku na jeziorze Cheow Lan (19–20.02)",
+   "when": "TERAZ (operatorzy: 3–4 mies. wcześniej)",
+   "how": "Pakiet 2D1N u operatora lub bezpośrednio w domku (Phupha Waree, Laguna, 360° Issara, Panvaree, 500 Rai). Poprosić od razu o transfery z Surat Thani i do Ao Nang.",
+   "price": "ok. 5 700–6 300 THB/os. + park ok. 300 THB"
+  },
+  {
+   "priority": 1,
+   "what": "Noclegi: Phi Phi (25–27.02), Railay/Ao Nang (20–23.02), Bangkok",
+   "when": "listopad–grudzień",
+   "how": "Booking / Agoda z darmowym anulowaniem. Phi Phi i Railay mają mało miejsc, a koniec lutego to szczyt sezonu.",
+   "price": "—"
+  },
+  {
+   "priority": 1,
+   "what": "Loty wewnętrzne: Chiang Mai → Surat Thani (18.02) i Phuket → Bangkok (1.03)",
+   "when": "grudzień",
+   "how": "airasia.com / strony linii (taniej niż pośrednicy), bagaż rejestrowany dokupić od razu. Najpierw potwierdzić, że lot CNX–URT lata 18.02.",
+   "price": "ok. 1 300–2 500 THB za lot + bagaż"
+  },
+  {
+   "priority": 1,
+   "what": "Nocny pociąg Bangkok → Chiang Mai (13.02), 5 kuszetek obok siebie",
+   "when": "w dniu otwarcia sprzedaży (90–180 dni przed — sprawdzić)",
+   "how": "dticket.railway.co.th albo 12Go (z prowizją, ale prościej). Pociąg nr 9, 2. klasa sypialna, dolne kuszetki.",
+   "price": "ok. 800–1 100 THB/os."
+  },
+  {
+   "priority": 2,
+   "what": "Elephant Nature Park (15.02)",
+   "when": "kilka tygodni wcześniej",
+   "how": "elephantnaturepark.org — rezerwacja z zaliczką online.",
+   "price": "2 500–3 500 THB/os."
+  },
+  {
+   "priority": 2,
+   "what": "Ubezpieczenie podróżne (ze skuterami i sportami wodnymi) + szczepienia",
+   "when": "szczepienia teraz, polisa przed wylotem",
+   "how": "Sprawdzić, czy polisa obejmuje skuter — bez kat. A zwykle nie.",
+   "price": "—"
+  },
+  {
+   "priority": 2,
+   "what": "Międzynarodowe prawo jazdy (jeśli skutery)",
+   "when": "styczeń",
+   "how": "Starostwo / urząd miasta, ok. 3 dni. W Tajlandii na skuter trzeba mieć kat. A — samo B nie wystarcza.",
+   "price": "35 zł"
+  },
+  {
+   "priority": 2,
+   "what": "TDAC — cyfrowa karta przylotu",
+   "when": "8–10.02 (najwcześniej 3 dni przed przylotem)",
+   "how": "tdac.immigration.go.th — darmowe; uwaga na płatne strony-podróbki.",
+   "price": "0 zł"
+  },
+  {
+   "priority": 3,
+   "what": "Wycieczka do Chiang Rai (16.02) i kurs gotowania (17.02)",
+   "when": "1–2 tygodnie wcześniej lub na miejscu",
+   "how": "Klook / GetYourGuide / hotel.",
+   "price": "ok. 1 500–2 000 THB (wycieczka)"
+  },
+  {
+   "priority": 3,
+   "what": "Promy: Lanta → Phi Phi (25.02), Phi Phi → Phuket (27.02), van Ao Nang → Lanta (23.02)",
+   "when": "1–3 dni wcześniej",
+   "how": "12Go albo kasa na przystani / hotel.",
+   "price": "400–900 THB za odcinek"
+  },
+  {
+   "priority": 3,
+   "what": "Muay Thai Rajadamnern (2.03) i stolik na rooftopie (1.03)",
+   "when": "tydzień wcześniej",
+   "how": "rajadamnern.com; rooftopy przez Instagram/LINE lokalu.",
+   "price": "od 1 000 THB (Muay Thai)"
+  },
+  {
+   "priority": 3,
+   "what": "Wycieczki łodzią: 4 Islands (21.02), 4 wyspy z Lanty (24.02), longtail do Maya Bay (26.02)",
+   "when": "dzień wcześniej na miejscu",
+   "how": "Hotel / budka na plaży / przystań. Gotówka na opłaty parkowe.",
+   "price": "600–1 500 THB/os.; Maya Bay 400 THB"
+  }
+ ],
+ "alternatives": [
+  "Wiza: od września 2026 Tajlandia skróciła pobyt bezwizowy do 30 dni (wcześniej 60). Nasze 21 dni się mieści, ale potwierdźcie status Polski na stronie ambasady przed wylotem. Zapowiadana jest też opłata turystyczna 450 THB dla przylatujących (planowo I kwartał 2027, bez daty startu).",
+  "Wariant Full Moon Party: impreza na Koh Phangan wypada wstępnie w poniedziałek 22.02 (przesunięta przez Makha Bucha 21.02; data jeszcze niepotwierdzona). Żeby ją złapać: po Khao Sok prom z Don Sak na Phangan (20–23.02), potem lot z Samui albo prom + bus do Krabi (ok. 4,5 h) — kosztem Koh Lanty i jednego dnia w Krabi. Research mówi jasno: Zatoka + Andamany to ok. 2 dni straconych na transport, więc w planie głównym jej nie ma.",
+  "Wariant Similany: sezon trwa do 15.05, wypływa się z Thap Lamu koło Khao Lak, rezerwacja min. miesiąc wcześniej, wstęp 500 THB. Z Phuketu to pobudka ok. 5:00 — jeśli bardzo chcecie, zamieńcie dzień 18 albo dodajcie noc w Khao Lak zamiast jednej na Lancie.",
+  "Wariant spokojniejsza północ: nocleg w Chiang Rai zamiast jednodniówki (dzień 6–7), kosztem Monk's Trail i kursu gotowania.",
+  "Wariant mniej przeprowadzek: bez Koh Lanty — 4 noce w Krabi (w tym 1–2 w Railay) i 3 na Phuket. Wtedy 4 wyspy (Mook/Kradan/Ngai) odpadają.",
+  "Założyłem lądowanie w Bangkoku 11.02 i wylot z Bangkoku 3.03. Jeśli lot powrotny jest z Phuketu albo o innej porze — dajcie znać, końcówkę da się odwrócić."
+ ],
+ "sources": [
+  {
+   "title": "Tajlandia skraca pobyt bezwizowy do 30 dni (Khaosod, 09.2026)",
+   "url": "https://www.khaosodenglish.com/politics/2026/09/01/thailand-reduces-visa-free-stay-from-60-to-30-days/"
+  },
+  {
+   "title": "TDAC — karta przylotu (ambasada Tajlandii)",
+   "url": "https://colombo.thaiembassy.org/en/publicservice/thailand-digital-arrival-card-tdac"
+  },
+  {
+   "title": "Proponowana opłata turystyczna 450 THB",
+   "url": "https://thailand.go.th/event-detail/thailand-proposes-new-thb450-us1350-tourism-fee-for-all-foreign-visitors"
+  },
+  {
+   "title": "Makha Bucha 2027 — data",
+   "url": "https://www.officeholidays.com/holidays/thailand/makha-bucha"
+  },
+  {
+   "title": "Full Moon Party — kalendarz dat",
+   "url": "https://www.fullmoonpartythailand.com/dates"
+  },
+  {
+   "title": "Pociągi w Tajlandii (Seat61)",
+   "url": "https://www.seat61.com/Thailand.htm"
+  },
+  {
+   "title": "SRT D-Ticket — bilety kolejowe",
+   "url": "https://dticket.railway.co.th"
+  },
+  {
+   "title": "Elephant Nature Park",
+   "url": "https://www.elephantnaturepark.org/enp/visit-volunteer/projects/walking-with-elephants-108/view"
+  },
+  {
+   "title": "Chiang Rai — jednodniówka z Chiang Mai",
+   "url": "https://iamchiangmai.com/chiang-rai-temples-day-trip-from-chiang-mai/"
+  },
+  {
+   "title": "Sezon wypalania pól na północy",
+   "url": "https://explorertom.com/en/burning-season-thailand/"
+  },
+  {
+   "title": "Rajadamnern — Muay Thai",
+   "url": "https://muaythaistadiums.com/rajadamnern-muay-thai-stadium/"
+  },
+  {
+   "title": "Loty Chiang Mai → Surat Thani",
+   "url": "https://www.flightsfrom.com/CNX-URT"
+  },
+  {
+   "title": "Cheow Lan 2D1N — pakiet i domki",
+   "url": "https://www.phuketthailand-travel.com/packages/2-days-1-night-cheow-lan-lake-explorer"
+  },
+  {
+   "title": "Tama Ratchaprapha / jezioro Cheow Lan",
+   "url": "https://www.thaiholidayguide.com/attraction/rajjaprabha-dam-reservoir-chiao-lan/"
+  },
+  {
+   "title": "Khao Sok → Ao Nang (12Go)",
+   "url": "https://12go.asia/en/travel/khao-sok/ao-nang/?z=1215319"
+  },
+  {
+   "title": "Jak dostać się na Railay",
+   "url": "https://shippedaway.com/getting-to-railay-beach-thailand"
+  },
+  {
+   "title": "Krabi — wycieczki po wyspach",
+   "url": "https://www.nomadotravel.app/en/guides/krabi-island-hopping-guide"
+  },
+  {
+   "title": "Krabi → Koh Lanta",
+   "url": "https://thailandboattickets.com/en/guides/krabi-to-koh-lanta"
+  },
+  {
+   "title": "Prom Koh Lanta ↔ Koh Phi Phi",
+   "url": "https://www.phuketferry.com/how-to-get-from-koh-phi-phi-to-koh-lanta-and-vice-versa.html"
+  },
+  {
+   "title": "Maya Bay — zasady i opłaty",
+   "url": "https://www.nomadotravel.app/en/attractions/maya-bay"
+  },
+  {
+   "title": "Prom Phuket ↔ Koh Phi Phi",
+   "url": "https://thailandboattickets.com/en/guides/ferry-phuket-koh-phi-phi"
+  },
+  {
+   "title": "Similany — otwarcie sezonu",
+   "url": "https://www.pattayamail.com/thailandnews/similan-islands-in-phang-nga-draw-over-one-thousand-tourists-on-opening-day-443281"
+  },
+  {
+   "title": "Loty Phuket → Bangkok",
+   "url": "https://www.flightsfrom.com/HKT-DMK"
+  }
+ ]
+}

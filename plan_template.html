@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🗺️%3C/text%3E%3C/svg%3E">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>~*~ TAJLANDIA 2027 ~*~ Plan wyprawy dzień po dniu ~*~</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin-ext.woff2) format("woff2");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 Verdana,Tahoma,"DejaVu Sans",sans-serif;color:#000;
+    background:#0000a8 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><text x='6' y='34' font-size='26'>🌴</text><text x='44' y='74' font-size='22'>🛺</text></svg>")}
+  a{color:#0000ee}a:visited{color:#551a8b}
+  .page{max-width:1280px;margin:0 auto;padding:10px}
+  .box{background:#fffbe6;border:4px outset #c0c0c0;margin:14px 0;padding:10px 14px;box-shadow:6px 6px 0 #000}
+  .title{text-align:center;background:linear-gradient(90deg,#ff0080,#ff8c00,#ffe600,#00d26a,#00b7ff,#8a2be2);
+    border:4px ridge #ffd700;padding:12px 6px;box-shadow:6px 6px 0 #000}
+  .title h1{margin:0;font-family:Anton,Impact,"Arial Black",sans-serif;font-size:clamp(26px,5vw,48px);color:#fff;
+    text-shadow:3px 3px 0 #000,-1px -1px 0 #000;letter-spacing:2px}
+  .title p{margin:4px 0 0;color:#fff;text-shadow:2px 2px 0 #000;font-weight:bold}
+  h2{font-family:Anton,Impact,"Arial Black",sans-serif;font-weight:normal;letter-spacing:1px;color:#c2005f;
+    text-shadow:1px 1px 0 #ffe600;margin:4px 0 10px;font-size:26px}
+  .btn{display:inline-block;font:bold 13px Verdana,Tahoma,sans-serif;background:#c0c0c0;border:3px outset #fff;padding:4px 10px;
+    cursor:pointer;color:#000;text-decoration:none}
+  .btn:visited{color:#000}
+  .route{display:flex;flex-wrap:wrap;gap:4px 2px;align-items:center;font-size:13.5px}
+  .route .stop{border:2px solid #000;padding:2px 8px;font-weight:bold;color:#fff;text-shadow:1px 1px 0 #000;cursor:pointer}
+  .route .leg{font-size:12px;white-space:nowrap}
+  .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+  .mapcol{position:sticky;top:8px}
+  #pmap{height:calc(100vh - 110px);min-height:420px;border:4px inset #c0c0c0;box-shadow:6px 6px 0 #000}
+  .maphint{background:#000;color:#0f0;font:bold 12.5px "Courier New",monospace;padding:4px 8px;border:2px inset #888;margin-top:6px}
+  .day{background:#fffbe6;border:4px outset #c0c0c0;margin:0 0 12px;box-shadow:5px 5px 0 #000;cursor:pointer;scroll-margin-top:10px}
+  .day.active{border-style:inset;outline:3px solid #ff0080}
+  .day header{display:flex;gap:10px;align-items:center;padding:6px 10px;color:#fff;text-shadow:1px 1px 0 #000}
+  .day .num{font:26px Anton,Impact,"Arial Black",sans-serif;line-height:1;min-width:64px}
+  .day .num small{display:block;font:bold 11px Verdana,sans-serif;letter-spacing:1px}
+  .day .hd b{display:block;font-size:16px;line-height:1.25}
+  .day .hd span{font-size:12.5px}
+  .day .body{padding:8px 12px 10px}
+  .day ul{margin:4px 0;padding-left:20px}
+  .day li{margin:3px 0}
+  .move{background:#e6f3ff;border:2px dashed #0050c8;padding:6px 8px;margin:6px 0;font-size:14px}
+  .move b{color:#0036a0}
+  .bookit{background:#fff0f0;border:2px dashed #d40000;padding:6px 8px;margin:6px 0;font-size:14px}
+  .bookit b{color:#d40000}
+  .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+  .chip{background:#ffffcc;border:1px dashed #ff0080;padding:1px 7px;font-size:12px;border-radius:8px;text-decoration:none;color:#000}
+  .chip:visited{color:#000}
+  .stophead{font:22px Anton,Impact,"Arial Black",sans-serif;color:#ffe600;text-shadow:2px 2px 0 #000;margin:16px 0 8px;letter-spacing:1px}
+  table.t{width:100%;border-collapse:separate;border-spacing:2px;background:#808080;border:3px outset #c0c0c0;font-size:13.5px}
+  .t th{background:#000080;color:#ffff00;padding:6px;text-align:left;font-size:12.5px}
+  .t td{background:#fff;padding:6px;vertical-align:top}
+  .t tr.p1 td:first-child{border-left:6px solid #d40000}.t tr.p2 td:first-child{border-left:6px solid #ff8c00}.t tr.p3 td:first-child{border-left:6px solid #00a000}
+  .src{font-size:12px;columns:2;column-gap:24px}.src li{margin:2px 0;break-inside:avoid;word-break:break-word}
+  .pin{border:2px solid #000;border-radius:50%;color:#fff;font:bold 13px Verdana,sans-serif;text-align:center;line-height:24px;
+    width:28px;height:28px;box-shadow:2px 2px 0 #000;text-shadow:1px 1px 0 #000}
+  .leaflet-popup-content{font-family:Verdana,Tahoma,sans-serif;font-size:13px;line-height:1.5}
+  .leglabel{background:#fff;border:2px solid #000;padding:0 5px;font:bold 11px Verdana,sans-serif;white-space:nowrap;box-shadow:2px 2px 0 #000}
+  footer{color:#fff;text-align:center;font-size:12px;padding:10px}
+  footer a{color:#ffe600}
+  @media(max-width:860px){
+    .split{grid-template-columns:minmax(0,1fr)}
+    .mapcol{position:sticky;top:0;z-index:500;background:#0000a8;padding-bottom:6px;order:-1}
+    #pmap{height:42vh;min-height:260px;box-shadow:none}
+    .maphint{font-size:11.5px}
+    .t thead{display:none}.t,.t tbody,.t tr,.t td{display:block;width:100%}
+    .t tr{margin-bottom:4px}.t td{border-left:0!important;padding:4px 8px}
+    .t td:first-child{font-weight:bold;background:#fff3a0}
+    .t td[data-l]:not(:first-child)::before{content:attr(data-l) ": ";font-weight:bold;color:#000080}
+    .src{columns:1}
+    .day .num{min-width:54px;font-size:22px}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="title">
+    <h1>🗺️ PLAN WYPRAWY 🗺️</h1>
+    <p id="sub"></p>
+  </div>
+  <p style="text-align:center;margin:10px 0"><a class="btn" href="index.html">⬅ Wróć na stronę główną (znaleziska, tabela ligowa)</a></p>
+
+  <div class="box">
+    <h2>🧭 TRASA W PIGUŁCE</h2>
+    <div class="route" id="route"></div>
+    <ul id="assume" style="font-size:13px;margin:10px 0 0;padding-left:20px"></ul>
+  </div>
+
+  <div class="split">
+    <div id="days"></div>
+    <div class="mapcol">
+      <div id="pmap"></div>
+      <div class="maphint" id="hint">▶ Kliknij dzień po lewej — mapa pokaże, co wtedy zwiedzamy</div>
+      <p style="margin:6px 0 0;text-align:right"><button class="btn" id="whole">🌏 Cała trasa</button></p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>🚆 PRZEJAZDY — czym i za ile</h2>
+    <table class="t"><thead><tr><th>Odcinek</th><th>Czym</th><th>Czas</th><th>Cena</th><th>Rezerwacja</th></tr></thead><tbody id="legs"></tbody></table>
+  </div>
+
+  <div class="box">
+    <h2>🎟️ BILETY I REZERWACJE — co, kiedy, gdzie</h2>
+    <table class="t"><thead><tr><th>Co</th><th>Kiedy kupić</th><th>Gdzie / jak</th><th>Cena</th></tr></thead><tbody id="tickets"></tbody></table>
+    <p style="font-size:12px;margin:8px 0 0">🟥 pilne · 🟧 ważne · 🟩 na spokojnie. Ceny orientacyjne — sprawdź przed zakupem.</p>
+  </div>
+
+  <div class="box" id="altbox" hidden>
+    <h2>🔀 WARIANTY I UWAGI</h2>
+    <ul id="alts" style="padding-left:20px;margin:0"></ul>
+  </div>
+
+  <div class="box">
+    <h2>📚 ŹRÓDŁA</h2>
+    <ul class="src" id="src"></ul>
+  </div>
+  <footer>Plan ułożony z rolek z czatu + research (stan: <span id="upd"></span>). <a href="index.html">Strona główna</a></footer>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const P = /*__PLAN__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const stops = Object.fromEntries(P.stops.map(s => [s.id, s]));
+const MODE = {flight:"✈️", train:"🚆", ferry:"⛴️", van:"🚐", boat:"🛶", bus:"🚌", taxi:"🚕"};
+const WD = ["nd","pn","wt","śr","cz","pt","sb"], MON = ["sty","lut","mar","kwi"];
+const fmt = iso => { const d = new Date(iso + "T12:00:00"); return `${WD[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`; };
+
+$("#sub").textContent = P.subtitle || "";
+$("#upd").textContent = (P.updatedAt || "").slice(0, 10);
+
+// trasa w pigułce: przystanki w kolejności odwiedzin + środek transportu między nimi
+const seq = []; P.days.forEach(d => { if (seq[seq.length - 1] !== d.stop) seq.push(d.stop); });
+const nights = {}; P.days.forEach(d => { if (!d.noNight) nights[d.stop] = (nights[d.stop] || 0) + 1; });
+$("#route").innerHTML = seq.map((id, i) => {
+  const leg = i ? P.legs.find(l => l.from === seq[i - 1] && l.to === id) : null;
+  return (i ? `<span class="leg">—${leg ? MODE[leg.mode] || "" : ""}→</span>` : "") +
+    `<span class="stop" data-stop="${id}" style="background:${stops[id].color}">${esc(stops[id].name)}</span>`;
+}).join("");
+$("#assume").innerHTML = (P.assumptions || []).map(a => `<li>${esc(a)}</li>`).join("");
+
+// mapa
+const map = L.map("pmap", {scrollWheelZoom: false});
+L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+  {maxZoom: 18, attribution: "Tiles © Esri"}).addTo(map);
+const all = L.latLngBounds(P.stops.map(s => [s.lat, s.lng]));
+const STYLE = {flight: {dashArray: "10 8", color: "#d40000"}, train: {color: "#000"}, ferry: {dashArray: "2 7", color: "#0050c8"},
+  boat: {dashArray: "2 7", color: "#0050c8"}, van: {color: "#00802b"}, bus: {color: "#00802b"}, taxi: {color: "#00802b"}};
+P.legs.forEach(l => {
+  const a = stops[l.from], b = stops[l.to]; if (!a || !b) return;
+  const line = L.polyline([[a.lat, a.lng], [b.lat, b.lng]], {weight: 4, opacity: .85, ...(STYLE[l.mode] || {})}).addTo(map);
+  line.bindPopup(`<b>${MODE[l.mode] || ""} ${esc(a.name)} → ${esc(b.name)}</b><br>${esc(l.how)}<br>${esc(l.time || "")}${l.price ? " · " + esc(l.price) : ""}`);
+});
+P.stops.forEach(s => {
+  const n = seq.indexOf(s.id) + 1; if (!n) return;
+  L.marker([s.lat, s.lng], {icon: L.divIcon({className: "", html: `<div class="pin" style="background:${s.color}">${n}</div>`, iconSize: [28, 28], iconAnchor: [14, 14]})})
+    .addTo(map).bindPopup(`<b>${n}. ${esc(s.name)}</b><br>${nights[s.id] || 0} nocy`).on("click", () => focusStop(s.id));
+});
+const dayLayer = L.layerGroup().addTo(map);
+map.fitBounds(all.pad(0.08));
+
+// dni
+let cur = null;
+$("#days").innerHTML = P.days.map((d, i) => {
+  const s = stops[d.stop], first = i === 0 || P.days[i - 1].stop !== d.stop;
+  const head = first ? `<div class="stophead">${seq.indexOf(d.stop) + 1}. ${esc(s.name)}${nights[d.stop] ? ` — ${nights[d.stop]} ${nights[d.stop] === 1 ? "noc" : nights[d.stop] < 5 ? "noce" : "nocy"}` : ""}</div>` : "";
+  return head + `<div class="day" id="d${d.n}" data-n="${d.n}">
+    <header style="background:${s.color}"><div class="num"><small>DZIEŃ</small>${d.n}</div>
+      <div class="hd"><b>${esc(d.title)}</b><span>${fmt(d.date)} · ${esc(s.name)}</span></div></header>
+    <div class="body">
+      ${d.move ? `<div class="move"><b>${MODE[d.move.mode] || "➡️"} Przejazd:</b> ${esc(d.move.text)}</div>` : ""}
+      <ul>${(d.plan || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+      ${d.book ? `<div class="bookit"><b>🎟️ Bilety / rezerwacja:</b> ${esc(d.book)}</div>` : ""}
+      ${d.tip ? `<div style="font-size:13px">💡 ${esc(d.tip)}</div>` : ""}
+      ${(d.points || []).some(p => p.url) ? `<div class="chips">${d.points.filter(p => p.url).map(p => `<a class="chip" href="${esc(p.url)}" target="_blank" rel="noopener">🎬 ${esc(p.name)}</a>`).join("")}</div>` : ""}
+    </div></div>`;
+}).join("");
+
+function showDay(n, scroll) {
+  const d = P.days.find(x => x.n === n); if (!d) return;
+  cur = n;
+  document.querySelectorAll(".day").forEach(e => e.classList.toggle("active", +e.dataset.n === n));
+  dayLayer.clearLayers();
+  const s = stops[d.stop], pts = (d.points || []).filter(p => p.ll);
+  pts.forEach((p, i) => L.circleMarker(p.ll, {radius: 8, color: "#000", weight: 2, fillColor: s.color, fillOpacity: .95})
+    .bindTooltip(esc(p.name), {permanent: pts.length <= 6, direction: "top", offset: [0, -6]})
+    .bindPopup(`<b>${esc(p.name)}</b>${p.url ? `<br><a href="${esc(p.url)}" target="_blank" rel="noopener">🎬 rolka z czatu</a>` : ""}`).addTo(dayLayer));
+  if (d.move && d.move.from && stops[d.move.from]) {
+    const a = stops[d.move.from];
+    map.fitBounds(L.latLngBounds([[a.lat, a.lng], [s.lat, s.lng], ...pts.map(p => p.ll)]).pad(0.25));
+  } else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts.map(p => p.ll)).pad(0.3), {maxZoom: 14});
+  else map.setView(pts[0] ? pts[0].ll : [s.lat, s.lng], d.zoom || s.zoom || 11);
+  $("#hint").textContent = `▶ Dzień ${d.n} (${fmt(d.date)}): ${d.title}` + (pts.length ? ` — ${pts.length} miejsc na mapie` : "");
+  if (scroll) document.getElementById("d" + n).scrollIntoView({behavior: "smooth", block: "start"});
+}
+function focusStop(id) { const d = P.days.find(x => x.stop === id); if (d) showDay(d.n, true); }
+document.querySelectorAll(".day").forEach(e => e.addEventListener("click", ev => { if (ev.target.closest("a")) return; showDay(+e.dataset.n); }));
+document.querySelectorAll(".route .stop").forEach(e => e.addEventListener("click", () => focusStop(e.dataset.stop)));
+$("#whole").addEventListener("click", () => { dayLayer.clearLayers(); cur = null; map.fitBounds(all.pad(0.08));
+  document.querySelectorAll(".day").forEach(e => e.classList.remove("active")); $("#hint").textContent = "▶ Kliknij dzień — mapa pokaże, co wtedy zwiedzamy"; });
+
+$("#legs").innerHTML = P.legs.map(l => `<tr><td>${esc(stops[l.from].name)} → ${esc(stops[l.to].name)}</td>
+  <td data-l="Czym">${MODE[l.mode] || ""} ${esc(l.how)}</td><td data-l="Czas">${esc(l.time || "—")}</td><td data-l="Cena">${esc(l.price || "—")}</td><td data-l="Rezerwacja">${esc(l.book || "—")}</td></tr>`).join("");
+$("#tickets").innerHTML = P.tickets.slice().sort((a, b) => (a.priority || 9) - (b.priority || 9)).map(t => `<tr class="p${t.priority || 3}"><td>${esc(t.what)}</td>
+  <td data-l="Kiedy">${esc(t.when)}</td><td data-l="Jak">${esc(t.how)}</td><td data-l="Cena">${esc(t.price || "—")}</td></tr>`).join("");
+if ((P.alternatives || []).length) { $("#altbox").hidden = false; $("#alts").innerHTML = P.alternatives.map(a => `<li style="margin:4px 0">${esc(a)}</li>`).join(""); }
+$("#src").innerHTML = (P.sources || []).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("");
+</script>
+</body>
+</html>

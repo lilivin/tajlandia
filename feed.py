@@ -450,6 +450,36 @@ def leaderboard(posts, offtopic):
     return rows
 
 
+def render_plan(posts):
+    """docs/plan.html z plan.json: punkty dnia po nazwie miejsca z analiz (współrzędne + link do rolki) albo z własnym `ll`."""
+    src = HERE / "plan.json"
+    if not src.exists():
+        return
+    plan = json.loads(src.read_text(encoding="utf-8"))
+    known = {}
+    for p in posts:
+        for pl in p.get("places", []):
+            if pl.get("ll") and not pl.get("approx"):
+                known.setdefault(pl["name"].lower(), {"ll": pl["ll"], "url": p["url"]})
+    by_code = {p["shortCode"]: p for p in posts}
+    missing = []
+    for d in plan["days"]:
+        for pt in d.get("points", []):
+            hit = known.get((pt.get("match") or pt["name"]).lower())
+            if hit and not pt.get("ll"):
+                pt["ll"] = hit["ll"]
+            if pt.get("ref") in by_code:
+                pt["url"] = by_code[pt["ref"]]["url"]
+            elif hit and "url" not in pt and pt.get("ref") is None:
+                pt["url"] = hit["url"]
+            if not pt.get("ll"):
+                missing.append(f"dzień {d['n']}: {pt['name']}")
+    plan["updatedAt"] = now()
+    tpl = (HERE / "plan_template.html").read_text(encoding="utf-8")
+    (SITE / "plan.html").write_text(tpl.replace("/*__PLAN__*/null", json.dumps(plan, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
+    print(f"plan: {len(plan['days'])} dni -> {SITE / 'plan.html'}" + (f" (bez współrzędnych: {'; '.join(missing)})" if missing else ""))
+
+
 def render():
     st = load_state()
     prev_last = st.get("last") or {}
@@ -512,6 +542,7 @@ def render():
     data = json.dumps({"posts": posts, "categories": CATEGORIES, "updatedAt": now(), "tiles": tiles, "bookings": bookings,
                        "leaderboard": leaderboard(posts, offtopic), "offtopic": offtopic}, ensure_ascii=False)
     (SITE / "index.html").write_text(tpl.replace("/*__DATA__*/null", data.replace("</", "<\\/")), encoding="utf-8")
+    render_plan(posts)
     # Ostatni (najnowszy w czacie) przeanalizowany post — punkt, na którym `ig.mjs grab` może się zatrzymać.
     analyzed = [c for c, it in st["items"].items() if it["status"] == "analyzed"]
     newest = analyzed[-1] if analyzed else None

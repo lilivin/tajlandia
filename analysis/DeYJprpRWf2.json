@@ -1,0 +1,31 @@
+{
+ "title": "Warsztat batiku z bandaną na Jing Jai Weekend Market",
+ "summary": "Na weekendowym markecie w Chiang Mai można samemu zrobić bandanę techniką batiku: stemplem z gorącym woskiem, a potem barwieniem naturalnym barwnikiem. Całość kosztowała autorów 4,50 USD.",
+ "category": "Atrakcje",
+ "region": "Chiang Mai",
+ "places": [
+  {
+   "name": "Jing Jai Weekend Market Chiang Mai",
+   "type": "targ",
+   "area": "Chiang Mai",
+   "note": "Targ z warsztatem batiku, gdzie robi się bandanę własnoręcznie."
+  }
+ ],
+ "tips": [
+  "Przed odbiciem usuń z pieczątki nadmiar wosku, bo wzór będzie się rozmazywał.",
+  "Obsługa dba o dalsze barwienie i utrwalanie bandany."
+ ],
+ "prices": [
+  {
+   "item": "warsztat batiku z bandaną",
+   "price": "4,50 USD"
+  }
+ ],
+ "tags": [
+  "Chiang Mai",
+  "targ",
+  "warsztat",
+  "batik",
+  "DIY"
+ ]
+}

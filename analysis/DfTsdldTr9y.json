@@ -1,0 +1,36 @@
+{
+ "title": "Bikini Booth na Phuket: gdzie kupić stroje kąpielowe",
+ "summary": "Sklep Bikini Booth z kolorowymi strojami kąpielowymi i pareo ma trzy lokalizacje na Phuket. Najnowszy sklep jest w Central Patong, obok plaży Patong.",
+ "category": "Porady i koszty",
+ "region": "Phuket",
+ "places": [
+  {
+   "name": "Bikini Booth Jungceylon Phuket",
+   "type": "sklep ze strojami kąpielowymi",
+   "area": "Patong, Phuket",
+   "note": "Lokalizacja na drugim piętrze centrum Jungceylon."
+  },
+  {
+   "name": "Bikini Booth Porto De Phuket",
+   "type": "sklep ze strojami kąpielowymi",
+   "area": "Phuket",
+   "note": "Jedna z trzech lokalizacji."
+  },
+  {
+   "name": "Bikini Booth Central Patong",
+   "type": "sklep ze strojami kąpielowymi",
+   "area": "Patong, Phuket",
+   "note": "Najnowszy sklep na zachodnim wybrzeżu, tuż obok plaży Patong."
+  }
+ ],
+ "tips": [
+  "Bikini Booth ma stroje jedno- i dwuczęściowe oraz pasujące pareo, więc można spakować mniej."
+ ],
+ "prices": [],
+ "tags": [
+  "Phuket",
+  "Patong",
+  "bikini",
+  "zakupy"
+ ]
+}

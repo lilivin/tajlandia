@@ -1,0 +1,56 @@
+{
+ "title": "Bangkok: pamiątki w Chinatown i Song Wat",
+ "summary": "Trasa po sklepach z pamiątkami w Bangkoku: papeteria, pracownia ceramiki, kawiarnia ze sklepem, fotobudki i sklep z magnesami w centrum handlowym. Dobry pomysł na ostatni dzień przed lotem.",
+ "category": "Atrakcje",
+ "region": "Bangkok",
+ "places": [
+  {
+   "name": "SSS Sandal & Souvenir",
+   "type": "sklep z pamiątkami",
+   "area": "Chinatown, Bangkok",
+   "note": "Pocztówki, naklejki, notesy i inne drobiazgi."
+  },
+  {
+   "name": "Clay Songwat Studio",
+   "type": "pracownia ceramiki",
+   "area": "Song Wat, Chinatown",
+   "note": "Kubki i ceramika na pamiątkę."
+  },
+  {
+   "name": "SAAN Songwat",
+   "type": "sklep",
+   "area": "Song Wat, Chinatown",
+   "note": "Pokazany w filmie jako kolejny przystanek."
+  },
+  {
+   "name": "Sun cafe and lifestyle store Bangkok",
+   "type": "kawiarnia i sklep",
+   "area": "Bangkok",
+   "note": "Dobry wybór rzeczy, m.in. metalowe talerze, które łatwo zabrać w samolocie."
+  },
+  {
+   "name": "Shutter Booth Bangkok",
+   "type": "fotobudka",
+   "area": "Bangkok",
+   "note": "Różne układy zdjęć i możliwość pobrania cyfrowej wersji."
+  },
+  {
+   "name": "Custom magnet shop, najwyższy parter największego centrum handlowego w Bangkoku",
+   "type": "sklep z magnesami",
+   "area": "Bangkok",
+   "note": "Można zrobić własny magnes ze wspomnieniami z podróży."
+  }
+ ],
+ "tips": [
+  "Na ostatni dzień przed wieczornym lotem dobrze sprawdza się zakupowa trasa po okolicy Song Wat.",
+  "Metalowy talerz jest wygodny do przewiezienia w samolocie."
+ ],
+ "prices": [],
+ "tags": [
+  "Bangkok",
+  "pamiątki",
+  "Chinatown",
+  "Song Wat",
+  "ceramika"
+ ]
+}

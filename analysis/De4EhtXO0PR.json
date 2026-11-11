@@ -1,0 +1,130 @@
+{
+ "title": "Tajlandia po 2 miesiącach: co robić, a czego unikać (północ i wyspy)",
+ "summary": "Lista „do i skip” dla Chiang Mai, Chiang Rai, Koh Mak, Koh Kham, Koh Kood, Khao Sok, Koh Tao, Railay i Krabi. Autorka radzi m.in. nocować w Chiang Rai i w Railay zamiast w Ao Nang oraz łączyć Koh Kood z Koh Mak.",
+ "category": "Porady i koszty",
+ "region": "Cała Tajlandia",
+ "places": [
+  {
+   "name": "Chiang Mai",
+   "type": "miasto",
+   "area": "północ Tajlandii",
+   "note": "Kawiarnie, wodospady i kurs gotowania; warto zostać dłużej, bez pośpiechu."
+  },
+  {
+   "name": "White Temple Chiang Rai",
+   "type": "świątynia",
+   "area": "Chiang Rai",
+   "note": "Biała Świątynia, obok Niebieskiej uznana za niesamowitą."
+  },
+  {
+   "name": "Blue Temple Chiang Rai",
+   "type": "świątynia",
+   "area": "Chiang Rai",
+   "note": "Niebieska Świątynia, którą warto zobaczyć razem z Białą."
+  },
+  {
+   "name": "Koh Mak",
+   "type": "wyspa",
+   "area": "Koh Mak",
+   "note": "Prawie bez turystów; wyspę da się zobaczyć na rowerze w kilka dni."
+  },
+  {
+   "name": "Koh Kham",
+   "type": "wyspa",
+   "area": "Koh Mak",
+   "note": "Dopłynięcie kajakiem z Koh Mak; określona jako najbliższe Malediwom w Tajlandii."
+  },
+  {
+   "name": "Koh Kood",
+   "type": "wyspa",
+   "area": "Koh Kood",
+   "note": "Najczystsza woda w Tajlandii i mało turystów, ale mało restauracji."
+  },
+  {
+   "name": "Khao Sok",
+   "type": "park narodowy",
+   "area": "Khao Sok",
+   "note": "Pływające bungalowy, trekking w dżungli, safari łodzią i nocne safari."
+  },
+  {
+   "name": "Our Jungle House Khao Sok",
+   "type": "nocleg",
+   "area": "Khao Sok",
+   "note": "Wspomniany jako organizator pobytu i aktywności."
+  },
+  {
+   "name": "Koh Tao",
+   "type": "wyspa",
+   "area": "Koh Tao",
+   "note": "Dobre miejsce na kurs nurkowania i na mix imprez z nurkowaniem."
+  },
+  {
+   "name": "La Bombona Diving Koh Tao",
+   "type": "szkoła nurkowania",
+   "area": "Koh Tao",
+   "note": "Tu autorka zrobiła certyfikat PADI."
+  },
+  {
+   "name": "Shark Bay Koh Tao",
+   "type": "plaża",
+   "area": "Koh Tao",
+   "note": "Wymieniona jako miejsce, którego nie wolno ominąć."
+  },
+  {
+   "name": "Koh Nang Yuan",
+   "type": "wyspa",
+   "area": "Koh Tao",
+   "note": "Wymieniona jako przepiękna, nie do pominięcia."
+  },
+  {
+   "name": "Railay Beach",
+   "type": "plaża",
+   "area": "Krabi",
+   "note": "Lepiej nocować tu niż w Ao Nang, gdzie woda nie jest czysta i jest zbyt turystycznie."
+  },
+  {
+   "name": "Krabi 4 Islands tour",
+   "type": "wycieczka łodzią",
+   "area": "Krabi",
+   "note": "Polecana wycieczka po czterech wyspach."
+  },
+  {
+   "name": "Hong Islands",
+   "type": "wycieczka łodzią",
+   "area": "Krabi",
+   "note": "Polecana wycieczka na wyspy Hong."
+  },
+  {
+   "name": "Koh Chang",
+   "type": "wyspa",
+   "area": "Koh Chang",
+   "note": "Wymieniona wśród ulubionych miejsc z najlepszymi plażami."
+  }
+ ],
+ "tips": [
+  "Chiang Rai to nie wycieczka jednodniowa, lepiej tam przenocować.",
+  "Na Koh Kham płyń kajakiem z Koh Mak i nie wybieraj się późno w ciągu dnia.",
+  "Na Koh Kood nie licz na wiele restauracji, jedz w hotelu lub homestayu.",
+  "Koh Mak zwiedzaj zaraz po Koh Kood, bo łódź jest tania i szybka.",
+  "Na Koh Mak wypożycz rower.",
+  "W Krabi nocuj w Railay, nie w Ao Nang.",
+  "Na północ Tajlandii nie warto się spieszyć."
+ ],
+ "prices": [
+  {
+   "item": "pad thai w Chiang Mai",
+   "price": "około 1 €"
+  }
+ ],
+ "tags": [
+  "Chiang Mai",
+  "Chiang Rai",
+  "Koh Kood",
+  "Koh Mak",
+  "Khao Sok",
+  "Koh Tao",
+  "Railay",
+  "nurkowanie",
+  "wyspy"
+ ]
+}

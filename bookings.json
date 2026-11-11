@@ -1,85 +1,100 @@
 [
- {
-  "what": "Szczepienia: WZW A, błonica / tężec / krztusiec / polio, dur brzuszny (+ opcjonalnie wścieklizna i japońskie zapalenie mózgu)",
-  "when": "TERAZ",
-  "why": "Szczepionki są wielodawkowe, a do wylotu zostały ok. 3 miesiące",
-  "priority": 1,
-  "source": "zalecenie lekarza / przychodni"
- },
- {
-  "what": "Khao Sok: rejs po jeziorze + nocleg w domku na wodzie",
-  "when": "jak najszybciej",
-  "why": "Park narodowy, miejsca w domkach na jeziorze trzeba rezerwować dużo wcześniej",
-  "priority": 1,
-  "source": "czat (Martyna, 2.11)",
-  "ref": "DXWyjplk4Oq"
- },
- {
-  "what": "Noclegi na Phi Phi, Railay/Ao Nang i w Bangkoku",
-  "when": "w listopadzie–grudniu",
-  "why": "Luty to szczyt sezonu na Andamanach — najlepsze miejsca i ceny znikają",
-  "priority": 1,
-  "source": "wiedza ogólna — do sprawdzenia; z rolki: hotele tuż przed wyjazdem bywały o 30% droższe",
-  "ref": "Dd4RiN-Rg4r"
- },
- {
-  "what": "Loty wewnętrzne (np. Phuket/Krabi ↔ Chiang Mai ↔ Bangkok) i ewentualny nocny pociąg do Chiang Mai",
-  "when": "gdy będzie gotowa trasa",
-  "why": "W notatkach loty po ok. 70 zł/os. — w sezonie tanie bilety szybko znikają",
-  "priority": 2,
-  "source": "notatki + wiedza ogólna — do sprawdzenia"
- },
- {
-  "what": "Elephant Nature Park (Chiang Mai)",
-  "when": "kilka tygodni przed",
-  "why": "Etyczny park z ograniczoną liczbą miejsc — w sezonie dni się wyprzedają",
-  "priority": 2,
-  "source": "notatki + wiedza ogólna — do sprawdzenia"
- },
- {
-  "what": "Similany: wycieczka early bird albo liveaboard",
-  "when": "kilka tygodni przed",
-  "why": "Sezon 15.10–15.05; park ma dzienne limity odwiedzających",
-  "priority": 2,
-  "source": "rolka (sezon); limity: wiedza ogólna — do sprawdzenia",
-  "ref": "De3sno6uTLy"
- },
- {
-  "what": "Ubezpieczenie podróżne — sprawdź franszyzę i leki",
-  "when": "przed wylotem",
-  "why": "Po ugryzieniu przez małpę ubezpieczyciel pokrył przyjęcie, ale franszyza i leki poszły z kieszeni (4 250 THB w klinice)",
-  "priority": 2,
-  "source": "rolka",
-  "ref": "DdjlcD3RtAO"
- },
- {
-  "what": "Full Moon Party na Koh Phangan — data i noclegi",
-  "when": "gdy będzie znana data",
-  "why": "W okolicy imprezy noclegi na wyspie drożeją i znikają; w lutym 2027 pełnia ok. 20.02 (do potwierdzenia)",
-  "priority": 3,
-  "source": "wiedza ogólna — do sprawdzenia"
- },
- {
-  "what": "Kurs gotowania (np. Smile Organic Farm) i stolik w Mahasan",
-  "when": "1–2 tygodnie przed",
-  "why": "Mahasan ma rundy rezerwacji i mało miejsc; kursy mają limit osób",
-  "priority": 3,
-  "source": "rolka + notatki",
-  "ref": "DfBYyVbzFYx"
- },
- {
-  "what": "TDAC — karta przylotu online",
-  "when": "do 3 dni przed przylotem",
-  "why": "Darmowa, tylko na tdac.immigration.go.th (płatne strony to scam)",
-  "priority": 3,
-  "source": "rolki",
-  "ref": "DcK8k5wRYRW"
- },
- {
-  "what": "Chiński Nowy Rok — ok. 6.02.2027 (do potwierdzenia), tuż przed przylotem",
-  "when": "przy planowaniu",
-  "why": "Więcej turystów z Azji i wyższe ceny w pierwszych dniach",
-  "priority": 3,
-  "source": "wiedza ogólna — do sprawdzenia"
- }
+  {
+    "what": "Szczepienia: WZW A, błonica / tężec / krztusiec / polio, dur brzuszny (+ opcjonalnie wścieklizna i japońskie zapalenie mózgu)",
+    "when": "TERAZ",
+    "why": "Szczepionki są wielodawkowe, a do wylotu zostały ok. 3 miesiące",
+    "priority": 1,
+    "source": "zalecenie lekarza / przychodni"
+  },
+  {
+    "what": "Khao Sok: rejs po jeziorze + nocleg w domku na wodzie",
+    "when": "TERAZ — na noc 19/20.02",
+    "why": "Pakiet 2 dni/1 noc ok. 5 700–6 300 THB/os.; operatorzy radzą rezerwować 3–4 miesiące wcześniej. Szczegóły w planie wyprawy.",
+    "priority": 1,
+    "source": "czat (Martyna, 2.11)",
+    "ref": "DXWyjplk4Oq"
+  },
+  {
+    "what": "Noclegi na Phi Phi, Railay/Ao Nang i w Bangkoku",
+    "when": "w listopadzie–grudniu",
+    "why": "Luty to szczyt sezonu na Andamanach — najlepsze miejsca i ceny znikają",
+    "priority": 1,
+    "source": "wiedza ogólna — do sprawdzenia; z rolki: hotele tuż przed wyjazdem bywały o 30% droższe",
+    "ref": "Dd4RiN-Rg4r"
+  },
+  {
+    "what": "Loty: Chiang Mai → Surat Thani (18.02) i Phuket → Bangkok (1.03)",
+    "when": "grudzień",
+    "why": "Najpierw potwierdzić rozkład AirAsia CNX–URT na 18.02; plan B to lot do Phuketu/Krabi.",
+    "priority": 1,
+    "source": "notatki + wiedza ogólna — do sprawdzenia"
+  },
+  {
+    "what": "Elephant Nature Park (Chiang Mai)",
+    "when": "kilka tygodni przed",
+    "why": "Etyczny park z ograniczoną liczbą miejsc — w sezonie dni się wyprzedają",
+    "priority": 2,
+    "source": "notatki + wiedza ogólna — do sprawdzenia"
+  },
+  {
+    "what": "Similany: wycieczka early bird albo liveaboard",
+    "when": "kilka tygodni przed",
+    "why": "Sezon 15.10–15.05; park ma dzienne limity odwiedzających",
+    "priority": 2,
+    "source": "rolka (sezon); limity: wiedza ogólna — do sprawdzenia",
+    "ref": "De3sno6uTLy"
+  },
+  {
+    "what": "Ubezpieczenie podróżne — sprawdź franszyzę i leki",
+    "when": "przed wylotem",
+    "why": "Po ugryzieniu przez małpę ubezpieczyciel pokrył przyjęcie, ale franszyza i leki poszły z kieszeni (4 250 THB w klinice)",
+    "priority": 2,
+    "source": "rolka",
+    "ref": "DdjlcD3RtAO"
+  },
+  {
+    "what": "Full Moon Party na Koh Phangan — data i noclegi",
+    "when": "tylko w wariancie z Koh Phangan",
+    "why": "Wstępna data: poniedziałek 22.02 (przesunięta przez Makha Bucha 21.02) — do potwierdzenia. W głównym planie jej nie ma.",
+    "priority": 3,
+    "source": "wiedza ogólna — do sprawdzenia"
+  },
+  {
+    "what": "Kurs gotowania (np. Smile Organic Farm) i stolik w Mahasan",
+    "when": "1–2 tygodnie przed",
+    "why": "Mahasan ma rundy rezerwacji i mało miejsc; kursy mają limit osób",
+    "priority": 3,
+    "source": "rolka + notatki",
+    "ref": "DfBYyVbzFYx"
+  },
+  {
+    "what": "TDAC — karta przylotu online",
+    "when": "8–10.02",
+    "why": "Darmowa, na tdac.immigration.go.th, najwcześniej 3 dni przed przylotem. Pobyt bezwizowy to teraz 30 dni (od 09.2026) — nasze 21 się mieści.",
+    "priority": 3,
+    "source": "rolki",
+    "ref": "DcK8k5wRYRW"
+  },
+  {
+    "what": "Chiński Nowy Rok — ok. 6.02.2027 (do potwierdzenia), tuż przed przylotem",
+    "when": "przy planowaniu",
+    "why": "Wypada 6.02.2027 — przed naszym przylotem, nie koliduje.",
+    "priority": 3,
+    "source": "wiedza ogólna — do sprawdzenia"
+  },
+  {
+    "what": "Nocny pociąg Bangkok → Chiang Mai (13.02, pociąg nr 9)",
+    "when": "w dniu otwarcia sprzedaży",
+    "why": "Kuszetki na luty znikają szybko; D-Ticket albo 12Go. Plan B: lot rano 14.02.",
+    "priority": 1,
+    "source": "research"
+  },
+  {
+    "what": "Międzynarodowe prawo jazdy (jeśli skutery)",
+    "when": "styczeń",
+    "why": "Starostwo, ok. 3 dni, 35 zł. Na skuter w Tajlandii potrzebna kat. A — samo B nie wystarcza.",
+    "priority": 3,
+    "source": "rolka",
+    "ref": "Dfm7wv0xLBY"
+  }
 ]
