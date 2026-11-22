@@ -13,7 +13,7 @@ Czat: **„Polecajka Tajlandia”** (`https://www.instagram.com/direct/t/2337745
 cd "/Volumes/T7 Res/Projects/tajlandia-feed"
 # 1. Chrome z osobnym profilem (sesja IG zostaje w nim; gdy wygaśnie — użytkownik loguje się w tym oknie)
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --user-data-dir="$HOME/.cache/tajlandia-feed/chrome-profile" \
-  --remote-debugging-port=9333 --no-first-run "https://www.instagram.com/direct/t/2337745603657101/" &
+  --remote-debugging-port=9335 --no-first-run "https://www.instagram.com/direct/t/2337745603657101/" &
 node ig.mjs status                    # loggedIn: true?
 # 2. Linki: przewija czat od najnowszych w górę i staje na pierwszym znanym poście
 node ig.mjs open https://www.instagram.com/direct/t/2337745603657101/

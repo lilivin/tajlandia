@@ -1,4 +1,4 @@
-// Steruje oknem Chrome otwartym z --remote-debugging-port=9333 (profil ~/.cache/tajlandia-feed/chrome-profile).
+// Steruje oknem Chrome otwartym z --remote-debugging-port=9335 (profil ~/.cache/tajlandia-feed/chrome-profile).
 //   node ig.mjs status              -> czy zalogowany, URL
 //   node ig.mjs shot <plik.png>     -> zrzut ekranu
 //   node ig.mjs threads             -> lista czatów w skrzynce
@@ -9,7 +9,7 @@ import fs from "node:fs";
 
 const LINK = /instagram\.com\\?\/(?:[\w.]+\\?\/)?(p|reels?|tv)\\?\/([A-Za-z0-9_-]{6,})/g;
 const [cmd, ...args] = process.argv.slice(2);
-const browser = await chromium.connectOverCDP("http://127.0.0.1:9333");
+const browser = await chromium.connectOverCDP(process.env.IG_CDP || "http://127.0.0.1:9335");
 const ctx = browser.contexts()[0];
 const page = ctx.pages().find(p => p.url().includes("instagram.com")) ?? ctx.pages()[0];
 

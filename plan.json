@@ -148,7 +148,7 @@
    },
    "plan": [
     "Check-in, prysznic, drzemka — nie planujemy nic ambitnego po 15 h podróży",
-    "Karta SIM/eSIM i gotówka z bankomatu; apki Grab, Bolt, LINE",
+    "Karta SIM/eSIM; na lotnisku wymienić tylko trochę gotówki, resztę w kantorze SuperRich; apki Grab, Bolt, LINE",
     "Wieczorem Chinatown (Yaowarat): street food, pierwsze pad thai i mango sticky rice",
     "Jak starczy sił: drink w Talat Noi albo Song Wat"
    ],
@@ -463,6 +463,7 @@
     "text": "Rano transfer do tamy Ratchaprapha (ok. 65 km od wioski), stamtąd longtail po jeziorze do domków na tratwach (ok. 1 h)."
    },
    "plan": [
+    "Wypłynąć jak najwcześniej (rolka: na przystani ok. 7:00, zanim zrobi się tłum)",
     "Rejs między wapiennymi ostańcami („tajskie Guilin”)",
     "Zakwaterowanie w pływającym domku, skoki do wody prosto z tarasu, kajaki",
     "Wieczorne safari łodzią: małpy, dzioborożce, przy szczęściu słonie",
@@ -491,7 +492,8 @@
       98.529
      ]
     }
-   ]
+   ],
+   "tip": "Zabierzcie repelent, wodoodporne buty, pelerynę i krem z filtrem. Sama łódź z mola (bez pakietu) to ok. 1 800–2 500 THB w obie strony za łódź."
   },
   {
    "n": 10,
@@ -537,11 +539,11 @@
    },
    "plan": [
     "Wycieczka longtailem: Phra Nang Cave Beach (Railay), Koh Poda, Chicken Island, mierzeja Tup",
-    "Po południu zostańcie na Railay: plaża zachodnia, punkt widokowy, zachód słońca",
+    "Po południu zostańcie na Railay: plaża zachodnia, punkt widokowy; ok. 15:00 longtail na sąsiednią Tonsai Beach (100 THB) — tam najlepsze popołudniowe słońce",
     "Powrót łodzią przed zmrokiem (wieczorem drożej)"
    ],
    "book": "Wycieczkę kupić dzień wcześniej na plaży / w hotelu. Opłata parkowa 200–400 THB zwykle NIE jest wliczona — miejcie gotówkę.",
-   "tip": "21.02 to święto Makha Bucha: sklepy i większość barów nie sprzedają alkoholu. Idealny dzień na łódkę, nie na imprezę.",
+   "tip": "21.02 to święto Makha Bucha: sklepy i większość barów nie sprzedają alkoholu. Idealny dzień na łódkę, nie na imprezę. Zamiast 4 Islands można wziąć Koh Hong (laguna + punkt widokowy, 400 schodów) — rolka poleca ją jako spokojniejszą alternatywę dla Phi Phi.",
    "points": [
     {
      "name": "Ao Nang",
@@ -570,6 +572,14 @@
       7.956,
       98.805
      ]
+    },
+    {
+     "name": "Tonsai Beach",
+     "ll": [
+      8.0125,
+      98.833
+     ],
+     "ref": "DfSUpbgE2eF"
     }
    ]
   },
@@ -586,6 +596,7 @@
     "Rano kajaki w krystalicznej wodzie Klong Root (Klong Nam Sai)",
     "Ok. 11:30 lunch w The Hideaway Cafe — bambusowe chatki nad rzeką (wcześnie = najlepszy pomost)",
     "Opcjonalnie Tiger Cave Temple (1 260 schodów) dla ambitnych",
+    "Po drodze Kuan Nom Saow — restauracja i punkt widokowy na wzgórzu (z rolek o Krabi)",
     "Zachód słońca na Khao Thong Hill — być 1–1,5 h wcześniej, żeby dostać dobry stolik"
    ],
    "points": [
@@ -615,6 +626,16 @@
       8.0322,
       98.8228
      ]
+    },
+    {
+     "name": "Kuan Nom Saow",
+     "match": "Kuan Nom Saow Restaurant and Viewpoint, Krabi",
+     "ref": "DfmNyzKSGDo"
+    },
+    {
+     "name": "The Hideaway Cafe",
+     "match": "The Hideaway, Krabi",
+     "ref": "Dfj9otpP73-"
     }
    ]
   },
@@ -928,7 +949,8 @@
     "Pamiątki i ciuchy: Platinum Fashion Mall, MBK Center; kosmetyki i przekąski z 7-Eleven do walizki",
     "Kto ma cierpliwość: omlet z krabem u Jay Fai (kolejka od rana, zapisy na listę na miejscu — sprawdźcie, czy danego dnia otwarte)",
     "Spacer po Lumphini Park (warany!)",
-    "Wieczorem gala Muay Thai na stadionie Rajadamnern, potem pożegnalna kolacja"
+    "Wieczorem gala Muay Thai na stadionie Rajadamnern, potem pożegnalna kolacja",
+    "Na ostatni drink: Salon Kiku — listening bar z winylami"
    ],
    "book": "Rajadamnern: bilety 1 000–3 500+ THB, kupować bezpośrednio na rajadamnern.com (ringside warto z wyprzedzeniem).",
    "points": [
@@ -1075,10 +1097,11 @@
  "alternatives": [
   "Wiza: od września 2026 Tajlandia skróciła pobyt bezwizowy do 30 dni (wcześniej 60). Nasze 21 dni się mieści, ale potwierdźcie status Polski na stronie ambasady przed wylotem. Zapowiadana jest też opłata turystyczna 450 THB dla przylatujących (planowo I kwartał 2027, bez daty startu).",
   "Wariant Full Moon Party: impreza na Koh Phangan wypada wstępnie w poniedziałek 22.02 (przesunięta przez Makha Bucha 21.02; data jeszcze niepotwierdzona). Żeby ją złapać: po Khao Sok prom z Don Sak na Phangan (20–23.02), potem lot z Samui albo prom + bus do Krabi (ok. 4,5 h) — kosztem Koh Lanty i jednego dnia w Krabi. Research mówi jasno: Zatoka + Andamany to ok. 2 dni straconych na transport, więc w planie głównym jej nie ma.",
-  "Wariant Similany: sezon trwa do 15.05, wypływa się z Thap Lamu koło Khao Lak, rezerwacja min. miesiąc wcześniej, wstęp 500 THB. Z Phuketu to pobudka ok. 5:00 — jeśli bardzo chcecie, zamieńcie dzień 18 albo dodajcie noc w Khao Lak zamiast jednej na Lancie.",
+  "Wariant Similany: sezon trwa do 15.05, wypływa się z Thap Lamu koło Khao Lak, rezerwacja min. miesiąc wcześniej; jednodniówka z Khao Lak to ok. 3 700–4 200 THB z opłatą parkową 500 THB, nocować można tylko na łodzi. Z Phuketu to pobudka ok. 5:00 — jeśli bardzo chcecie, zamieńcie dzień 18 albo dodajcie noc w Khao Lak zamiast jednej na Lancie.",
   "Wariant spokojniejsza północ: nocleg w Chiang Rai zamiast jednodniówki (dzień 6–7), kosztem Monk's Trail i kursu gotowania.",
   "Wariant mniej przeprowadzek: bez Koh Lanty — 4 noce w Krabi (w tym 1–2 w Railay) i 3 na Phuket. Wtedy 4 wyspy (Mook/Kradan/Ngai) odpadają.",
-  "Założyłem lądowanie w Bangkoku 11.02 i wylot z Bangkoku 3.03. Jeśli lot powrotny jest z Phuketu albo o innej porze — dajcie znać, końcówkę da się odwrócić."
+  "Założyłem lądowanie w Bangkoku 11.02 i wylot z Bangkoku 3.03. Jeśli lot powrotny jest z Phuketu albo o innej porze — dajcie znać, końcówkę da się odwrócić.",
+  "Słonie w Krabi zamiast w Chiang Mai: Following Giants (obserwacja z dystansu) — gdyby Elephant Nature Park był wyprzedany, dzień 5 zwalnia się na Chiang Mai, a słonie wchodzą w dzień 12."
  ],
  "sources": [
   {
