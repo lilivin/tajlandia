@@ -1,0 +1,629 @@
+{
+ "ratings": [
+  {
+   "stop": "bkk",
+   "date": "2027-02-11",
+   "load": "ok",
+   "note": "Po kilkunastu godzinach lotu to już jest sporo. Nic nie dokładać; jeśli ktoś padnie, wypada Wat Traimit.",
+   "add": ""
+  },
+  {
+   "stop": "bkk",
+   "date": "2027-02-12",
+   "load": "full",
+   "note": "Cztery zabytki w upale i wyjście wieczorem. Działa tylko przy starcie o 8:15 i przerwie w środku dnia.",
+   "add": "Do wycięcia w razie zmęczenia: Khao San albo Złota Góra."
+  },
+  {
+   "stop": "bkk",
+   "date": "2027-02-13",
+   "load": "travel",
+   "note": "Lot i bus — do Khao Sok docieracie ok. 13:30–15:00.",
+   "add": ""
+  },
+  {
+   "stop": "ks",
+   "date": "2027-02-13",
+   "load": "light",
+   "note": "Zostaje wolne popołudnie i wieczór w wiosce.",
+   "add": "Można dodać: tubing po rzece (ok. 500 THB) albo nocne safari (ok. 700 THB)."
+  },
+  {
+   "stop": "ks",
+   "date": "2027-02-14",
+   "load": "ok",
+   "note": "Program dnia układa operator rejsu; jest czas na kąpiel i kajak przy tratwie.",
+   "add": ""
+  },
+  {
+   "stop": "ks",
+   "date": "2027-02-15",
+   "load": "travel",
+   "note": "Rano jezioro, potem 4–5 godzin w busie. Wieczór w Ao Nang tylko na kolację.",
+   "add": ""
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-15",
+   "load": "travel",
+   "note": "Przyjazd ok. 15:00–16:00. Plaża i kolacja, nic więcej.",
+   "add": ""
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-16",
+   "load": "full",
+   "note": "Cztery wyspy, Railay i Tonsai w jeden dzień to dużo słońca i łodzi.",
+   "add": "Jeśli zabraknie sił, wypada Tonsai — Railay i Phra Nang zostają."
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-17",
+   "load": "ok",
+   "note": "Całodniowa wycieczka z wczesną pobudką; po powrocie ok. 16:00 już tylko kolacja.",
+   "add": ""
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-18",
+   "load": "ok",
+   "note": "Kajaki, lunch, punkt widokowy i zachód słońca — z kierowcą bez pośpiechu.",
+   "add": "Tiger Cave Temple (1 260 schodów) zmieści się tylko zamiast kajaków."
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-19",
+   "load": "light",
+   "note": "Celowo luźny dzień przed długim przejazdem.",
+   "add": "Można dodać: wyspy Hong albo słonie (Following Giants), albo Tiger Cave Temple rano."
+  },
+  {
+   "stop": "krabi",
+   "date": "2027-02-20",
+   "load": "travel",
+   "note": "Ok. 5 godzin busem i katamaranem.",
+   "add": ""
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-20",
+   "load": "light",
+   "note": "Po przeprawie zostaje wieczór: targ w Thong Sala i bary.",
+   "add": "Można dodać: imprezę w dżungli, jeśli będzie tego dnia (terminy nieopublikowane)."
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-21",
+   "load": "ok",
+   "note": "Objazd północy wyspy na spokojnie; alkoholu i tak nie kupicie.",
+   "add": "Bottle Beach nie zmieści się razem z objazdem — albo jedno, albo drugie."
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-22",
+   "load": "ok",
+   "note": "Dzień celowo pusty, bo noc jest długa. Nic nie dokładać.",
+   "add": ""
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-23",
+   "load": "light",
+   "note": "Luz zamierzony — odsypianie.",
+   "add": "Jeśli ktoś ma siłę: wodospad Phaeng albo plaża Haad Son."
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-24",
+   "load": "ok",
+   "note": "Rejs do Ang Thong zajmuje 7–8,5 godziny; po nim tylko kolacja.",
+   "add": "Wersja lżejsza: plaże Thong Nai Pan zamiast rejsu."
+  },
+  {
+   "stop": "kpg",
+   "date": "2027-02-25",
+   "load": "travel",
+   "note": "Prom ok. południa, 1–1,75 h.",
+   "add": ""
+  },
+  {
+   "stop": "tao",
+   "date": "2027-02-25",
+   "load": "light",
+   "note": "Popołudnie na plaży i zachód słońca.",
+   "add": "Można dodać: spacer na punkt widokowy nad Sairee albo plażę Sai Nuan."
+  },
+  {
+   "stop": "tao",
+   "date": "2027-02-26",
+   "load": "ok",
+   "note": "Rejs dookoła wyspy z pięcioma przystankami wypełnia dzień.",
+   "add": ""
+  },
+  {
+   "stop": "tao",
+   "date": "2027-02-27",
+   "load": "light",
+   "note": "Wolny dzień: nurkowanie próbne zajmuje pół dnia, plaża i punkt widokowy drugie pół.",
+   "add": "Można dodać: zatokę Tanote albo Chalok Baan Kao."
+  },
+  {
+   "stop": "tao",
+   "date": "2027-02-28",
+   "load": "travel",
+   "note": "Łódź ok. 11:30 → 13:00.",
+   "add": ""
+  },
+  {
+   "stop": "usm",
+   "date": "2027-02-28",
+   "load": "ok",
+   "note": "Jedno popołudnie: Wielki Budda, plaża, kolacja, ostatni wieczór.",
+   "add": "Wodospady i południe wyspy się nie zmieszczą."
+  },
+  {
+   "stop": "usm",
+   "date": "2027-03-01",
+   "load": "travel",
+   "note": "Poranny lot do Bangkoku.",
+   "add": ""
+  },
+  {
+   "stop": "bkk2",
+   "date": "2027-03-01",
+   "load": "ok",
+   "note": "Po porannym locie: muzeum, ulica z jedzeniem i rooftop.",
+   "add": "Jim Thompson wymaga wejścia przed ok. 17:00 — przy opóźnieniu lotu wypada."
+  },
+  {
+   "stop": "bkk2",
+   "date": "2027-03-02",
+   "load": "full",
+   "note": "Zakupy, pamiątki, park i Muay Thai. Najbardziej napchany dzień finału.",
+   "add": "Do wycięcia: Lumphini albo Song Wat (byliście tam 11.02)."
+  },
+  {
+   "stop": "bkk2",
+   "date": "2027-03-03",
+   "load": "travel",
+   "note": "Zależy od godziny lotu do domu.",
+   "add": "Przy wieczornym wylocie: darmowy Muay Thai przed MBK 18:00–20:00 albo Wat Paknam."
+  }
+ ],
+ "skipped": {
+  "bkk": [
+   {
+    "name": "Chatuchak Weekend Market",
+    "ll": [
+     13.7999,
+     100.5503
+    ],
+    "why": "Działa tylko w weekendy, a w Bangkoku jesteście czw–pt i pn–wt.",
+    "rec": "rolki z czatu; klasyk przewodników",
+    "fit": "Tylko gdyby wylot 13.02 był wieczorem."
+   },
+   {
+    "name": "Wat Paknam (wielki Budda, „kosmiczny” sufit)",
+    "ll": [
+     13.7217,
+     100.4703
+    ],
+    "why": "Leży na uboczu, po drugiej stronie rzeki — pół dnia z dojazdem.",
+    "rec": "rolka z czatu",
+    "fit": "3.03 przy wieczornym wylocie."
+   },
+   {
+    "name": "ICONSIAM",
+    "ll": [
+     13.7266,
+     100.5103
+    ],
+    "why": "Centrum handlowe nad rzeką; zakupy są w planie na finał w innym miejscu.",
+    "rec": "rolka z czatu",
+    "fit": "Zamiast Platinum/MBK 2.03."
+   },
+   {
+    "name": "Mahanakhon SkyWalk",
+    "ll": [
+     13.7234,
+     100.5282
+    ],
+    "why": "Płatny taras widokowy; widok z góry daje wam rooftop.",
+    "rec": "rolka z czatu",
+    "fit": "11.02 po południu zamiast Song Wat."
+   },
+   {
+    "name": "Wat Suthat",
+    "ll": [
+     13.751,
+     100.5012
+    ],
+    "why": "Byłaby to piąta świątynia jednego dnia.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Po drodze na Złotą Górę, 30 min."
+   },
+   {
+    "name": "Raan Jay Fai",
+    "ll": [
+     13.7526,
+     100.5047
+    ],
+    "why": "Kolejka bywa wielogodzinna i drogo (omlet ok. 170 zł).",
+    "rec": "rolka z czatu; gwiazdka Michelin",
+    "fit": "12.02 na lunch, jeśli ktoś stanie w kolejce rano."
+   },
+   {
+    "name": "Pływające targi (Khlong Lat Mayom)",
+    "ll": [
+     13.7616,
+     100.4155
+    ],
+    "why": "Działają w weekendy.",
+    "rec": "rolka „5 błędów w Bangkoku”",
+    "fit": "Nie w tych datach."
+   },
+   {
+    "name": "Ayutthaya",
+    "ll": [
+     14.3532,
+     100.5689
+    ],
+    "why": "Całodniowy wypad za miasto.",
+    "rec": "rolka z czatu; klasyk przewodników",
+    "fit": "Wymaga piątego dnia w Bangkoku."
+   },
+   {
+    "name": "Bang Krachao (rowery)",
+    "ll": [
+     13.683,
+     100.564
+    ],
+    "why": "Pół dnia; przegrywa ze Starym Miastem.",
+    "rec": "rolka z czatu",
+    "fit": "Wymaga dodatkowego dnia."
+   },
+   {
+    "name": "Erawan Museum",
+    "ll": [
+     13.6285,
+     100.589
+    ],
+    "why": "Daleko na południe od centrum.",
+    "rec": "rolka z czatu",
+    "fit": "Wymaga dodatkowego dnia."
+   }
+  ],
+  "ks": [
+   {
+    "name": "Druga noc na jeziorze",
+    "ll": [
+     8.99,
+     98.69
+    ],
+    "why": "Dwa razy drożej i odpada łatwa pierwsza noc po locie.",
+    "rec": "część blogów poleca 3 dni / 2 noce",
+    "fit": "Zamiast nocy w wiosce, z prywatnym busem prosto z lotniska."
+   },
+   {
+    "name": "Trekking w dżungli z wioski",
+    "ll": [
+     8.917,
+     98.527
+    ],
+    "why": "Pół dnia; przyjeżdżacie dopiero po południu.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Tylko przy locie o 7:25."
+   },
+   {
+    "name": "Jaskinia Nam Talu (z jeziora)",
+    "ll": [
+     9.03,
+     98.62
+    ],
+    "why": "Wymeldowanie z tratwy jest ok. 9:00, więc w poniedziałek się nie zmieści.",
+    "rec": "częsty punkt 2-dniowych wycieczek",
+    "fit": "Jeśli operator ma ją w programie niedzieli."
+   }
+  ],
+  "krabi": [
+   {
+    "name": "Nocleg na Phi Phi (fire show, punkt widokowy o zachodzie)",
+    "ll": [
+     7.7407,
+     98.7784
+    ],
+    "why": "Macie ją jako jednodniówkę; nocleg to przenoszenie się i najdroższe łóżka na trasie.",
+    "rec": "źródła zgodnie: wyspa imprezowa",
+    "fit": "Z plecakami realne: 1 noc zamiast piątej w Ao Nang (noc 17/18.02)."
+   },
+   {
+    "name": "Nocleg na Railay",
+    "ll": [
+     8.0118,
+     98.8375
+    ],
+    "why": "Wszystko, co daje Railay, jest w wycieczce we wtorek.",
+    "rec": "rolka „po 2 miesiącach”: spać w Railay, nie w Ao Nang",
+    "fit": "Z plecakami łatwiejsze niż z walizkami: 1 noc 16/17.02."
+   },
+   {
+    "name": "Tiger Cave Temple",
+    "ll": [
+     8.1247,
+     98.9247
+    ],
+    "why": "1 260 schodów w upale; w planie tylko „dla ambitnych”.",
+    "rec": "popularne w przewodnikach",
+    "fit": "19.02 rano albo 18.02 zamiast kajaków."
+   },
+   {
+    "name": "Zatoka Phang Nga i Wyspa Jamesa Bonda",
+    "ll": [
+     8.2744,
+     98.501
+    ],
+    "why": "Kolejny cały dzień na łodzi; trzy już macie.",
+    "rec": "popularna jednodniówka",
+    "fit": "19.02 zamiast Hong."
+   },
+   {
+    "name": "Emerald Pool i gorące źródła",
+    "ll": [
+     7.923,
+     99.264
+    ],
+    "why": "Ok. 1,5 h jazdy w jedną stronę w głąb lądu.",
+    "rec": "popularna jednodniówka z Krabi",
+    "fit": "19.02 jako dzień luzu."
+   },
+   {
+    "name": "Phuket",
+    "ll": [
+     7.8847,
+     98.388
+    ],
+    "why": "Inny kierunek niż Zatoka; wasz ranking daje mu 4/10.",
+    "rec": "12 rolek z czatu",
+    "fit": "Tylko zamiast Koh Tao (lot Samui → Phuket)."
+   },
+   {
+    "name": "Koh Lanta",
+    "ll": [
+     7.613,
+     99.031
+    ],
+    "why": "Wymaga 3–4 nocy; odpoczynek daje Koh Tao.",
+    "rec": "blogi: najlepsza wyspa na odpoczynek",
+    "fit": "Tylko w wariancie bez Zatoki."
+   },
+   {
+    "name": "Similany",
+    "ll": [
+     8.65,
+     97.64
+    ],
+    "why": "Wypływa się spod Khao Lak, ok. 2,5 h od Ao Nang.",
+    "rec": "3 rolki z czatu",
+    "fit": "Realnie nie."
+   },
+   {
+    "name": "Koh Mook — Szmaragdowa Jaskinia",
+    "ll": [
+     7.374,
+     99.293
+    ],
+    "why": "Dostępna z Koh Lanty albo Trang.",
+    "rec": "rankingi wysp z rolek",
+    "fit": "Tylko w wariancie bez Zatoki."
+   }
+  ],
+  "kpg": [
+   {
+    "name": "Bottle Beach",
+    "ll": [
+     9.8,
+     100.03
+    ],
+    "why": "Dopływa się tylko łodzią; nie mieści się w dniu z objazdem północy.",
+    "rec": "popularne w przewodnikach",
+    "fit": "21.02 zamiast objazdu albo 24.02 zamiast Ang Thong."
+   },
+   {
+    "name": "Thong Nai Pan",
+    "ll": [
+     9.77,
+     100.06
+    ],
+    "why": "W planie jest jako zamiennik rejsu do Ang Thong.",
+    "rec": "uchodzą za najładniejsze plaże wyspy",
+    "fit": "24.02 — jedno z dwojga."
+   },
+   {
+    "name": "Wodospad Than Sadet",
+    "ll": [
+     9.756,
+     100.07
+    ],
+    "why": "Na wschodnim wybrzeżu, słaba droga.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Razem z Thong Nai Pan."
+   },
+   {
+    "name": "Wodospad Phaeng i punkt widokowy Domsila",
+    "ll": [
+     9.737,
+     99.999
+    ],
+    "why": "W lutym mało wody; nie ma go w żadnym dniu.",
+    "rec": "popularne w przewodnikach",
+    "fit": "23.02 po południu."
+   },
+   {
+    "name": "Haad Son (Secret Beach)",
+    "ll": [
+     9.765,
+     99.964
+    ],
+    "why": "Objazd 21.02 ma już trzy plaże.",
+    "rec": "popularne w przewodnikach",
+    "fit": "23.02 zamiast Zen Beach."
+   },
+   {
+    "name": "Imprezy w dżungli (Half Moon, Jungle Experience)",
+    "ll": [
+     9.72,
+     100.035
+    ],
+    "why": "Terminów na luty 2027 jeszcze nie ma.",
+    "rec": "źródła: obok Full Moon najlepsze imprezy wyspy",
+    "fit": "20.02 albo 24.02, jeśli trafią w daty."
+   }
+  ],
+  "tao": [
+   {
+    "name": "Kurs nurkowy PADI",
+    "ll": [
+     10.098,
+     99.827
+    ],
+    "why": "Trwa 3–4 dni i zjada cały pobyt.",
+    "rec": "rolka z czatu: Koh Tao na PADI",
+    "fit": "Zostaje nurkowanie próbne 27.02."
+   },
+   {
+    "name": "Zatoka Tanote",
+    "ll": [
+     10.084,
+     99.848
+    ],
+    "why": "Po drugiej stronie wyspy, taksówką po stromej drodze.",
+    "rec": "popularne w przewodnikach",
+    "fit": "27.02 zamiast Freedom Beach."
+   },
+   {
+    "name": "Chalok Baan Kao",
+    "ll": [
+     10.064,
+     99.826
+    ],
+    "why": "Spokojniejsza zatoka na południu; wieczorem wymaga taksówki.",
+    "rec": "druga baza w przewodnikach",
+    "fit": "27.02 po południu."
+   },
+   {
+    "name": "Plaża Sai Nuan",
+    "ll": [
+     10.073,
+     99.817
+    ],
+    "why": "Dojście pieszo ok. 30–40 min z Mae Haad.",
+    "rec": "popularne w przewodnikach",
+    "fit": "25.02 po południu."
+   }
+  ],
+  "usm": [
+   {
+    "name": "Wodospady Na Muang",
+    "ll": [
+     9.466,
+     99.987
+    ],
+    "why": "Południe wyspy, a macie jedno popołudnie.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Nie przy jednej nocy."
+   },
+   {
+    "name": "Lamai i skały Hin Ta Hin Yai",
+    "ll": [
+     9.452,
+     100.039
+    ],
+    "why": "Jak wyżej.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Nie przy jednej nocy."
+   },
+   {
+    "name": "Targ w Fisherman's Village",
+    "ll": [
+     9.56,
+     100.027
+    ],
+    "why": "Działa w piątki; jesteście w niedzielę.",
+    "rec": "popularne w przewodnikach",
+    "fit": "Kolacja tam jest możliwa, bez targu."
+   },
+   {
+    "name": "Wat Plai Laem",
+    "ll": [
+     9.571,
+     100.068
+    ],
+    "why": "Tuż obok Wielkiego Buddy, ale to kolejna świątynia.",
+    "rec": "popularne w przewodnikach",
+    "fit": "28.02 razem z Wielkim Buddą, +30 min."
+   }
+  ],
+  "bkk2": [
+   {
+    "name": "Mahasan (tajski steakhouse)",
+    "ll": [
+     13.704,
+     100.528
+    ],
+    "why": "Wymaga rezerwacji i dojazdu na południe miasta.",
+    "rec": "rolka z czatu",
+    "fit": "Kolacja 1.03 zamiast Banthat Thong."
+   },
+   {
+    "name": "Wattana Panich (zupa gotowana od 1974)",
+    "ll": [
+     13.74,
+     100.585
+    ],
+    "why": "Ekkamai, nie po drodze z Siam.",
+    "rec": "rolka z czatu; Michelin",
+    "fit": "Lunch 2.03 zamiast Terminal 21."
+   },
+   {
+    "name": "Rung Rueang (pork noodles)",
+    "ll": [
+     13.726,
+     100.569
+    ],
+    "why": "Objazd na Sukhumvit 26.",
+    "rec": "2 rolki z czatu; Michelin",
+    "fit": "Lunch 1.03, jeśli śpicie przy Sukhumvit."
+   },
+   {
+    "name": "Kluby na Thonglor",
+    "ll": [
+     13.733,
+     100.581
+    ],
+    "why": "Poniedziałek i wtorek to słabe dni na kluby.",
+    "rec": "2 rolki z rankingami klubów",
+    "fit": "Nie w tych datach."
+   },
+   {
+    "name": "Rejs tramwajem wodnym o zachodzie (16 THB)",
+    "ll": [
+     13.719,
+     100.513
+    ],
+    "why": "Nie wpisany w żaden dzień.",
+    "rec": "rolka z czatu",
+    "fit": "2.03 po Song Wat zamiast taksówki do Lumphini."
+   },
+   {
+    "name": "Nai Lert Park",
+    "ll": [
+     13.747,
+     100.548
+    ],
+    "why": "Mały park przy BTS Ploenchit.",
+    "rec": "rolka z czatu",
+    "fit": "2.03 zamiast Lumphini."
+   }
+  ]
+ }
+}

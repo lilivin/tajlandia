@@ -91,3 +91,9 @@ Dokumenty do skopiowania do Google Docs: `bangkok_doc.py` → `docs/bangkok-doc.
 `stays.json` (7 przystanków: baza noclegowa, porównanie okolic, przykładowe hotele, dni z dojazdem z bazy, punkty na mapę) +
 `stays_template.html` → `feed.py render`. Dane powstały z researchu subagentów (`research/r3-*.md` → `research/stay-*.json`, lokalnie,
 poza repo); współrzędne punktów są w większości przybliżone (`approx`). Ceny hoteli to migawki — niepotwierdzone na luty 2027.
+
+## Dzień po dniu (`docs/dni.html`)
+
+Ta sama rozpiska dni co w `noclegi.html`, ale bez hoteli i porównania okolic: duża mapa z wyborem dnia (zoom + podświetlenie),
+mini-mapa pod każdym dniem, ocena obłożenia dnia i lista miejsc świadomie pominiętych (szare ✕ na mapach).
+Oceny i pominięte miejsca są ręczne: `days_extra.py` → `days_extra.json`; szablon `days_template.html`; render w `feed.py`.

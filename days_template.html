@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🛏️%3C/text%3E%3C/svg%3E">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>~*~ TAJLANDIA 2027 ~*~ Dzień po dniu ~*~</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin-ext.woff2) format("woff2");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:Anton;font-display:swap;src:url(fonts/anton-latin.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 Verdana,Tahoma,"DejaVu Sans",sans-serif;color:#000;
+    background:#0000a8 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><text x='6' y='34' font-size='26'>🌴</text><text x='44' y='74' font-size='22'>🛏️</text></svg>")}
+  a{color:#0000ee}a:visited{color:#551a8b}
+  .page{max-width:1280px;margin:0 auto;padding:10px}
+  .box{background:#fffbe6;border:4px outset #c0c0c0;margin:14px 0;padding:10px 14px;box-shadow:6px 6px 0 #000}
+  .title{text-align:center;background:linear-gradient(90deg,#ff0080,#ff8c00,#ffe600,#00d26a,#00b7ff,#8a2be2);
+    border:4px ridge #ffd700;padding:12px 6px;box-shadow:6px 6px 0 #000}
+  .title h1{margin:0;font-family:Anton,Impact,"Arial Black",sans-serif;font-size:clamp(24px,5vw,46px);color:#fff;
+    text-shadow:3px 3px 0 #000,-1px -1px 0 #000;letter-spacing:2px}
+  .title p{margin:4px 0 0;color:#fff;text-shadow:2px 2px 0 #000;font-weight:bold}
+  h2,h3{font-family:Anton,Impact,"Arial Black",sans-serif;font-weight:normal;letter-spacing:1px;margin:4px 0 8px}
+  h3{font-size:20px;color:#c2005f;text-shadow:1px 1px 0 #ffe600}
+  .btn{display:inline-block;font:bold 13px Verdana,Tahoma,sans-serif;background:#c0c0c0;border:3px outset #fff;padding:4px 10px;
+    cursor:pointer;color:#000;text-decoration:none;margin:2px}
+  .btn:visited{color:#000}
+  .nav{position:sticky;top:0;z-index:900;background:#000;border:2px inset #888;padding:5px;display:flex;gap:4px;overflow-x:auto;white-space:nowrap}
+  .nav a{border:2px solid #000;padding:3px 9px;font-weight:bold;color:#fff;text-shadow:1px 1px 0 #000;text-decoration:none;font-size:13px;flex:none}
+  .stop{scroll-margin-top:48px}
+  .band{color:#fff;text-shadow:2px 2px 0 #000;padding:10px 14px;border:4px ridge #ffd700;box-shadow:6px 6px 0 #000;margin-top:26px}
+  .band h2{font-size:clamp(24px,4vw,36px);margin:0;color:#fff}
+  .band div{font-weight:bold}
+  .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+  .grid .box{margin:14px 0 0}
+  .map{height:440px;border:4px inset #c0c0c0}
+  .legend{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+  .legend button{font:bold 12px Verdana,sans-serif;border:2px solid #000;padding:2px 8px;cursor:pointer;color:#fff;text-shadow:1px 1px 0 #000}
+  .legend button.off{opacity:.3}
+  .bed{background:#fff3a0;border:3px dashed #d40000;padding:8px 10px;margin:6px 0}
+  .bed b.big{font:22px Anton,Impact,"Arial Black",sans-serif;color:#d40000;letter-spacing:1px}
+  ul{margin:4px 0;padding-left:20px}li{margin:3px 0}
+  table.t{width:100%;border-collapse:separate;border-spacing:2px;background:#808080;border:3px outset #c0c0c0;font-size:13.5px}
+  .t th{background:#000080;color:#ffff00;padding:5px 6px;text-align:left;font-size:12.5px}
+  .t td{background:#fff;padding:5px 6px;vertical-align:top}
+  .v{font-weight:bold;white-space:nowrap}.v.POLECAM{color:#00802b}.v.REZERWA{color:#b36b00}.v.ODPADA{color:#d40000}
+  .days{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px;margin-top:14px}
+  .day{background:#fffbe6;border:4px outset #c0c0c0;box-shadow:5px 5px 0 #000;cursor:pointer}
+  .day.active{outline:3px solid #ff0080;border-style:inset}
+  .day header{color:#fff;text-shadow:1px 1px 0 #000;padding:5px 10px}
+  .day header b{display:block;font-size:15.5px;line-height:1.25}
+  .day header span{font-size:12px}
+  .day .body{padding:6px 10px 10px;font-size:14px}
+  .slot{display:grid;grid-template-columns:92px minmax(0,1fr);gap:6px;padding:4px 0;border-bottom:1px dotted #999}
+  .slot b{font:bold 12px "Courier New",monospace;color:#000080;padding-top:2px}
+  .info{margin-top:6px;padding:5px 7px;font-size:13px}
+  .go{background:#e6f3ff;border:2px dashed #0050c8}.bk{background:#fff0f0;border:2px dashed #d40000}
+  .fb{background:#f0f0f0;border:2px dashed #666}.eat{background:#eaffea;border:2px dashed #00802b}
+  details{margin:8px 0}summary{cursor:pointer;font-weight:bold;background:#c0c0c0;border:3px outset #fff;padding:4px 10px}
+  .src{font-size:12px;word-break:break-word}
+  .pin{border:2px solid #000;border-radius:50%;width:16px;height:16px;box-shadow:1px 1px 0 #000}
+  .leaflet-popup-content,.leaflet-tooltip{font-family:Verdana,Tahoma,sans-serif;font-size:12.5px}
+  footer{color:#fff;text-align:center;font-size:12px;padding:14px}footer a{color:#ffe600}
+  @media(max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}.map{height:320px}.days{grid-template-columns:minmax(0,1fr)}
+    .t thead{display:none}.t,.t tbody,.t tr,.t td{display:block;width:100%}.t tr{margin-bottom:4px}.t td:first-child{background:#fff3a0;font-weight:bold}
+    .slot{grid-template-columns:78px minmax(0,1fr)}}
+
+  #big{height:520px;border:4px inset #c0c0c0}
+  .daybar{display:flex;gap:3px;overflow-x:auto;padding:6px 0;white-space:nowrap}
+  .daybar button{flex:none;font:bold 12px Verdana,sans-serif;border:2px solid #000;padding:3px 7px;cursor:pointer;color:#fff;text-shadow:1px 1px 0 #000;line-height:1.2}
+  .daybar button small{display:block;font-weight:normal;font-size:10.5px}
+  .daybar button.on{outline:3px solid #ffe600;outline-offset:-1px}
+  .daybar button.dim{opacity:.45}
+  .hint{background:#000;color:#0f0;font:bold 12.5px "Courier New",monospace;padding:4px 8px;border:2px inset #888;margin-top:6px}
+  .tog{font-size:13px;margin-top:6px}
+  .rate{display:inline-block;font:bold 12px Verdana,sans-serif;padding:2px 8px;border:2px solid #000;margin:6px 0 2px}
+  .rate.full{background:#ff5a5a;color:#000}.rate.ok{background:#7be07b}.rate.light{background:#ffe600}.rate.travel{background:#9fd0ff}
+  .ratenote{font-size:13px;margin:2px 0 6px}
+  .mini{height:230px;border:3px inset #c0c0c0;margin-top:8px}
+  .days{grid-template-columns:repeat(auto-fill,minmax(380px,1fr))}
+  .skip td:first-child{font-weight:bold}
+  .skiprow{cursor:pointer}
+  @media(max-width:860px){#big{height:380px}.mini{height:200px}.days{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="title">
+    <h1>📅 DZIEŃ PO DNIU 📅</h1>
+    <p>Co robimy, czy dzień nie jest przeładowany i co w okolicy świadomie omijamy</p>
+  </div>
+  <p style="text-align:center;margin:10px 0">
+    <a class="btn" href="index.html">⬅ Strona główna</a>
+    <a class="btn" href="plan.html">🗺️ Plan całej trasy</a>
+    <a class="btn" href="noclegi.html">🛏️ Wersja z noclegami</a>
+  </p>
+  <div class="box">
+    <h3>🗺️ CAŁA TRASA — KLIKNIJ DZIEŃ</h3>
+    <div class="daybar" id="daybar"></div>
+    <div id="big"></div>
+    <div class="hint" id="bighint">▶ Wszystkie dni. Kliknij dzień powyżej — mapa przybliży się tam, gdzie wtedy jesteśmy.</div>
+    <label class="tog"><input type="checkbox" id="showskip" checked> pokaż miejsca, które omijamy (szare ✕)</label>
+    <div style="font-size:12.5px;margin-top:6px">
+      <span class="rate full">przepełniony</span> <span class="rate ok">w sam raz</span> <span class="rate light">luz — można coś dodać</span> <span class="rate travel">dzień przejazdu</span>
+      · punkty z przerywaną obwódką mają przybliżone położenie · stan: <span id="upd"></span>
+    </div>
+  </div>
+  <div class="nav" id="nav"></div>
+  <div id="stops"></div>
+  <footer>Oceny obłożenia to szacunek na podstawie planu, nie pomiar. <a href="noclegi.html">Wersja z noclegami</a> · <a href="plan.html">Plan całej trasy</a></footer>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const S = /*__DAYS__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const WD = ["nd","pn","wt","śr","cz","pt","sb"], MON = ["sty","lut","mar","kwi"];
+const fmt = iso => { const d = new Date(iso + "T12:00:00"); return `${WD[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`; };
+const ok = p => Array.isArray(p.ll) && p.ll.length === 2 && p.ll.every(Number.isFinite);
+const LOAD = {full: "przepełniony", ok: "w sam raz", light: "luz — można coś dodać", travel: "dzień przejazdu"};
+const LCOL = {full: "#ff5a5a", ok: "#2e9e2e", light: "#c9a800", travel: "#3a86d6"};
+const TILES = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}";
+const rating = (stop, date) => S.ratings.find(r => r.stop === stop && r.date === date) || {};
+const stopOf = Object.fromEntries(S.stops.map(s => [s.id, s]));
+$("#upd").textContent = (S.updatedAt || "").slice(0, 10);
+$("#nav").innerHTML = S.stops.map(s => `<a href="#s-${s.id}" style="background:${s.color}">${esc(s.name)} · ${esc(s.dates)}</a>`).join("");
+
+const xIcon = L.divIcon({className: "", html: '<div style="font:bold 13px Verdana;color:#fff;background:#777;border:2px solid #000;width:20px;height:20px;line-height:16px;text-align:center;border-radius:4px;opacity:.9">✕</div>', iconSize: [20, 20], iconAnchor: [10, 10]});
+const skipPopup = k => `<b>✕ ${esc(k.name)}</b><br><b>Dlaczego omijamy:</b> ${esc(k.why)}<br><b>Kto poleca:</b> ${esc(k.rec)}${k.fit ? `<br><b>Kiedy by się zmieściło:</b> ${esc(k.fit)}` : ""}`;
+const dot = (p, color) => L.circleMarker(p.ll, {radius: 8, color: "#000", weight: 2, dashArray: p.approx ? "3 3" : null, fillColor: color, fillOpacity: .95});
+
+// ---- sekcje przystanków: dni z mini-mapą i oceną, potem lista pominiętych ----
+$("#stops").innerHTML = S.stops.map(s => {
+  const sk = S.skipped[s.id] || [];
+  return `<section class="stop" id="s-${s.id}">
+  <div class="band" style="background:${s.color}"><h2>${esc(s.name)}</h2><div>${esc(s.dates)} · ${s.nights} ${s.nights === 1 ? "noc" : s.nights < 5 ? "noce" : "nocy"}</div></div>
+  <div class="days">${(s.days || []).map(d => { const r = rating(s.id, d.date); return `<div class="day" id="d-${s.id}-${d.date}" style="cursor:default">
+    <header style="background:${s.color}"><b>${esc(d.title)}</b><span>${fmt(d.date)}</span></header>
+    <div class="body">
+      ${r.load ? `<span class="rate ${r.load}">${LOAD[r.load]}</span><div class="ratenote">${esc(r.note)}${r.add ? ` <b>${esc(r.add)}</b>` : ""}</div>` : ""}
+      ${(d.slots || []).map(x => `<div class="slot"><b>${esc(x.when)}</b><div>${esc(x.text)}</div></div>`).join("")}
+      ${d.getThere ? `<div class="info go"><b>🚕 Dojazd:</b> ${esc(d.getThere)}</div>` : ""}
+      ${d.book ? `<div class="info bk"><b>🎟️ Rezerwacja:</b> ${esc(d.book)}</div>` : ""}
+      ${d.eat ? `<div class="info eat"><b>🍜 Jedzenie i bary:</b> ${esc(d.eat)}</div>` : ""}
+      ${d.fallback ? `<div class="info fb"><b>🌧️ Plan B:</b> ${esc(d.fallback)}</div>` : ""}
+      <div class="mini" data-stop="${s.id}" data-date="${d.date}"></div>
+      <div style="text-align:right;margin-top:4px"><button class="btn" data-big="${d.date}">🗺️ pokaż na dużej mapie</button></div>
+    </div></div>`; }).join("")}</div>
+  ${sk.length ? `<div class="box skip"><h3>✕ CO W TEJ OKOLICY OMIJAMY</h3>
+    <table class="t"><thead><tr><th>Miejsce</th><th>Dlaczego omijamy</th><th>Kto poleca</th><th>Kiedy by się zmieściło</th></tr></thead><tbody>
+    ${sk.map((k, i) => `<tr class="skiprow" data-stop="${s.id}" data-i="${i}"><td>${esc(k.name)}</td><td>${esc(k.why)}</td><td>${esc(k.rec)}</td><td>${esc(k.fit || "—")}</td></tr>`).join("")}
+    </tbody></table><p style="font-size:12px;margin:6px 0 0">Kliknij wiersz, żeby zobaczyć miejsce na dużej mapie.</p></div>` : ""}
+  <div class="box">
+    ${(s.transport || []).length ? `<details><summary>🛺 Transport na miejscu</summary><ul>${s.transport.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}
+    ${(s.pitfalls || []).length ? `<details><summary>⚠️ Pułapki</summary><ul>${s.pitfalls.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}
+    <details><summary>🛏️ Nocleg (ukryte)</summary><p style="margin:6px 0">Okolica: <b>${esc((s.base || {}).name)}</b>. Porównanie okolic i przykładowe hotele są w <a href="noclegi.html#s-${s.id}">wersji z noclegami</a>.</p></details>
+  </div></section>`;
+}).join("");
+
+// ---- mini-mapy: tworzone dopiero, gdy dzień pojawi się na ekranie ----
+function buildMini(el) {
+  const s = stopOf[el.dataset.stop], date = el.dataset.date;
+  const m = L.map(el, {scrollWheelZoom: false, zoomControl: false, attributionControl: false});
+  L.tileLayer(TILES, {maxZoom: 18}).addTo(m); L.control.zoom({position: "topright"}).addTo(m);
+  const pts = (s.points || []).filter(ok).filter(p => p.date === date), hasBase = ok(s.base || {});
+  const all = [...(hasBase ? [s.base.ll] : []), ...pts.map(p => p.ll)];
+  all.length > 1 ? m.fitBounds(L.latLngBounds(all).pad(0.25), {maxZoom: 15}) : m.setView(all[0] || [13, 100], 13);
+  if (hasBase) L.marker(s.base.ll, {icon: L.divIcon({className: "", html: '<div style="font-size:20px;line-height:20px">🛏️</div>', iconSize: [22, 22], iconAnchor: [11, 11]})}).bindTooltip("Baza: " + esc(s.base.name)).addTo(m);
+  pts.forEach(p => dot(p, s.color).bindTooltip(esc(p.name), {permanent: pts.length <= 5, direction: "top", offset: [0, -6]}).addTo(m));
+  (S.skipped[s.id] || []).filter(ok).forEach(k => L.marker(k.ll, {icon: xIcon, opacity: .75}).bindPopup(skipPopup(k)).addTo(m));
+}
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { io.unobserve(e.target); buildMini(e.target); } }), {rootMargin: "300px"});
+document.querySelectorAll(".mini").forEach(el => io.observe(el));
+
+// ---- duża mapa ----
+const big = L.map("big", {scrollWheelZoom: false});
+L.tileLayer(TILES, {maxZoom: 18, attribution: "Tiles © Esri"}).addTo(big);
+const allPts = S.stops.filter(s => ok(s.base || {})).map(s => s.base.ll);
+big.fitBounds(L.latLngBounds(allPts).pad(0.1));  // widok musi istnieć, zanim dojdą warstwy wektorowe
+const dates = [...new Set(S.stops.flatMap(s => (s.days || []).map(d => d.date)))].sort();
+const dayLayers = {}, skipLayer = L.layerGroup().addTo(big), baseLayer = L.layerGroup().addTo(big), bounds = {}, skipOf = {};
+S.stops.forEach(s => {
+  if (ok(s.base || {})) L.marker(s.base.ll, {icon: L.divIcon({className: "", html: '<div style="font-size:18px;line-height:18px">🛏️</div>', iconSize: [20, 20], iconAnchor: [10, 10]})}).bindTooltip(esc(s.name) + " — baza: " + esc(s.base.name)).addTo(baseLayer);
+  (s.points || []).filter(ok).filter(p => p.date).forEach(p => {
+    (dayLayers[p.date] ||= L.layerGroup().addTo(big));
+    dot(p, s.color).bindTooltip(esc(p.name)).bindPopup(`<b>${esc(p.name)}</b><br>${fmt(p.date)} · ${esc(s.name)}${p.approx ? "<br><i>położenie przybliżone</i>" : ""}`).addTo(dayLayers[p.date]);
+    (bounds[p.date] ||= []).push(p.ll);
+  });
+  (s.days || []).forEach(d => { if (ok(s.base || {})) (bounds[d.date] ||= []).push(s.base.ll); });
+  (S.skipped[s.id] || []).filter(ok).forEach((k, i) => { const mk = L.marker(k.ll, {icon: xIcon}).bindPopup(skipPopup(k)).addTo(skipLayer); skipOf[s.id + ":" + i] = mk; });
+});
+// linia trasy między bazami
+L.polyline(S.stops.filter(s => ok(s.base || {})).map(s => s.base.ll), {color: "#000", weight: 3, opacity: .6, dashArray: "6 8"}).addTo(big);
+const stopsOn = d => S.stops.filter(s => (s.days || []).some(x => x.date === d));
+$("#daybar").innerHTML = `<button data-d="all" class="on" style="background:#000">Wszystkie<small>dni</small></button>` + dates.map(d => {
+  const ss = stopsOn(d), main = ss[ss.length - 1], r = rating(main.id, d);
+  return `<button data-d="${d}" style="background:${main.color};border-bottom:6px solid ${LCOL[r.load] || "#000"}">${fmt(d)}<small>${esc(main.name.split(" — ")[0].split(" (")[0])}</small></button>`;
+}).join("");
+function showDay(d, scroll) {
+  document.querySelectorAll("#daybar button").forEach(b => b.classList.toggle("on", b.dataset.d === d));
+  Object.entries(dayLayers).forEach(([k, l]) => (d === "all" || k === d) ? l.addTo(big) : big.removeLayer(l));
+  if (d === "all") { big.fitBounds(L.latLngBounds(allPts).pad(0.1)); $("#bighint").textContent = "▶ Wszystkie dni. Kliknij dzień powyżej — mapa przybliży się tam, gdzie wtedy jesteśmy."; }
+  else {
+    const b = bounds[d] || []; b.length > 1 ? big.fitBounds(L.latLngBounds(b).pad(0.3), {maxZoom: 14}) : big.setView(b[0], 12);
+    const ss = stopsOn(d);
+    $("#bighint").innerHTML = "▶ " + fmt(d) + ": " + ss.map(s => { const day = s.days.find(x => x.date === d), r = rating(s.id, d);
+      return `<a href="#d-${s.id}-${d}" style="color:#0f0">${esc(day.title)}</a> [${LOAD[r.load] || "?"}]`; }).join(" → ");
+  }
+  if (scroll) $("#big").scrollIntoView({behavior: "smooth", block: "center"});
+}
+$("#daybar").addEventListener("click", e => { const b = e.target.closest("button"); if (b) showDay(b.dataset.d); });
+document.querySelectorAll("[data-big]").forEach(b => b.addEventListener("click", () => showDay(b.dataset.big, true)));
+$("#showskip").addEventListener("change", e => e.target.checked ? skipLayer.addTo(big) : big.removeLayer(skipLayer));
+document.querySelectorAll(".skiprow").forEach(r => r.addEventListener("click", () => {
+  const mk = skipOf[r.dataset.stop + ":" + r.dataset.i]; if (!mk) return;
+  $("#showskip").checked = true; skipLayer.addTo(big); showDay("all"); big.setView(mk.getLatLng(), 12); mk.openPopup();
+  $("#big").scrollIntoView({behavior: "smooth", block: "center"});
+}));
+showDay("all");
+</script>
+</body>
+</html>

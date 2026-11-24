@@ -490,6 +490,14 @@ def render_stays():
     tpl = (HERE / "stays_template.html").read_text(encoding="utf-8")
     (SITE / "noclegi.html").write_text(tpl.replace("/*__STAYS__*/null", json.dumps(stays, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
     print(f"noclegi: {len(stays['stops'])} przystanków -> {SITE / 'noclegi.html'}")
+    extra = HERE / "days_extra.json"
+    if extra.exists() and (HERE / "days_template.html").exists():
+        days = {**stays, **json.loads(extra.read_text(encoding="utf-8"))}
+        for st in days["stops"]:  # wersja bez noclegów: hotele i porównanie okolic zostają tylko w noclegi.html
+            st.pop("hotels", None), st.pop("areas", None)
+        dtpl = (HERE / "days_template.html").read_text(encoding="utf-8")
+        (SITE / "dni.html").write_text(dtpl.replace("/*__DAYS__*/null", json.dumps(days, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
+        print(f"dni: {sum(len(st['days']) for st in days['stops'])} kart dni -> {SITE / 'dni.html'}")
 
 
 def render():
