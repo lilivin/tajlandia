@@ -85,3 +85,9 @@ przy nowych rolkach warto je uzupełnić. Lista „Do ogarnięcia przed wylotem�
 buduje `docs/plan.html`: dni po lewej, mapa trasy po prawej (klik w dzień = punkty tego dnia). Punkt dnia bierze współrzędne
 i link do rolki z analiz po nazwie (`match`), albo ma własne `ll`; `ref` = kod rolki-źródła. Trasa od 24.11.2026: bez północy — Bangkok 2 dni → Khao Sok → Krabi → Koh Phangan (Full Moon) → Koh Tao → Samui → Bangkok 2 dni.
 Dokumenty do skopiowania do Google Docs: `bangkok_doc.py` → `docs/bangkok-doc.html`, `trasa_doc.py` → `docs/trasa-doc.html`. Research z 11.2026 — ceny i rozkłady (zwłaszcza lot CNX–URT, okno sprzedaży pociągu, data Full Moon) do potwierdzenia.
+
+## Noclegi i dni (`docs/noclegi.html`)
+
+`stays.json` (7 przystanków: baza noclegowa, porównanie okolic, przykładowe hotele, dni z dojazdem z bazy, punkty na mapę) +
+`stays_template.html` → `feed.py render`. Dane powstały z researchu subagentów (`research/r3-*.md` → `research/stay-*.json`, lokalnie,
+poza repo); współrzędne punktów są w większości przybliżone (`approx`). Ceny hoteli to migawki — niepotwierdzone na luty 2027.

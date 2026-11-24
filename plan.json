@@ -234,7 +234,7 @@
    "move": {
     "mode": "flight",
     "from": "bkk",
-    "text": "Poranny lot Bangkok → Surat Thani (ok. 1 h 15 min; pobudka ok. 6:00, tanie linie latają z Don Mueang), potem minivan do wioski Khao Sok (1,5–2,5 h)."
+    "text": "Lot Bangkok → Surat Thani ok. 9:00–10:00 (tanie linie z Don Mueang, ok. 1 h 15 min; taxi spod hotelu 6:45), potem minivan do wioski Khao Sok (1,5–2,5 h)."
    },
    "plan": [
     "Nocleg w bungalowie w wiosce przy wejściu do parku",
@@ -315,16 +315,16 @@
    "stop": "krabi",
    "title": "Poranek na jeziorze i przejazd do Krabi",
    "plan": [
-    "Świt na jeziorze: poranne safari we mgle (najlepszy moment na zwierzęta)",
-    "Trekking do jaskini lub punktu widokowego, lunch, powrót do przystani ok. 14:00",
-    "Wieczorem Ao Nang: kolacja przy plaży i wczesny sen"
+    "Świt na jeziorze: poranne safari we mgle, śniadanie na tratwie",
+    "Wymeldowanie z domku ok. 9:00–9:30, łódź z powrotem do przystani",
+    "Ok. 15:00–16:00 Ao Nang: plaża, kolacja przy promenadzie"
    ],
    "move": {
     "mode": "van",
     "from": "ks",
-    "text": "Minivan z przystani / Khao Sok do Ao Nang, ok. 3,5–5 h (ok. 350–700 THB/os.). Poproście operatora jeziora o transfer prosto z tamy."
+    "text": "Prywatny minivan z przystani prosto do Ao Nang ok. 11:00 (na miejscu ok. 15:00–16:00). Publiczne busy jadą dopiero po 15:00 i docierają ok. 20:00."
    },
-   "tip": "Baza na 5 nocy: Ao Nang (wygodnie, łodzie spod plaży, knajpy) albo 2 noce Railay + 3 Ao Nang. Samo Railay bywa nudne po 2–3 dniach.",
+   "tip": "Jedna baza na 5 nocy: Ao Nang, południowa część przy promenadzie. Dzielenie pobytu z Railay odpada — bagaże trzeba wozić łodzią. Szczegóły w „Gdzie śpimy”.",
    "points": [
     {
      "name": "Tama Ratchaprapha",
@@ -513,7 +513,7 @@
    "stop": "krabi",
    "title": "Dzień luzu: słonie albo Koh Hong, wieczorem Ao Nang",
    "plan": [
-    "Opcja A: Following Giants — etyczna obserwacja słoni bez dotykania i karmienia (sprawdzić, który oddział: pod Krabi czy na Koh Lancie)",
+    "Opcja A: Following Giants — etyczna obserwacja słoni; oddział pod Ao Nang (Khao Kram) ma darmowy odbiór z hotelu",
     "Opcja B: wyspy Hong — laguna i punkt widokowy",
     "Opcja C: nic — plaża, masaż, pranie przed drugą połową wyjazdu",
     "Wieczorem bary w Ao Nang; jutro długi przejazd, więc bez przesady"
@@ -743,7 +743,7 @@
    },
    "plan": [
     "Nocleg przy plaży Sairee — tu jest życie wyspy i wszędzie dojdziecie pieszo",
-    "Popołudnie na plaży, snorkeling prosto z brzegu",
+    "Popołudnie na plaży Sairee (snorkeling z brzegu jest tu słaby — zostawcie go na jutrzejszy rejs)",
     "Zachód słońca i fire show w barach na Sairee"
    ],
    "tip": "Koh Tao jest mała, ale górzysta: bez skutera zostają drogie taksówki-pickupy i łodzie taxi. Sairee jako baza ogranicza ten problem.",
@@ -858,12 +858,12 @@
    "move": {
     "mode": "ferry",
     "from": "tao",
-    "text": "Katamaran Lomprayah Koh Tao → Koh Samui (przystań w Maenam), 1,5–2 h; potem taxi do Chaweng (ok. 30 min)."
+    "text": "Najlepiej szybka łódź Koh Tao → Samui do przystani Bangrak (ok. 11:30 → 13:00) — stamtąd do Chaweng jest ok. 10 min. Katamaran Lomprayah przypływa do Maenam, dalej od Chaweng."
    },
    "plan": [
     "Nocleg w Chaweng albo Bophut — 10–15 min od lotniska",
     "Po południu Wielki Budda i plaża Chaweng",
-    "Kolacja w Fisherman's Village w Bophut",
+    "Kolacja w Fisherman's Village w Bophut (w niedzielę bez targu — działa w piątki) albo od razu w Chaweng",
     "Ostatni drink nad morzem w Chaweng; walizki spakowane przed wyjściem"
    ],
    "tip": "Ta noc jest tu po to, żeby poranny lot nie zależał od promu i fali.",
@@ -967,7 +967,7 @@
     "16:30 Lumphini Park i warany",
     "19:00 gala Muay Thai na stadionie Rajadamnern, potem pożegnalna kolacja"
    ],
-   "book": "Rajadamnern: bilety 1 000–3 500+ THB, kupować bezpośrednio na rajadamnern.com (ringside warto z wyprzedzeniem).",
+   "book": "Rajadamnern: dni gal są niepotwierdzone (jedno źródło podaje pn, śr, czw i nd). Jeśli we wtorek nie ma walk, zamieńcie: Muay Thai w poniedziałek 1.03, rooftop we wtorek. Bilety od 1 000 THB na stronie stadionu.",
    "points": [
     {
      "name": "Platinum Fashion Mall",

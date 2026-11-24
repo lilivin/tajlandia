@@ -480,6 +480,18 @@ def render_plan(posts):
     print(f"plan: {len(plan['days'])} dni -> {SITE / 'plan.html'}" + (f" (bez współrzędnych: {'; '.join(missing)})" if missing else ""))
 
 
+def render_stays():
+    """docs/noclegi.html ze stays.json: baza noclegowa i rozpiska dni dla każdego przystanku."""
+    src = HERE / "stays.json"
+    if not src.exists():
+        return
+    stays = json.loads(src.read_text(encoding="utf-8"))
+    stays["updatedAt"] = now()
+    tpl = (HERE / "stays_template.html").read_text(encoding="utf-8")
+    (SITE / "noclegi.html").write_text(tpl.replace("/*__STAYS__*/null", json.dumps(stays, ensure_ascii=False).replace("</", "<\\/")), encoding="utf-8")
+    print(f"noclegi: {len(stays['stops'])} przystanków -> {SITE / 'noclegi.html'}")
+
+
 def render():
     st = load_state()
     prev_last = st.get("last") or {}
@@ -543,6 +555,7 @@ def render():
                        "leaderboard": leaderboard(posts, offtopic), "offtopic": offtopic}, ensure_ascii=False)
     (SITE / "index.html").write_text(tpl.replace("/*__DATA__*/null", data.replace("</", "<\\/")), encoding="utf-8")
     render_plan(posts)
+    render_stays()
     # Ostatni (najnowszy w czacie) przeanalizowany post — punkt, na którym `ig.mjs grab` może się zatrzymać.
     analyzed = [c for c, it in st["items"].items() if it["status"] == "analyzed"]
     newest = analyzed[-1] if analyzed else None
